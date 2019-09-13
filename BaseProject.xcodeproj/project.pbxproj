@@ -33,7 +33,11 @@
 		0B0F42C1232C299000190405 /* imgui_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F42A5232C299000190405 /* imgui_demo.cpp */; };
 		0B0F42C2232C299000190405 /* imgui_draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F42A6232C299000190405 /* imgui_draw.cpp */; };
 		0B0F42C3232C299000190405 /* SettingsParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F42A7232C299000190405 /* SettingsParser.cpp */; };
-		0B3004CE22B53812007515D0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B3004CD22B53812007515D0 /* main.cpp */; };
+		0B0F42D8232C2D3200190405 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F42D7232C2D3200190405 /* main.cpp */; };
+		0B0F42DB232C2FF900190405 /* Menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F42D9232C2FF900190405 /* Menu.cpp */; };
+		0B0F42DE232C300400190405 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F42DC232C300400190405 /* Game.cpp */; };
+		0B0F42E1232C400900190405 /* Base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F42DF232C400900190405 /* Base.cpp */; };
+		0B0F42E4232C40AC00190405 /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F42E2232C40AC00190405 /* Entity.cpp */; };
 		0B3004DA22B538FC007515D0 /* libsfml-network.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3004D522B538FC007515D0 /* libsfml-network.2.5.1.dylib */; };
 		0B3004DB22B538FC007515D0 /* libsfml-audio.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3004D622B538FC007515D0 /* libsfml-audio.2.5.1.dylib */; };
 		0B3004DC22B538FC007515D0 /* libsfml-window.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3004D722B538FC007515D0 /* libsfml-window.2.5.1.dylib */; };
@@ -41,7 +45,7 @@
 		0B3004DE22B538FC007515D0 /* libsfml-system.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3004D922B538FC007515D0 /* libsfml-system.2.5.1.dylib */; };
 		0B3004E022B53926007515D0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3004DF22B53926007515D0 /* libsqlite3.tbd */; };
 		0B30050622B55DB9007515D0 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B3004FD22B55DB9007515D0 /* Window.cpp */; };
-		0B6233E922B5918E00E29872 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B6233E722B5918E00E29872 /* Game.cpp */; };
+		0B6233E922B5918E00E29872 /* WindowHolder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B6233E722B5918E00E29872 /* WindowHolder.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -121,8 +125,16 @@
 		0B0F42A5232C299000190405 /* imgui_demo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_demo.cpp; sourceTree = "<group>"; };
 		0B0F42A6232C299000190405 /* imgui_draw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_draw.cpp; sourceTree = "<group>"; };
 		0B0F42A7232C299000190405 /* SettingsParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SettingsParser.cpp; sourceTree = "<group>"; };
+		0B0F42D7232C2D3200190405 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		0B0F42D9232C2FF900190405 /* Menu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Menu.cpp; sourceTree = "<group>"; };
+		0B0F42DA232C2FF900190405 /* Menu.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Menu.hpp; sourceTree = "<group>"; };
+		0B0F42DC232C300400190405 /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		0B0F42DD232C300400190405 /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
+		0B0F42DF232C400900190405 /* Base.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Base.cpp; sourceTree = "<group>"; };
+		0B0F42E0232C400900190405 /* Base.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Base.hpp; sourceTree = "<group>"; };
+		0B0F42E2232C40AC00190405 /* Entity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Entity.cpp; sourceTree = "<group>"; };
+		0B0F42E3232C40AC00190405 /* Entity.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Entity.hpp; sourceTree = "<group>"; };
 		0B3004CA22B53812007515D0 /* BaseProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BaseProject; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B3004CD22B53812007515D0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		0B3004D522B538FC007515D0 /* libsfml-network.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-network.2.5.1.dylib"; path = "../../../../../usr/local/Cellar/sfml/2.5.1/lib/libsfml-network.2.5.1.dylib"; sourceTree = "<group>"; };
 		0B3004D622B538FC007515D0 /* libsfml-audio.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-audio.2.5.1.dylib"; path = "../../../../../usr/local/Cellar/sfml/2.5.1/lib/libsfml-audio.2.5.1.dylib"; sourceTree = "<group>"; };
 		0B3004D722B538FC007515D0 /* libsfml-window.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-window.2.5.1.dylib"; path = "../../../../../usr/local/Cellar/sfml/2.5.1/lib/libsfml-window.2.5.1.dylib"; sourceTree = "<group>"; };
@@ -132,8 +144,8 @@
 		0B3004FD22B55DB9007515D0 /* Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Window.cpp; sourceTree = "<group>"; };
 		0B3004FE22B55DB9007515D0 /* FPS.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FPS.hpp; sourceTree = "<group>"; };
 		0B3004FF22B55DB9007515D0 /* Window.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Window.hpp; sourceTree = "<group>"; };
-		0B6233E722B5918E00E29872 /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; usesTabs = 1; };
-		0B6233E822B5918E00E29872 /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
+		0B6233E722B5918E00E29872 /* WindowHolder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WindowHolder.cpp; sourceTree = "<group>"; usesTabs = 1; };
+		0B6233E822B5918E00E29872 /* WindowHolder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WindowHolder.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,13 +170,13 @@
 			children = (
 				0B0F4262232C299000190405 /* SelbaWard.hpp */,
 				0B0F4263232C299000190405 /* SfMath.hpp */,
-				0B0F4264232C299000190405 /* SettingsParser.hpp */,
 				0B0F4265232C299000190405 /* FileLogger.hpp */,
 				0B0F4266232C299000190405 /* OsDialog */,
 				0B0F426C232C299000190405 /* yaml */,
 				0B0F426F232C299000190405 /* SelbaWard */,
 				0B0F4295232C299000190405 /* DearImGUI */,
 				0B0F42A7232C299000190405 /* SettingsParser.cpp */,
+				0B0F4264232C299000190405 /* SettingsParser.hpp */,
 			);
 			path = External;
 			sourceTree = "<group>";
@@ -276,10 +288,10 @@
 		0B3004CC22B53812007515D0 /* BaseProject */ = {
 			isa = PBXGroup;
 			children = (
+				0B0F42D7232C2D3200190405 /* main.cpp */,
 				0B0F4261232C299000190405 /* External */,
 				0B6233E622B5914700E29872 /* Game */,
 				0B3004FC22B55DB9007515D0 /* Render */,
-				0B3004CD22B53812007515D0 /* main.cpp */,
 			);
 			path = BaseProject;
 			sourceTree = "<group>";
@@ -310,8 +322,16 @@
 		0B6233E622B5914700E29872 /* Game */ = {
 			isa = PBXGroup;
 			children = (
-				0B6233E722B5918E00E29872 /* Game.cpp */,
-				0B6233E822B5918E00E29872 /* Game.hpp */,
+				0B6233E722B5918E00E29872 /* WindowHolder.cpp */,
+				0B6233E822B5918E00E29872 /* WindowHolder.hpp */,
+				0B0F42D9232C2FF900190405 /* Menu.cpp */,
+				0B0F42DA232C2FF900190405 /* Menu.hpp */,
+				0B0F42DC232C300400190405 /* Game.cpp */,
+				0B0F42DD232C300400190405 /* Game.hpp */,
+				0B0F42DF232C400900190405 /* Base.cpp */,
+				0B0F42E0232C400900190405 /* Base.hpp */,
+				0B0F42E2232C40AC00190405 /* Entity.cpp */,
+				0B0F42E3232C40AC00190405 /* Entity.hpp */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -372,6 +392,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B0F42DE232C300400190405 /* Game.cpp in Sources */,
 				0B0F42AD232C299000190405 /* Line.cpp in Sources */,
 				0B0F42BE232C299000190405 /* imgui.cpp in Sources */,
 				0B0F42BA232C299000190405 /* PieChart.cpp in Sources */,
@@ -391,16 +412,19 @@
 				0B0F42AC232C299000190405 /* Yaml.cpp in Sources */,
 				0B0F42B0232C299000190405 /* NinePatch.cpp in Sources */,
 				0B0F42C0232C299000190405 /* imgui_stdlib.cpp in Sources */,
+				0B0F42E1232C400900190405 /* Base.cpp in Sources */,
 				0B0F42C3232C299000190405 /* SettingsParser.cpp in Sources */,
 				0B0F42B3232C299000190405 /* Ring.cpp in Sources */,
 				0B0F42B9232C299000190405 /* Crosshair.cpp in Sources */,
 				0B0F42BD232C299000190405 /* imgui_widgets.cpp in Sources */,
+				0B0F42E4232C40AC00190405 /* Entity.cpp in Sources */,
 				0B0F42B2232C299000190405 /* ConsoleScreen.cpp in Sources */,
+				0B0F42DB232C2FF900190405 /* Menu.cpp in Sources */,
+				0B0F42D8232C2D3200190405 /* main.cpp in Sources */,
 				0B0F42BF232C299000190405 /* imgui-SFML.cpp in Sources */,
 				0B0F42B1232C299000190405 /* Sprite3d.cpp in Sources */,
 				0B0F42BB232C299000190405 /* Spline.cpp in Sources */,
-				0B3004CE22B53812007515D0 /* main.cpp in Sources */,
-				0B6233E922B5918E00E29872 /* Game.cpp in Sources */,
+				0B6233E922B5918E00E29872 /* WindowHolder.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

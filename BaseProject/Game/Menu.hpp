@@ -1,0 +1,31 @@
+//
+//  Menu.hpp
+//  BaseProject
+//
+//  Created by Daniel Harvey on 13/09/2019.
+//  Copyright © 2019 Daniel Harvey. All rights reserved.
+//
+
+#ifndef Menu_hpp
+#define Menu_hpp
+
+#include "WindowHolder.hpp"
+#include <stdio.h>
+
+class Menu : public WindowHolder
+{
+    public:
+    Menu();
+    ~Menu(){};
+        
+        void Start() override;
+        void Input() override;
+        void Render() override;
+        void UI() override;
+        void EarlyUpdate() override;
+        void LateUpdate() override;
+
+    
+    private:
+};
+#endif /* Menu_hpp */

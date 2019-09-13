@@ -33,7 +33,6 @@ void Window::Update()
             window.close();
         }
     }
-	SetTitle(std::to_string(fps.getFPS()));
 }
 
 void Window::BeginDraw(sf::Color colour)
@@ -116,6 +115,10 @@ void Window::SetTitle(std::string title)
 float Window::getDT()
 {
     return deltatime; 
+}
+int Window::GetFPS()
+{
+    return fps.getFPS();
 }
 
 

@@ -10,14 +10,21 @@
 #include <vector>
 #include <iostream>
 #include "Game.hpp"
+#include "Menu.hpp"
 #include "imgui.h"
 #include "imgui-SFML.h"
+#include <thread>
+
 
 int main()
 {
-
+    Menu m;
+    m.Start();
+    m.Update();
+    
     Game g;
     g.Start();
     g.Update();
+
     return 0;
 }

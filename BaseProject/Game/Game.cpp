@@ -2,72 +2,40 @@
 //  Game.cpp
 //  BaseProject
 //
-//  Created by Daniel Harvey on 15/06/2019.
+//  Created by Daniel Harvey on 13/09/2019.
 //  Copyright © 2019 Daniel Harvey. All rights reserved.
 //
 
 #include "Game.hpp"
-#include <math.h>
-#include <iostream>
 
-Game::Game() : window("Window")
+Game::Game()
 {
-	c.restart();
+    window.SetTitle("Game");
 }
 
 void Game::Start()
 {
-
-}
-
-void Game::Update()
-{
-	const float frameDuration = 17;
-	const int maxTimePerFrame = 200;
-	float accumulatedTime = 0;
-	
-	while (window.IsOpen())
-	{
-		accumulatedTime += c.restart().asMilliseconds();
-		if (accumulatedTime > maxTimePerFrame)
-		{
-			accumulatedTime = maxTimePerFrame;
-		}
-			window.Update();
-		//Ensure Fps doesnt change User experiance
-		while (accumulatedTime >= frameDuration)
-		{
-			accumulatedTime -= frameDuration;
-			
-			EarlyUpdate();
-			LateUpdate();
-		}
-		
-		Render();
-		
-	}
+    
 }
 void Game::Input()
 {
-	
-}
-void Game::EarlyUpdate()
-{
-
-
-	
-}
-void Game::LateUpdate()
-{
-
+    
 }
 void Game::Render()
 {
-	window.BeginDraw(sf::Color::Green);
-	
-
-	
-	window.EndDraw();
+    window.BeginDraw(sf::Color::Red);
+    
+    window.EndDraw();
 }
+void Game::UI()
+{
 
-
+}
+void Game::EarlyUpdate()
+{
+    
+}
+void Game::LateUpdate()
+{
+    
+}

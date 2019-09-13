@@ -9,6 +9,7 @@
 #ifndef Window_hpp
 #define Window_hpp
 
+
 #include "imgui.h"
 #include "imgui-SFML.h"
 #include "FPS.hpp"
@@ -35,7 +36,9 @@ public:
 	
 	bool RenderToTexture = false;
     
-    float getDT(); 
+    float getDT();
+    
+    int GetFPS(); 
     
 private:
     void CalculateDT(); 
