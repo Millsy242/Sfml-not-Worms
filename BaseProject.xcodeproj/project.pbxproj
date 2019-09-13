@@ -3,11 +3,45 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B0F42AA232C299000190405 /* osdialog_mac.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F426A232C299000190405 /* osdialog_mac.m */; };
+		0B0F42AB232C299000190405 /* osdialog.c in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F426B232C299000190405 /* osdialog.c */; };
+		0B0F42AC232C299000190405 /* Yaml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F426D232C299000190405 /* Yaml.cpp */; };
+		0B0F42AD232C299000190405 /* Line.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F4270232C299000190405 /* Line.cpp */; };
+		0B0F42AE232C299000190405 /* BitmapFont.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F4273232C299000190405 /* BitmapFont.cpp */; };
+		0B0F42AF232C299000190405 /* ElasticSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F4274232C299000190405 /* ElasticSprite.cpp */; };
+		0B0F42B0232C299000190405 /* NinePatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F4276232C299000190405 /* NinePatch.cpp */; };
+		0B0F42B1232C299000190405 /* Sprite3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F4277232C299000190405 /* Sprite3d.cpp */; };
+		0B0F42B2232C299000190405 /* ConsoleScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F4278232C299000190405 /* ConsoleScreen.cpp */; };
+		0B0F42B3232C299000190405 /* Ring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F427B232C299000190405 /* Ring.cpp */; };
+		0B0F42B4232C299000190405 /* BitmapText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F427E232C299000190405 /* BitmapText.cpp */; };
+		0B0F42B5232C299000190405 /* SpinningCard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F427F232C299000190405 /* SpinningCard.cpp */; };
+		0B0F42B6232C299000190405 /* ProgressBar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F4282232C299000190405 /* ProgressBar.cpp */; };
+		0B0F42B7232C299000190405 /* GallerySprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F4286232C299000190405 /* GallerySprite.cpp */; };
+		0B0F42B8232C299000190405 /* ConsoleScreenOld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F4287232C299000190405 /* ConsoleScreenOld.cpp */; };
+		0B0F42B9232C299000190405 /* Crosshair.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F4289232C299000190405 /* Crosshair.cpp */; };
+		0B0F42BA232C299000190405 /* PieChart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F428C232C299000190405 /* PieChart.cpp */; };
+		0B0F42BB232C299000190405 /* Spline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F428F232C299000190405 /* Spline.cpp */; };
+		0B0F42BC232C299000190405 /* Starfield.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F4293232C299000190405 /* Starfield.cpp */; };
+		0B0F42BD232C299000190405 /* imgui_widgets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F429A232C299000190405 /* imgui_widgets.cpp */; };
+		0B0F42BE232C299000190405 /* imgui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F429E232C299000190405 /* imgui.cpp */; };
+		0B0F42BF232C299000190405 /* imgui-SFML.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F429F232C299000190405 /* imgui-SFML.cpp */; };
+		0B0F42C0232C299000190405 /* imgui_stdlib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F42A3232C299000190405 /* imgui_stdlib.cpp */; };
+		0B0F42C1232C299000190405 /* imgui_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F42A5232C299000190405 /* imgui_demo.cpp */; };
+		0B0F42C2232C299000190405 /* imgui_draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F42A6232C299000190405 /* imgui_draw.cpp */; };
+		0B0F42C3232C299000190405 /* SettingsParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F42A7232C299000190405 /* SettingsParser.cpp */; };
 		0B3004CE22B53812007515D0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B3004CD22B53812007515D0 /* main.cpp */; };
+		0B3004DA22B538FC007515D0 /* libsfml-network.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3004D522B538FC007515D0 /* libsfml-network.2.5.1.dylib */; };
+		0B3004DB22B538FC007515D0 /* libsfml-audio.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3004D622B538FC007515D0 /* libsfml-audio.2.5.1.dylib */; };
+		0B3004DC22B538FC007515D0 /* libsfml-window.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3004D722B538FC007515D0 /* libsfml-window.2.5.1.dylib */; };
+		0B3004DD22B538FC007515D0 /* libsfml-graphics.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3004D822B538FC007515D0 /* libsfml-graphics.2.5.1.dylib */; };
+		0B3004DE22B538FC007515D0 /* libsfml-system.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3004D922B538FC007515D0 /* libsfml-system.2.5.1.dylib */; };
+		0B3004E022B53926007515D0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3004DF22B53926007515D0 /* libsqlite3.tbd */; };
+		0B30050622B55DB9007515D0 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B3004FD22B55DB9007515D0 /* Window.cpp */; };
+		0B6233E922B5918E00E29872 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B6233E722B5918E00E29872 /* Game.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +57,83 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0B0F4262232C299000190405 /* SelbaWard.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SelbaWard.hpp; sourceTree = "<group>"; };
+		0B0F4263232C299000190405 /* SfMath.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SfMath.hpp; sourceTree = "<group>"; };
+		0B0F4264232C299000190405 /* SettingsParser.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SettingsParser.hpp; sourceTree = "<group>"; };
+		0B0F4265232C299000190405 /* FileLogger.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FileLogger.hpp; sourceTree = "<group>"; };
+		0B0F4268232C299000190405 /* osdialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = osdialog.h; sourceTree = "<group>"; };
+		0B0F426A232C299000190405 /* osdialog_mac.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = osdialog_mac.m; sourceTree = "<group>"; };
+		0B0F426B232C299000190405 /* osdialog.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = osdialog.c; sourceTree = "<group>"; };
+		0B0F426D232C299000190405 /* Yaml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Yaml.cpp; sourceTree = "<group>"; };
+		0B0F426E232C299000190405 /* Yaml.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Yaml.hpp; sourceTree = "<group>"; };
+		0B0F4270232C299000190405 /* Line.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Line.cpp; sourceTree = "<group>"; };
+		0B0F4271232C299000190405 /* TileMap.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TileMap.hpp; sourceTree = "<group>"; };
+		0B0F4272232C299000190405 /* PieChart.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PieChart.hpp; sourceTree = "<group>"; };
+		0B0F4273232C299000190405 /* BitmapFont.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BitmapFont.cpp; sourceTree = "<group>"; };
+		0B0F4274232C299000190405 /* ElasticSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ElasticSprite.cpp; sourceTree = "<group>"; };
+		0B0F4275232C299000190405 /* Spline.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Spline.hpp; sourceTree = "<group>"; };
+		0B0F4276232C299000190405 /* NinePatch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NinePatch.cpp; sourceTree = "<group>"; };
+		0B0F4277232C299000190405 /* Sprite3d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sprite3d.cpp; sourceTree = "<group>"; };
+		0B0F4278232C299000190405 /* ConsoleScreen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConsoleScreen.cpp; sourceTree = "<group>"; };
+		0B0F4279232C299000190405 /* Starfield.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Starfield.hpp; sourceTree = "<group>"; };
+		0B0F427A232C299000190405 /* ProgressBar.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ProgressBar.hpp; sourceTree = "<group>"; };
+		0B0F427B232C299000190405 /* Ring.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ring.cpp; sourceTree = "<group>"; };
+		0B0F427C232C299000190405 /* ConsoleScreenOld.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ConsoleScreenOld.hpp; sourceTree = "<group>"; };
+		0B0F427D232C299000190405 /* GallerySprite.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GallerySprite.hpp; sourceTree = "<group>"; };
+		0B0F427E232C299000190405 /* BitmapText.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BitmapText.cpp; sourceTree = "<group>"; };
+		0B0F427F232C299000190405 /* SpinningCard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpinningCard.cpp; sourceTree = "<group>"; };
+		0B0F4280232C299000190405 /* Crosshair.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Crosshair.hpp; sourceTree = "<group>"; };
+		0B0F4281232C299000190405 /* TileMap.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TileMap.inl; sourceTree = "<group>"; };
+		0B0F4282232C299000190405 /* ProgressBar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProgressBar.cpp; sourceTree = "<group>"; };
+		0B0F4283232C299000190405 /* Ring.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Ring.hpp; sourceTree = "<group>"; };
+		0B0F4284232C299000190405 /* PaletteEnums.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PaletteEnums.hpp; sourceTree = "<group>"; };
+		0B0F4285232C299000190405 /* BitmapText.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BitmapText.hpp; sourceTree = "<group>"; };
+		0B0F4286232C299000190405 /* GallerySprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GallerySprite.cpp; sourceTree = "<group>"; };
+		0B0F4287232C299000190405 /* ConsoleScreenOld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConsoleScreenOld.cpp; sourceTree = "<group>"; };
+		0B0F4288232C299000190405 /* SpinningCard.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SpinningCard.hpp; sourceTree = "<group>"; };
+		0B0F4289232C299000190405 /* Crosshair.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Crosshair.cpp; sourceTree = "<group>"; };
+		0B0F428A232C299000190405 /* Line.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Line.hpp; sourceTree = "<group>"; };
+		0B0F428B232C299000190405 /* Common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Common.hpp; sourceTree = "<group>"; };
+		0B0F428C232C299000190405 /* PieChart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PieChart.cpp; sourceTree = "<group>"; };
+		0B0F428D232C299000190405 /* BitmapFont.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BitmapFont.hpp; sourceTree = "<group>"; };
+		0B0F428E232C299000190405 /* ElasticSprite.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ElasticSprite.hpp; sourceTree = "<group>"; };
+		0B0F428F232C299000190405 /* Spline.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Spline.cpp; sourceTree = "<group>"; };
+		0B0F4290232C299000190405 /* NinePatch.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NinePatch.hpp; sourceTree = "<group>"; };
+		0B0F4291232C299000190405 /* Sprite3d.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Sprite3d.hpp; sourceTree = "<group>"; };
+		0B0F4292232C299000190405 /* ConsoleScreen.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ConsoleScreen.hpp; sourceTree = "<group>"; };
+		0B0F4293232C299000190405 /* Starfield.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Starfield.cpp; sourceTree = "<group>"; };
+		0B0F4294232C299000190405 /* Exception.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Exception.hpp; sourceTree = "<group>"; };
+		0B0F4296232C299000190405 /* imgui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgui.h; sourceTree = "<group>"; };
+		0B0F4297232C299000190405 /* imstb_textedit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imstb_textedit.h; sourceTree = "<group>"; };
+		0B0F4298232C299000190405 /* imconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imconfig.h; sourceTree = "<group>"; };
+		0B0F4299232C299000190405 /* imgui_user.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgui_user.h; sourceTree = "<group>"; };
+		0B0F429A232C299000190405 /* imgui_widgets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_widgets.cpp; sourceTree = "<group>"; };
+		0B0F429B232C299000190405 /* imconfig-SFML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "imconfig-SFML.h"; sourceTree = "<group>"; };
+		0B0F429C232C299000190405 /* imstb_truetype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imstb_truetype.h; sourceTree = "<group>"; };
+		0B0F429D232C299000190405 /* imgui_stdlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgui_stdlib.h; sourceTree = "<group>"; };
+		0B0F429E232C299000190405 /* imgui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui.cpp; sourceTree = "<group>"; };
+		0B0F429F232C299000190405 /* imgui-SFML.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "imgui-SFML.cpp"; sourceTree = "<group>"; };
+		0B0F42A0232C299000190405 /* imgui_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgui_internal.h; sourceTree = "<group>"; };
+		0B0F42A1232C299000190405 /* imgui-SFML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "imgui-SFML.h"; sourceTree = "<group>"; };
+		0B0F42A2232C299000190405 /* imstb_rectpack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imstb_rectpack.h; sourceTree = "<group>"; };
+		0B0F42A3232C299000190405 /* imgui_stdlib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_stdlib.cpp; sourceTree = "<group>"; };
+		0B0F42A4232C299000190405 /* imgui-SFML_export.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "imgui-SFML_export.h"; sourceTree = "<group>"; };
+		0B0F42A5232C299000190405 /* imgui_demo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_demo.cpp; sourceTree = "<group>"; };
+		0B0F42A6232C299000190405 /* imgui_draw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_draw.cpp; sourceTree = "<group>"; };
+		0B0F42A7232C299000190405 /* SettingsParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SettingsParser.cpp; sourceTree = "<group>"; };
 		0B3004CA22B53812007515D0 /* BaseProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BaseProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B3004CD22B53812007515D0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		0B3004D522B538FC007515D0 /* libsfml-network.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-network.2.5.1.dylib"; path = "../../../../../usr/local/Cellar/sfml/2.5.1/lib/libsfml-network.2.5.1.dylib"; sourceTree = "<group>"; };
+		0B3004D622B538FC007515D0 /* libsfml-audio.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-audio.2.5.1.dylib"; path = "../../../../../usr/local/Cellar/sfml/2.5.1/lib/libsfml-audio.2.5.1.dylib"; sourceTree = "<group>"; };
+		0B3004D722B538FC007515D0 /* libsfml-window.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-window.2.5.1.dylib"; path = "../../../../../usr/local/Cellar/sfml/2.5.1/lib/libsfml-window.2.5.1.dylib"; sourceTree = "<group>"; };
+		0B3004D822B538FC007515D0 /* libsfml-graphics.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-graphics.2.5.1.dylib"; path = "../../../../../usr/local/Cellar/sfml/2.5.1/lib/libsfml-graphics.2.5.1.dylib"; sourceTree = "<group>"; };
+		0B3004D922B538FC007515D0 /* libsfml-system.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-system.2.5.1.dylib"; path = "../../../../../usr/local/Cellar/sfml/2.5.1/lib/libsfml-system.2.5.1.dylib"; sourceTree = "<group>"; };
+		0B3004DF22B53926007515D0 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		0B3004FD22B55DB9007515D0 /* Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Window.cpp; sourceTree = "<group>"; };
+		0B3004FE22B55DB9007515D0 /* FPS.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FPS.hpp; sourceTree = "<group>"; };
+		0B3004FF22B55DB9007515D0 /* Window.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Window.hpp; sourceTree = "<group>"; };
+		0B6233E722B5918E00E29872 /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; usesTabs = 1; };
+		0B6233E822B5918E00E29872 /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,17 +141,127 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B3004E022B53926007515D0 /* libsqlite3.tbd in Frameworks */,
+				0B3004DA22B538FC007515D0 /* libsfml-network.2.5.1.dylib in Frameworks */,
+				0B3004DB22B538FC007515D0 /* libsfml-audio.2.5.1.dylib in Frameworks */,
+				0B3004DC22B538FC007515D0 /* libsfml-window.2.5.1.dylib in Frameworks */,
+				0B3004DD22B538FC007515D0 /* libsfml-graphics.2.5.1.dylib in Frameworks */,
+				0B3004DE22B538FC007515D0 /* libsfml-system.2.5.1.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B0F4261232C299000190405 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				0B0F4262232C299000190405 /* SelbaWard.hpp */,
+				0B0F4263232C299000190405 /* SfMath.hpp */,
+				0B0F4264232C299000190405 /* SettingsParser.hpp */,
+				0B0F4265232C299000190405 /* FileLogger.hpp */,
+				0B0F4266232C299000190405 /* OsDialog */,
+				0B0F426C232C299000190405 /* yaml */,
+				0B0F426F232C299000190405 /* SelbaWard */,
+				0B0F4295232C299000190405 /* DearImGUI */,
+				0B0F42A7232C299000190405 /* SettingsParser.cpp */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		0B0F4266232C299000190405 /* OsDialog */ = {
+			isa = PBXGroup;
+			children = (
+				0B0F4268232C299000190405 /* osdialog.h */,
+				0B0F426A232C299000190405 /* osdialog_mac.m */,
+				0B0F426B232C299000190405 /* osdialog.c */,
+			);
+			path = OsDialog;
+			sourceTree = "<group>";
+		};
+		0B0F426C232C299000190405 /* yaml */ = {
+			isa = PBXGroup;
+			children = (
+				0B0F426D232C299000190405 /* Yaml.cpp */,
+				0B0F426E232C299000190405 /* Yaml.hpp */,
+			);
+			path = yaml;
+			sourceTree = "<group>";
+		};
+		0B0F426F232C299000190405 /* SelbaWard */ = {
+			isa = PBXGroup;
+			children = (
+				0B0F4270232C299000190405 /* Line.cpp */,
+				0B0F4271232C299000190405 /* TileMap.hpp */,
+				0B0F4272232C299000190405 /* PieChart.hpp */,
+				0B0F4273232C299000190405 /* BitmapFont.cpp */,
+				0B0F4274232C299000190405 /* ElasticSprite.cpp */,
+				0B0F4275232C299000190405 /* Spline.hpp */,
+				0B0F4276232C299000190405 /* NinePatch.cpp */,
+				0B0F4277232C299000190405 /* Sprite3d.cpp */,
+				0B0F4278232C299000190405 /* ConsoleScreen.cpp */,
+				0B0F4279232C299000190405 /* Starfield.hpp */,
+				0B0F427A232C299000190405 /* ProgressBar.hpp */,
+				0B0F427B232C299000190405 /* Ring.cpp */,
+				0B0F427C232C299000190405 /* ConsoleScreenOld.hpp */,
+				0B0F427D232C299000190405 /* GallerySprite.hpp */,
+				0B0F427E232C299000190405 /* BitmapText.cpp */,
+				0B0F427F232C299000190405 /* SpinningCard.cpp */,
+				0B0F4280232C299000190405 /* Crosshair.hpp */,
+				0B0F4281232C299000190405 /* TileMap.inl */,
+				0B0F4282232C299000190405 /* ProgressBar.cpp */,
+				0B0F4283232C299000190405 /* Ring.hpp */,
+				0B0F4284232C299000190405 /* PaletteEnums.hpp */,
+				0B0F4285232C299000190405 /* BitmapText.hpp */,
+				0B0F4286232C299000190405 /* GallerySprite.cpp */,
+				0B0F4287232C299000190405 /* ConsoleScreenOld.cpp */,
+				0B0F4288232C299000190405 /* SpinningCard.hpp */,
+				0B0F4289232C299000190405 /* Crosshair.cpp */,
+				0B0F428A232C299000190405 /* Line.hpp */,
+				0B0F428B232C299000190405 /* Common.hpp */,
+				0B0F428C232C299000190405 /* PieChart.cpp */,
+				0B0F428D232C299000190405 /* BitmapFont.hpp */,
+				0B0F428E232C299000190405 /* ElasticSprite.hpp */,
+				0B0F428F232C299000190405 /* Spline.cpp */,
+				0B0F4290232C299000190405 /* NinePatch.hpp */,
+				0B0F4291232C299000190405 /* Sprite3d.hpp */,
+				0B0F4292232C299000190405 /* ConsoleScreen.hpp */,
+				0B0F4293232C299000190405 /* Starfield.cpp */,
+				0B0F4294232C299000190405 /* Exception.hpp */,
+			);
+			path = SelbaWard;
+			sourceTree = "<group>";
+		};
+		0B0F4295232C299000190405 /* DearImGUI */ = {
+			isa = PBXGroup;
+			children = (
+				0B0F4296232C299000190405 /* imgui.h */,
+				0B0F4297232C299000190405 /* imstb_textedit.h */,
+				0B0F4298232C299000190405 /* imconfig.h */,
+				0B0F4299232C299000190405 /* imgui_user.h */,
+				0B0F429A232C299000190405 /* imgui_widgets.cpp */,
+				0B0F429B232C299000190405 /* imconfig-SFML.h */,
+				0B0F429C232C299000190405 /* imstb_truetype.h */,
+				0B0F429D232C299000190405 /* imgui_stdlib.h */,
+				0B0F429E232C299000190405 /* imgui.cpp */,
+				0B0F429F232C299000190405 /* imgui-SFML.cpp */,
+				0B0F42A0232C299000190405 /* imgui_internal.h */,
+				0B0F42A1232C299000190405 /* imgui-SFML.h */,
+				0B0F42A2232C299000190405 /* imstb_rectpack.h */,
+				0B0F42A3232C299000190405 /* imgui_stdlib.cpp */,
+				0B0F42A4232C299000190405 /* imgui-SFML_export.h */,
+				0B0F42A5232C299000190405 /* imgui_demo.cpp */,
+				0B0F42A6232C299000190405 /* imgui_draw.cpp */,
+			);
+			path = DearImGUI;
+			sourceTree = "<group>";
+		};
 		0B3004C122B53812007515D0 = {
 			isa = PBXGroup;
 			children = (
 				0B3004CC22B53812007515D0 /* BaseProject */,
 				0B3004CB22B53812007515D0 /* Products */,
+				0B3004D422B538FC007515D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +276,44 @@
 		0B3004CC22B53812007515D0 /* BaseProject */ = {
 			isa = PBXGroup;
 			children = (
+				0B0F4261232C299000190405 /* External */,
+				0B6233E622B5914700E29872 /* Game */,
+				0B3004FC22B55DB9007515D0 /* Render */,
 				0B3004CD22B53812007515D0 /* main.cpp */,
 			);
 			path = BaseProject;
+			sourceTree = "<group>";
+		};
+		0B3004D422B538FC007515D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B3004DF22B53926007515D0 /* libsqlite3.tbd */,
+				0B3004D622B538FC007515D0 /* libsfml-audio.2.5.1.dylib */,
+				0B3004D822B538FC007515D0 /* libsfml-graphics.2.5.1.dylib */,
+				0B3004D522B538FC007515D0 /* libsfml-network.2.5.1.dylib */,
+				0B3004D922B538FC007515D0 /* libsfml-system.2.5.1.dylib */,
+				0B3004D722B538FC007515D0 /* libsfml-window.2.5.1.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0B3004FC22B55DB9007515D0 /* Render */ = {
+			isa = PBXGroup;
+			children = (
+				0B3004FD22B55DB9007515D0 /* Window.cpp */,
+				0B3004FF22B55DB9007515D0 /* Window.hpp */,
+				0B3004FE22B55DB9007515D0 /* FPS.hpp */,
+			);
+			path = Render;
+			sourceTree = "<group>";
+		};
+		0B6233E622B5914700E29872 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				0B6233E722B5918E00E29872 /* Game.cpp */,
+				0B6233E822B5918E00E29872 /* Game.hpp */,
+			);
+			path = Game;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,7 +351,7 @@
 				};
 			};
 			buildConfigurationList = 0B3004C522B53812007515D0 /* Build configuration list for PBXProject "BaseProject" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -118,7 +372,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B0F42AD232C299000190405 /* Line.cpp in Sources */,
+				0B0F42BE232C299000190405 /* imgui.cpp in Sources */,
+				0B0F42BA232C299000190405 /* PieChart.cpp in Sources */,
+				0B0F42C2232C299000190405 /* imgui_draw.cpp in Sources */,
+				0B0F42B4232C299000190405 /* BitmapText.cpp in Sources */,
+				0B0F42B6232C299000190405 /* ProgressBar.cpp in Sources */,
+				0B30050622B55DB9007515D0 /* Window.cpp in Sources */,
+				0B0F42AB232C299000190405 /* osdialog.c in Sources */,
+				0B0F42C1232C299000190405 /* imgui_demo.cpp in Sources */,
+				0B0F42AF232C299000190405 /* ElasticSprite.cpp in Sources */,
+				0B0F42AE232C299000190405 /* BitmapFont.cpp in Sources */,
+				0B0F42B8232C299000190405 /* ConsoleScreenOld.cpp in Sources */,
+				0B0F42B5232C299000190405 /* SpinningCard.cpp in Sources */,
+				0B0F42B7232C299000190405 /* GallerySprite.cpp in Sources */,
+				0B0F42AA232C299000190405 /* osdialog_mac.m in Sources */,
+				0B0F42BC232C299000190405 /* Starfield.cpp in Sources */,
+				0B0F42AC232C299000190405 /* Yaml.cpp in Sources */,
+				0B0F42B0232C299000190405 /* NinePatch.cpp in Sources */,
+				0B0F42C0232C299000190405 /* imgui_stdlib.cpp in Sources */,
+				0B0F42C3232C299000190405 /* SettingsParser.cpp in Sources */,
+				0B0F42B3232C299000190405 /* Ring.cpp in Sources */,
+				0B0F42B9232C299000190405 /* Crosshair.cpp in Sources */,
+				0B0F42BD232C299000190405 /* imgui_widgets.cpp in Sources */,
+				0B0F42B2232C299000190405 /* ConsoleScreen.cpp in Sources */,
+				0B0F42BF232C299000190405 /* imgui-SFML.cpp in Sources */,
+				0B0F42B1232C299000190405 /* Sprite3d.cpp in Sources */,
+				0B0F42BB232C299000190405 /* Spline.cpp in Sources */,
 				0B3004CE22B53812007515D0 /* main.cpp in Sources */,
+				0B6233E922B5918E00E29872 /* Game.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +521,13 @@
 		0B3004D222B53812007515D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/sfml/2.5.1/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/sfml/2.5.1/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -247,7 +535,13 @@
 		0B3004D322B53812007515D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/sfml/2.5.1/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/sfml/2.5.1/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
