@@ -9,7 +9,7 @@
 #ifndef Game_hpp
 #define Game_hpp
 #include "WindowHolder.hpp"
-
+#include "Track.hpp"
 #include <stdio.h>
 class Game : public WindowHolder
 {
@@ -18,12 +18,13 @@ public:
     ~Game(){};
     
     void Start() override;
-    void Input() override;
-    void Render() override;
+    void Input(sf::Event e) override;
+    void Render(Window *window) override;
     void UI() override;
     void EarlyUpdate() override;
     void LateUpdate() override;
 private:
+    Track track; 
     
 };
 #endif /* Game_hpp */

@@ -61,7 +61,7 @@ void WindowHolder::Update()
 			EarlyUpdate();
 			LateUpdate();
 		}
-		Render();
+		Render(&window);
 	}
 }
 void WindowHolder::Exit()

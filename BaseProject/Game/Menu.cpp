@@ -17,15 +17,15 @@ void Menu::Start()
 {
     
 }
-void Menu::Input()
+void Menu::Input(sf::Event e)
 {
     
 }
-void Menu::Render()
+void Menu::Render(Window *window)
 {
-    window.BeginDraw(sf::Color::Blue);
+    window->BeginDraw(sf::Color::Blue);
     
-    window.EndDraw();
+    window->EndDraw();
 }
 void Menu::UI()
 {

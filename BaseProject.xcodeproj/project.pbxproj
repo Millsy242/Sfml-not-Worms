@@ -45,6 +45,8 @@
 		0B3004DE22B538FC007515D0 /* libsfml-system.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3004D922B538FC007515D0 /* libsfml-system.2.5.1.dylib */; };
 		0B3004E022B53926007515D0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3004DF22B53926007515D0 /* libsqlite3.tbd */; };
 		0B30050622B55DB9007515D0 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B3004FD22B55DB9007515D0 /* Window.cpp */; };
+		0B458388232D459D00D561B6 /* collision.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B458386232D459D00D561B6 /* collision.cpp */; };
+		0B5ABB92232E81D000A59A2C /* Track.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B5ABB90232E81D000A59A2C /* Track.cpp */; };
 		0B6233E922B5918E00E29872 /* WindowHolder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B6233E722B5918E00E29872 /* WindowHolder.cpp */; };
 /* End PBXBuildFile section */
 
@@ -144,6 +146,11 @@
 		0B3004FD22B55DB9007515D0 /* Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Window.cpp; sourceTree = "<group>"; };
 		0B3004FE22B55DB9007515D0 /* FPS.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FPS.hpp; sourceTree = "<group>"; };
 		0B3004FF22B55DB9007515D0 /* Window.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Window.hpp; sourceTree = "<group>"; };
+		0B458386232D459D00D561B6 /* collision.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = collision.cpp; sourceTree = "<group>"; };
+		0B458387232D459D00D561B6 /* collision.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = collision.hpp; sourceTree = "<group>"; };
+		0B5ABB90232E81D000A59A2C /* Track.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Track.cpp; sourceTree = "<group>"; };
+		0B5ABB91232E81D000A59A2C /* Track.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Track.hpp; sourceTree = "<group>"; };
+		0B5ABB94232E910200A59A2C /* mySpline.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mySpline.hpp; sourceTree = "<group>"; };
 		0B6233E722B5918E00E29872 /* WindowHolder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WindowHolder.cpp; sourceTree = "<group>"; usesTabs = 1; };
 		0B6233E822B5918E00E29872 /* WindowHolder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WindowHolder.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -177,6 +184,8 @@
 				0B0F4295232C299000190405 /* DearImGUI */,
 				0B0F42A7232C299000190405 /* SettingsParser.cpp */,
 				0B0F4264232C299000190405 /* SettingsParser.hpp */,
+				0B458386232D459D00D561B6 /* collision.cpp */,
+				0B458387232D459D00D561B6 /* collision.hpp */,
 			);
 			path = External;
 			sourceTree = "<group>";
@@ -288,6 +297,7 @@
 		0B3004CC22B53812007515D0 /* BaseProject */ = {
 			isa = PBXGroup;
 			children = (
+				0B5ABB93232E910200A59A2C /* Spline */,
 				0B0F42D7232C2D3200190405 /* main.cpp */,
 				0B0F4261232C299000190405 /* External */,
 				0B6233E622B5914700E29872 /* Game */,
@@ -319,6 +329,14 @@
 			path = Render;
 			sourceTree = "<group>";
 		};
+		0B5ABB93232E910200A59A2C /* Spline */ = {
+			isa = PBXGroup;
+			children = (
+				0B5ABB94232E910200A59A2C /* mySpline.hpp */,
+			);
+			path = Spline;
+			sourceTree = "<group>";
+		};
 		0B6233E622B5914700E29872 /* Game */ = {
 			isa = PBXGroup;
 			children = (
@@ -332,6 +350,8 @@
 				0B0F42E0232C400900190405 /* Base.hpp */,
 				0B0F42E2232C40AC00190405 /* Entity.cpp */,
 				0B0F42E3232C40AC00190405 /* Entity.hpp */,
+				0B5ABB90232E81D000A59A2C /* Track.cpp */,
+				0B5ABB91232E81D000A59A2C /* Track.hpp */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -362,7 +382,7 @@
 		0B3004C222B53812007515D0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Daniel Harvey";
 				TargetAttributes = {
 					0B3004C922B53812007515D0 = {
@@ -376,6 +396,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 0B3004C122B53812007515D0;
 			productRefGroup = 0B3004CB22B53812007515D0 /* Products */;
@@ -399,6 +420,7 @@
 				0B0F42C2232C299000190405 /* imgui_draw.cpp in Sources */,
 				0B0F42B4232C299000190405 /* BitmapText.cpp in Sources */,
 				0B0F42B6232C299000190405 /* ProgressBar.cpp in Sources */,
+				0B5ABB92232E81D000A59A2C /* Track.cpp in Sources */,
 				0B30050622B55DB9007515D0 /* Window.cpp in Sources */,
 				0B0F42AB232C299000190405 /* osdialog.c in Sources */,
 				0B0F42C1232C299000190405 /* imgui_demo.cpp in Sources */,
@@ -424,6 +446,7 @@
 				0B0F42BF232C299000190405 /* imgui-SFML.cpp in Sources */,
 				0B0F42B1232C299000190405 /* Sprite3d.cpp in Sources */,
 				0B0F42BB232C299000190405 /* Spline.cpp in Sources */,
+				0B458388232D459D00D561B6 /* collision.cpp in Sources */,
 				0B6233E922B5918E00E29872 /* WindowHolder.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -546,6 +569,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				HEADER_SEARCH_PATHS = /usr/local/Cellar/sfml/2.5.1/include;
 				LIBRARY_SEARCH_PATHS = (
@@ -560,6 +584,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				HEADER_SEARCH_PATHS = /usr/local/Cellar/sfml/2.5.1/include;
 				LIBRARY_SEARCH_PATHS = (

@@ -7,3 +7,49 @@
 //
 
 #include "Entity.hpp"
+
+void Entity::LoadTexture(std::string filepath)
+{
+    Collision::CreateTextureAndBitmask(EntityTexture, filepath);
+    EntitySprite.setTexture(EntityTexture);
+}
+void Entity::Render(Window *window)
+{
+    if(Active)
+        window->draw(EntitySprite);
+}
+sf::Vector2f Entity::GetPosition()
+{
+    return Position;
+}
+sf::Vector2f Entity::GetOldPosition()
+{
+    return OldPosition;
+}
+ void Entity::Update()
+{
+    OldPosition = Position;
+    EntityUpdate();
+}
+void Entity::SetPosition(sf::Vector2f NewPosition)
+{
+    Position = NewPosition;
+    EntitySprite.setPosition(Position);
+}
+void Entity::SetPosition(float x, float y)
+{
+    SetPosition(sf::Vector2f(x,y));
+}
+void Entity::ResetPosition()
+{
+    Position = OldPosition;
+    SetPosition(OldPosition);
+}
+bool Entity::isCollision(sf::Sprite *sprite)
+{
+    return Collision::PixelPerfectTest(EntitySprite, *sprite);
+}
+sf::Sprite Entity::GetSprite()
+{
+    return EntitySprite;
+}

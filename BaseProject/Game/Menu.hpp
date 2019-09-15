@@ -19,8 +19,8 @@ class Menu : public WindowHolder
     ~Menu(){};
         
         void Start() override;
-        void Input() override;
-        void Render() override;
+        void Input(sf::Event e) override;
+        void Render(Window *window) override;
         void UI() override;
         void EarlyUpdate() override;
         void LateUpdate() override;

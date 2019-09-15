@@ -8,17 +8,18 @@
 
 #ifndef Base_hpp
 #define Base_hpp
-
+#include <SFML/Graphics.hpp>
 #include <stdio.h>
+#include "Window.hpp"
 
 class Base
 {
 public:
     virtual void Start() = 0;
     virtual void Update() = 0;
-    virtual void Render() = 0;
-    virtual void Input() = 0;
     virtual void Exit() = 0;
+    virtual void Render(Window *window) = 0;
+    virtual void Input(sf::Event event)  = 0;
 };
 
 #endif /* Base_hpp */

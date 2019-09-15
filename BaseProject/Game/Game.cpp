@@ -15,17 +15,17 @@ Game::Game()
 
 void Game::Start()
 {
-    
+    track.LoadTrackFromFile("NewTrack.yml");
 }
-void Game::Input()
+void Game::Input(sf::Event e)
 {
     
 }
-void Game::Render()
+void Game::Render(Window *window)
 {
-    window.BeginDraw(sf::Color::Red);
-    
-    window.EndDraw();
+    window->BeginDraw(sf::Color::Red);
+    track.Render(window);
+    window->EndDraw();
 }
 void Game::UI()
 {

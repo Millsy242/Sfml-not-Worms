@@ -18,9 +18,9 @@
 
 int main()
 {
-    Menu m;
-    m.Start();
-    m.Update();
+   // Menu m;
+   // m.Start();
+   // m.Update();
     
     Game g;
     g.Start();
