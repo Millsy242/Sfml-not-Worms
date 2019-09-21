@@ -11,6 +11,7 @@
 #include "Entity.hpp"
 #include "mySpline.hpp"
 #include <stdio.h>
+#include "SelbaWard.hpp"
 class Track : public Entity
 {
 public:
@@ -24,14 +25,36 @@ public:
     void Input(sf::Event event) override;
     void Exit() override;
     
-    bool LoadTrackFromFile(std::string filepath);
+     
+    sf::Sprite temp;
+    void CreateTrackOutline(); 
+    
+    sf::Vector2f GetStart();
+    
+    bool LoadTrackFromFile(std::string filepath, sf::Vector2u ScreenSize);
     sf::Color getPixel(sf::Vector2f point);
     
+    int getStartNode()
+    {
+        return StartNode;
+    }
+    
+    mySpline CSpline,LSpline,RSpline, RacingLine;
+    
 private:
-    int StartNode,EndNode,Sector1,Sector2,Sector3,numnodes;
+    int StartNode,EndNode,Sector1,Sector2,Sector3,numnodes,Width,Height;
     float TrackWidth;
     bool Loaded = false;
-    mySpline CSpline,LSpline,RSpline;
+    
+    float scaleX{1}, scaleY{1};
+    
+    sf::Texture trackedge;
+    
+    int iteration = 0;
+    
+    float fDisplacement[50];
+    
+    bool curve{false}, distance{true};
 };
 
 #endif /* Track_hpp */

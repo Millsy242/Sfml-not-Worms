@@ -67,6 +67,9 @@ namespace Collision {
     /// The function returns false if the file could not be opened for some reason
     //////
     bool CreateTextureAndBitmask(sf::Texture &LoadInto, const std::string& Filename);
+    //Edit by Daniel Harvey 17/09/2019
+    //////creates bitmask froma lready created texture
+    bool CreateTextureAndBitmask(sf::Texture *LoadInto);
  
     //////
     /// Test for collision using circle collision dection

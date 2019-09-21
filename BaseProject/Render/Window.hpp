@@ -38,7 +38,11 @@ public:
     
     float getDT();
     
-    int GetFPS(); 
+    int GetFPS();
+    
+    sf::Event GetEvent();
+    
+    sf::Vector2u GetSize();
     
 private:
     void CalculateDT(); 
@@ -49,6 +53,7 @@ private:
 	FPS fps;
     float deltatime;
     sf::Clock clock;
+    sf::Event event;
     bool temp = false;
 };
 

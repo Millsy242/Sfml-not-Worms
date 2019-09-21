@@ -13,6 +13,7 @@
 #include <SFML/Graphics.hpp>
 #include <stdio.h>
 #include "collision.hpp"
+#include "SfMath.hpp"
 
 class Entity : public Base
 {
@@ -24,13 +25,14 @@ public:
     virtual void LoadTexture(std::string filepath); 
     void Update() override;
     virtual void EntityUpdate()  = 0 ;
-    virtual void Render(Window *window) ;
-    virtual void Input(sf::Event event)  = 0;
+    virtual void Render(Window *window) override;
+    virtual void Input(sf::Event event) override = 0;
     virtual void Exit() override = 0;
     virtual bool isCollision(sf::Sprite *sprite);
      
     
     virtual void SetPosition(sf::Vector2f NewPosition);
+    void SetScale(sf::Vector2f scale);
     sf::Sprite GetSprite();
     void SetPosition(float x, float y);
     void ResetPosition();
@@ -41,7 +43,7 @@ protected:
     sf::Sprite EntitySprite;
     sf::Texture EntityTexture;
     sf::Vector2f Position, OldPosition;
-    bool Active;
+    bool Active = true;
 };
 
 #endif /* Entity_hpp */

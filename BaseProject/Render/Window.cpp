@@ -12,7 +12,7 @@
 #include <stdlib.h>
 
 
-Window::Window(const std::string& windowName): window(sf::VideoMode(1920, 1080), windowName, sf::Style::Default)
+Window::Window(const std::string& windowName): window(sf::VideoMode(1920,1080), windowName, sf::Style::Default)
 {  
     window.setFramerateLimit(1000);
 	rendertexture.create(window.getSize().x,window.getSize().y);
@@ -24,7 +24,7 @@ void Window::Update()
 {
 	fps.update();
     ImGui::SFML::Update(window, sf::seconds(deltatime));
-    sf::Event event;
+   
     if (window.pollEvent(event))
     {
 		 ImGui::SFML::ProcessEvent(event);
@@ -33,6 +33,10 @@ void Window::Update()
             window.close();
         }
     }
+}
+sf::Event Window::GetEvent()
+{
+    return event;
 }
 
 void Window::BeginDraw(sf::Color colour)
@@ -71,6 +75,10 @@ void Window::CalculateDT()
 bool Window::IsOpen() const
 {
     return window.isOpen();
+}
+sf::Vector2u Window::GetSize()
+{
+    return window.getSize();
 }
 sf::Vector2u Window::GetCentre()
 {

@@ -107,6 +107,14 @@ namespace Collision
         Bitmasks.CreateMask(&LoadInto, img);
         return true;
     }
+        
+    bool CreateTextureAndBitmask(sf::Texture *LoadInto)
+    {
+        sf::Image img(LoadInto->copyToImage());
+
+        Bitmasks.CreateMask(LoadInto, img);
+        return true;
+    }
 
     sf::Vector2f GetSpriteCenter (const sf::Sprite& Object)
     {

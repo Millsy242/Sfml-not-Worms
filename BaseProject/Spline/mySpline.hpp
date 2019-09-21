@@ -15,6 +15,7 @@
 #include "SfMath.hpp"
 #include "Window.hpp"
 
+
 struct Point
 {
 	float x,y;
@@ -25,6 +26,7 @@ struct mySpline
 	std::vector<Point> points;
     float Length = 0.0f;
     bool Loop = true;
+    sf::Vector2f scale = {1,1};
 	
 	void AddPoint(sf::Vector2f point)
 	{
@@ -114,7 +116,15 @@ struct mySpline
         
         return fLength;
     }
-    
+    void SetScale(float scaleX,float scaleY)
+    {
+        scale = {scaleX,scaleY};
+        for(int i{0}; i < points.size();i++)
+        {
+            points[i].x = points[i].x * scaleX;
+            points[i].y = points[i].y * scaleY;
+        }
+    }
     float GetNormalisedOffset(float p)
     {
         // Which node is the base?
@@ -149,15 +159,18 @@ struct mySpline
             }
         }
     }
-    void DrawSelf(Window *window, sf::Color col = sf::Color::White)
+    void DrawSelf(Window *window, sf::Color col = sf::Color::White, sf::Vector2f lineSize = {8,8})
     {
         sf::RectangleShape tri;
         tri.setFillColor(col);
-        tri.setSize(sf::Vector2f(8,8));
+        tri.setSize(lineSize);
+        tri.setScale(scale);
+        
+        float inc = (0.005f / (scale.x * 10)) * scale.x *20;
         
         if(Loop)
         {
-            for(float t{0}; t<(float)points.size();t+=0.005f)
+            for(float t{0}; t<(float)points.size();t+=inc)
             {
                 auto pos = GetSplinePoint(t);
                 tri.setPosition(pos);
@@ -166,11 +179,39 @@ struct mySpline
         }
         else
         {
-            for(float t{0}; t<(float)points.size()-3;t+=0.005f)
+            for(float t{0}; t<(float)points.size()-3;t+=inc)
             {
                 auto pos = GetSplinePoint(t);
                 tri.setPosition(pos);
                 window->draw(tri);
+            }
+        }
+    }
+    void DrawSelf(sf::RenderTexture *RT, sf::Color col = sf::Color::White)
+    {
+        sf::RectangleShape tri;
+        tri.setFillColor(col);
+        tri.setSize(sf::Vector2f(8,8));
+        tri.setScale(scale);
+        
+        float inc = (0.005f / (scale.x * 10)) * scale.x *20;
+        
+        if(Loop)
+        {
+            for(float t{0}; t<(float)points.size();t+=inc)
+            {
+                auto pos = GetSplinePoint(t);
+                tri.setPosition(pos);
+                RT->draw(tri);
+            }
+        }
+        else
+        {
+            for(float t{0}; t<(float)points.size()-3;t+=inc)
+            {
+                auto pos = GetSplinePoint(t);
+                tri.setPosition(pos);
+                RT->draw(tri);
             }
         }
     }

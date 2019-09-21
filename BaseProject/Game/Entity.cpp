@@ -53,3 +53,7 @@ sf::Sprite Entity::GetSprite()
 {
     return EntitySprite;
 }
+void Entity::SetScale(sf::Vector2f scale)
+{
+    EntitySprite.setScale(scale);
+}

@@ -10,6 +10,7 @@
 #define Game_hpp
 #include "WindowHolder.hpp"
 #include "Track.hpp"
+#include "Car.hpp"
 #include <stdio.h>
 class Game : public WindowHolder
 {
@@ -24,7 +25,9 @@ public:
     void EarlyUpdate() override;
     void LateUpdate() override;
 private:
-    Track track; 
+    Track track;
+    
+    Car car; 
     
 };
 #endif /* Game_hpp */
