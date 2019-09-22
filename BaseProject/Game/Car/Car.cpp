@@ -14,7 +14,7 @@ void Car::Start()
 void Car::giveRacingLineSpline(mySpline *RacingLine_, int startpoint)
 {
     RacingLine = RacingLine_;
-    EntitySprite.setOrigin(EntitySprite.getLocalBounds().width/2, EntitySprite.getLocalBounds().height/2);
+    EntitySprite.setOrigin(EntitySprite.getLocalBounds().width/2, EntitySprite.getLocalBounds().height-5);
     EntitySprite.setRotation(180);
     start = startpoint;
     fmarker = start;
@@ -28,8 +28,8 @@ void Car::EntityUpdate()
     SetPosition(RacingLine->GetSplinePoint(fmarker));
     
     auto rot = std::atan2(RacingLine->GetSplineGradient( fmarker).y, (RacingLine->GetSplineGradient(fmarker).x));
-    EntitySprite.rotate(rot);
-     //EntitySprite.setRotation(270 + rot);
+    EntitySprite.rotate(tanf(rot));
+    //EntitySprite.setRotation(sinf(rot));
 }
 void Car::Input(sf::Event event)
 {
