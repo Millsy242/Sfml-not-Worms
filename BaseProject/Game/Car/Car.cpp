@@ -12,53 +12,93 @@ void Car::Start()
 {
     
 }
+
 void Car::giveRacingLineSpline(mySpline *RacingLine_, int startpoint)
 {
     RacingLine = RacingLine_;
     
-    EntitySprite.setOrigin(EntitySprite.getLocalBounds().width/2, EntitySprite.getLocalBounds().height/2);
+   // FlipTexture(true);
+    
+    EntitySprite.setOrigin(EntitySprite.getLocalBounds().width/2, EntitySprite.getLocalBounds().height-10);
     
     start = startpoint;
     fmarker = start;
 }
+
 void Car::EntityUpdate()
 {
-    
-
-}
-void Car::Render(Window *window)
-{
-    
-    fmarker += 1.1f * 0.016;
-    // if (fmarker > (float)RacingLine->points.size())
-    //   fmarker = 0;
-    
+    /*
+    fmarker -=speed * 0.0016; //+ or - depending on direction
+        
     if (fmarker >= (float)RacingLine->points.size())
         fmarker -= (float)RacingLine->points.size();
     
     if (fmarker < 0.0f)
         fmarker += (float)RacingLine->points.size();
     
-    
-   // SetPosition(RacingLine->GetSplinePoint(fmarker));
-    
-    float rot = atan2(RacingLine->GetSplineGradient( fmarker).y, (RacingLine->GetSplineGradient(fmarker).x));
-   // EntitySprite.rotate(tanf(rot));
-    //EntitySprite.setRotation(sinf(rot));
-    
-    float fOffset = fmarker;// RacingLine->GetNormalisedOffset(fmarker);
+    float fOffset =  fmarker;//RacingLine->GetNormalisedOffset(fmarker);
     sf::Vector2f p1 = RacingLine->GetSplinePoint(fOffset);
     sf::Vector2f g1 = RacingLine->GetSplineGradient(fOffset);
     float r = atan2(-g1.y, g1.x);
     float len = 50.f;
-    
-    
-    
+
     sf::Vector2f start = {len * sin(r) + p1.x, len * cos(r) + p1.y};
     sf::Vector2f end = {-len * sin(r) + p1.x, -len * cos(r) + p1.y};
-    sw::Line myline(start,end,5.f);
+    myline = sw::Line(start,end,5.f);
+    */
+    angle = sf::degToRad(EntitySprite.getRotation());
     
- //   EntitySprite.setRotation(sf::getAngleBetween(end, start));
+    float x{GetPosition().x},y{GetPosition().y},tx{RacingLine->GetSplinePoint(fmarker).x},ty{RacingLine->GetSplinePoint(fmarker).y};
+    
+    if ((x-tx)*(x-tx)+(y-ty)*(y-ty)<radius*radius)
+    {
+        fmarker=std::fmod(fmarker-0.25, RacingLine->points.size());
+        if(fmarker < 0)
+            fmarker = RacingLine->points.size() -1;
+    }
+    
+
+    bool D_{1},B_{0},R_{0},L_{0};
+    
+    sf::Vector2f next = RacingLine->GetSplinePoint(fmarker);
+    
+    tx=next.x;
+    ty=next.y;
+
+    float beta = angle-atan2(tx-GetPosition().x,-ty+GetPosition().y);
+
+    if (sin(beta) < 0)
+    {
+        R_ = true;
+    }
+    else
+    {
+        L_ = true;
+    }
+
+    MoveCar(D_,R_,L_,B_);
+
+   //EntitySprite.setRotation(sf::radToDeg( angle));
+}
+void Car::Render(Window *window)
+{
+    ImGui::Begin("car");
+    ImGui::SliderInt("radius", &radius, 1, 1000);
+    ImGui::End();
+    
+    sf::CircleShape circle;
+    circle.setRadius(radius);
+    circle.setOutlineThickness(5);
+    circle.setOutlineColor(sf::Color::White);
+    circle.setFillColor(sf::Color::Transparent);
+    circle.setOrigin(circle.getLocalBounds().width/2, circle.getLocalBounds().height/2);
+    
+    for(float t{0};t<RacingLine->points.size();t++)
+    {
+        circle.setPosition(RacingLine->GetSplinePoint(t));
+        window->draw(circle);
+
+    }
     
     if(Active)
         window->draw(EntitySprite);
@@ -108,7 +148,7 @@ void Car::Input(sf::Event event)
         D=1;
     }
      
-     MoveCar(D,R,L,B);
+     //MoveCar(D,R,L,B);
 }
 void Car::Exit()
 {
@@ -124,12 +164,11 @@ void Car::MoveCar(bool Drive,bool Right, bool Left, bool Brake)
         {
             if(speed > 3)
                 speed-=(acc*0.75);
-            speed-=0.0001; // some speed is scrubbed off when turning.
+          //  speed-=0.0001; // some speed is scrubbed off when turning.
             
             if(Left)
             {
-                turnSpeed_temp = -turnSpeed_temp;
-                EntitySprite.rotate(turnSpeed_temp);
+                EntitySprite.rotate(-turnSpeed_temp);
             }
             else if(Right)
             {
@@ -173,7 +212,11 @@ void Car::MoveCar(bool Drive,bool Right, bool Left, bool Brake)
     {
         speed = 0; //make sure car doesn't go backwards.
     }
-    
+    if(offTrack && speed>offTrackSpeed)
+    {
+        speed--;
+    }
+
     sf::Vector2f oldVec = movementVec;
     
     sf::Transform t;

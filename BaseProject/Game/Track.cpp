@@ -21,8 +21,6 @@ void Track::LoadTexture(std::string filepath)
 }
 void Track::EntityUpdate()
 {
-    
-    
     // Reset racing line
     for (int i = 0; i < RacingLine.points.size(); i++)
     {
@@ -66,7 +64,7 @@ void Track::EntityUpdate()
 
             // Shortest path
             if(distance)
-            fDisplacement[i] += (dp * 0.3f);
+                fDisplacement[i] += (dp * 0.3f);
 
             // Curvature
             if(curve)
@@ -91,15 +89,32 @@ void Track::EntityUpdate()
         }
     }
 
+
     RacingLine.UpdateSplineProperties();
     return;
 }
 void Track::Render(Window *window)
 {
+    static bool center{true}, RLine{true}, background{true};
+    static int maxit{100},minit{0};
+    ImGui::Begin("track");
+    ImGui::InputInt("max iteration", &maxit);
+    ImGui::InputInt("min iteration", &minit);
+    ImGui::SliderInt("iterations", &iteration, minit, maxit);
+    ImGui::Checkbox("Curve", &curve);
+    ImGui::Checkbox("Distance", &distance);
+    
+    ImGui::Checkbox("Show Center", &center);
+    ImGui::Checkbox("Show Racing Line", &RLine);
+    ImGui::Checkbox("Show Background", &background);
+    ImGui::End();
+    
+    if(background)
     window->draw(EntitySprite);
    // window->draw(temp);
-    
+    if(center)
     CSpline.DrawSelf(window,sf::Color::White,{2,2});
+    if(RLine)
     RacingLine.DrawSelf(window,sf::Color::Magenta,{5,5});
 }
 sf::Vector2f Track::GetStart()
@@ -108,11 +123,7 @@ sf::Vector2f Track::GetStart()
 }
 void Track::Input(sf::Event event)
 {
-    ImGui::Begin("track");
-    ImGui::SliderInt("iterations", &iteration, 0, 100);
-    ImGui::Checkbox("Curve", &curve);
-    ImGui::Checkbox("Distance", &distance);
-    ImGui::End();
+    
     return;
 }
 void Track::Exit()

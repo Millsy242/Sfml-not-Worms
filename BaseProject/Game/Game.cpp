@@ -20,7 +20,7 @@ void Game::Start()
     car.LoadTexture("car.png");
     car.SetPosition(track.GetStart());
     car.SetScale(sf::Vector2f(1,1));
-    car.giveRacingLineSpline(&track.CSpline,track.getStartNode());
+    car.giveRacingLineSpline(&track.RacingLine,track.getStartNode());
 }
 void Game::Input(sf::Event e)
 {
@@ -49,14 +49,8 @@ void Game::UI()
 void Game::EarlyUpdate()
 {
     track.EntityUpdate();
-    if(car.isCollision(&track.temp))
-    {
-        
-    }
-    else
-    {
-        
-    }
+    car.offTrack = !car.isCollision(&track.temp);
+    
     car.EntityUpdate();
 }
 void Game::LateUpdate()

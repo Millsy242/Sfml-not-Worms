@@ -86,6 +86,10 @@ public:
     
     Timing Laptimes;
     
+     bool offTrack = false;
+    
+    void findTarget(sf::Vector2f next);
+    
 private:
     void MoveCar(bool Drive,bool Right, bool Left, bool Brake);
     void LoadFromFile(std::string Filepath);
@@ -97,16 +101,21 @@ private:
     float brakepower = 0.02;
     float turnSpeed=3.f;
     float offTrackSpeed = 1.f;
-    float speed = 0.f;
+    float speed = 2.f;
     
+    int radius = 25; 
+    
+    float angle = 0; 
     bool D{false},B{false},L{false},R{false};
+   
     
     sf::Vector2f forwardVec = sf::Vector2f(0.f, -1.f);
     sf::Vector2f movementVec; //normal vector based on current direction
     
     mySpline *RacingLine = nullptr;
     
-    sw::Line carline; 
+    sw::Line carline;
+    sw::Line myline;
     
     float fmarker= 1;
     int start = 0; 

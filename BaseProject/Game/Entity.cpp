@@ -57,3 +57,16 @@ void Entity::SetScale(sf::Vector2f scale)
 {
     EntitySprite.setScale(scale);
 }
+void  Entity::FlipTexture(bool Vertical)
+{
+    sf::Image temp = EntityTexture.copyToImage();
+    if(Vertical)
+        temp.flipVertically();
+    else
+        temp.flipHorizontally();
+    
+    EntityTexture.loadFromImage(temp);
+    Collision::CreateTextureAndBitmask(&EntityTexture);
+    EntitySprite.setTexture(EntityTexture);
+    
+}
