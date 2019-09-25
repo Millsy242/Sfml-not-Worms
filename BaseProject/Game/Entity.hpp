@@ -14,6 +14,7 @@
 #include <stdio.h>
 #include "collision.hpp"
 #include "SfMath.hpp"
+#include "Selbaward.hpp"
 
 class Entity : public Base
 {

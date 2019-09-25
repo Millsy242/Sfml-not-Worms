@@ -13,6 +13,7 @@
 #include <fstream>
 #include <string>
 #include "mySpline.hpp"
+#include "SelbaWard.hpp"
 
 struct Timing
 {
@@ -81,6 +82,8 @@ public:
     void Input(sf::Event event) override ;
     void Exit() override ;
     
+    void Render(Window *window) override;
+    
     Timing Laptimes;
     
 private:
@@ -103,7 +106,9 @@ private:
     
     mySpline *RacingLine = nullptr;
     
-    float fmarker= 0;
+    sw::Line carline; 
+    
+    float fmarker= 1;
     int start = 0; 
 };
 

@@ -39,6 +39,7 @@ void Game::Render(Window *window)
     track.Render(window);
     window->draw(shape);
     car.Render(window);
+    
     window->EndDraw();
 }
 void Game::UI()

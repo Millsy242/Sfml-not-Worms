@@ -7,6 +7,7 @@
 //
 
 #include "Car.hpp"
+#include <iostream>
 void Car::Start()
 {
     
@@ -14,22 +15,56 @@ void Car::Start()
 void Car::giveRacingLineSpline(mySpline *RacingLine_, int startpoint)
 {
     RacingLine = RacingLine_;
-    EntitySprite.setOrigin(EntitySprite.getLocalBounds().width/2, EntitySprite.getLocalBounds().height-5);
-    EntitySprite.setRotation(180);
+    EntitySprite.setScale({3,3});
+    EntitySprite.setOrigin(EntitySprite.getLocalBounds().width/2, EntitySprite.getLocalBounds().height/2);
+    
     start = startpoint;
     fmarker = start;
 }
 void Car::EntityUpdate()
 {
-    fmarker += 1.0f * 0.01;
-    if (fmarker > (float)RacingLine->points.size())
-        fmarker = 0;
+    
+
+}
+void Car::Render(Window *window)
+{
+    
+    
+    fmarker += 1.1f * 0.016;
+    // if (fmarker > (float)RacingLine->points.size())
+    //   fmarker = 0;
+    
+    if (fmarker >= (float)RacingLine->points.size())
+        fmarker -= (float)RacingLine->points.size();
+    
+    if (fmarker < 0.0f)
+        fmarker += (float)RacingLine->points.size();
+    
     
     SetPosition(RacingLine->GetSplinePoint(fmarker));
     
-    auto rot = std::atan2(RacingLine->GetSplineGradient( fmarker).y, (RacingLine->GetSplineGradient(fmarker).x));
-    EntitySprite.rotate(tanf(rot));
+    float rot = atan2(RacingLine->GetSplineGradient( fmarker).y, (RacingLine->GetSplineGradient(fmarker).x));
+   // EntitySprite.rotate(tanf(rot));
     //EntitySprite.setRotation(sinf(rot));
+    
+    float fOffset = fmarker;// RacingLine->GetNormalisedOffset(fmarker);
+    sf::Vector2f p1 = RacingLine->GetSplinePoint(fOffset);
+    sf::Vector2f g1 = RacingLine->GetSplineGradient(fOffset);
+    float r = atan2(-g1.y, g1.x);
+    float len = 50.f;
+    
+    
+    
+    sf::Vector2f start = {len * sin(r) + p1.x, len * cos(r) + p1.y};
+    sf::Vector2f end = {-len * sin(r) + p1.x, -len * cos(r) + p1.y};
+    sw::Line myline(start,end,5.f);
+    
+    EntitySprite.setRotation(sf::getAngleBetween(end, start));
+    
+    if(Active)
+        window->draw(EntitySprite);
+    
+    window->draw(myline);
 }
 void Car::Input(sf::Event event)
 {
