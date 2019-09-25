@@ -24,7 +24,7 @@ void Game::Start()
 }
 void Game::Input(sf::Event e)
 {
-    //car.Input(e);
+    car.Input(e);
     track.Input(e);
     
 }

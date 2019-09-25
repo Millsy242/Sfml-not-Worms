@@ -55,11 +55,11 @@ void WindowHolder::Update()
 		
 		Stats();
 		UI();
-		Input(window.GetEvent());
+		
 		//Ensure Fps doesnt change User experiance
 		while (accumulatedTime >= frameDuration)
 		{
-			
+		Input(window.GetEvent());
 			accumulatedTime -= frameDuration;
 			EarlyUpdate();
 			LateUpdate();

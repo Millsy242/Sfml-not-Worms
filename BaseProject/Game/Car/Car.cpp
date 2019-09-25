@@ -15,7 +15,7 @@ void Car::Start()
 void Car::giveRacingLineSpline(mySpline *RacingLine_, int startpoint)
 {
     RacingLine = RacingLine_;
-    EntitySprite.setScale({3,3});
+    
     EntitySprite.setOrigin(EntitySprite.getLocalBounds().width/2, EntitySprite.getLocalBounds().height/2);
     
     start = startpoint;
@@ -29,7 +29,6 @@ void Car::EntityUpdate()
 void Car::Render(Window *window)
 {
     
-    
     fmarker += 1.1f * 0.016;
     // if (fmarker > (float)RacingLine->points.size())
     //   fmarker = 0;
@@ -41,7 +40,7 @@ void Car::Render(Window *window)
         fmarker += (float)RacingLine->points.size();
     
     
-    SetPosition(RacingLine->GetSplinePoint(fmarker));
+   // SetPosition(RacingLine->GetSplinePoint(fmarker));
     
     float rot = atan2(RacingLine->GetSplineGradient( fmarker).y, (RacingLine->GetSplineGradient(fmarker).x));
    // EntitySprite.rotate(tanf(rot));
@@ -59,7 +58,7 @@ void Car::Render(Window *window)
     sf::Vector2f end = {-len * sin(r) + p1.x, -len * cos(r) + p1.y};
     sw::Line myline(start,end,5.f);
     
-    EntitySprite.setRotation(sf::getAngleBetween(end, start));
+ //   EntitySprite.setRotation(sf::getAngleBetween(end, start));
     
     if(Active)
         window->draw(EntitySprite);
@@ -68,8 +67,9 @@ void Car::Render(Window *window)
 }
 void Car::Input(sf::Event event)
 {
-    /*
+    
      D = false;B = false;L = false;R = false;
+    /*
     if(event.type == sf::Event::KeyPressed )
     {
         if(event.key.code == sf::Keyboard::Left)
@@ -89,7 +89,7 @@ void Car::Input(sf::Event event)
             B = 1;
         }
     }
-  //
+  */
    
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
     {
@@ -107,8 +107,8 @@ void Car::Input(sf::Event event)
     {
         D=1;
     }
-     */
-     //MoveCar(D,R,L,B);
+     
+     MoveCar(D,R,L,B);
 }
 void Car::Exit()
 {
