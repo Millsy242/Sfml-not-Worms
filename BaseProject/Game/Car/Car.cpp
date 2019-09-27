@@ -13,10 +13,17 @@ void Car::Start()
     
 }
 
-void Car::giveRacingLineSpline(mySpline *RacingLine_, int startpoint)
+void Car::giveRacingLineSpline(mySpline *CenterLine, int startpoint,float Twidth)
 {
-    RacingLine = RacingLine_;
+    CSpline = CenterLine;
+    for(int i{0}; i<CenterLine->points.size();i++)
+    {
+        RacingLine.AddPoint(CenterLine->GetSplinePoint(i));
+    }
+    RacingLine.UpdateSplineProperties();
     
+    TrackWidth = Twidth;
+    radius = TrackWidth*2;
    // FlipTexture(true);
     
     EntitySprite.setOrigin(EntitySprite.getLocalBounds().width/2, EntitySprite.getLocalBounds().height-10);
@@ -46,21 +53,22 @@ void Car::EntityUpdate()
     sf::Vector2f end = {-len * sin(r) + p1.x, -len * cos(r) + p1.y};
     myline = sw::Line(start,end,5.f);
     */
+    
     angle = sf::degToRad(EntitySprite.getRotation());
     
-    float x{GetPosition().x},y{GetPosition().y},tx{RacingLine->GetSplinePoint(fmarker).x},ty{RacingLine->GetSplinePoint(fmarker).y};
+    float x{GetPosition().x},y{GetPosition().y},tx{RacingLine.GetSplinePoint(fmarker).x},ty{RacingLine.GetSplinePoint(fmarker).y};
     
     if ((x-tx)*(x-tx)+(y-ty)*(y-ty)<radius*radius)
     {
-        fmarker=std::fmod(fmarker-0.25, RacingLine->points.size());
+        fmarker=std::fmod(fmarker-0.25, RacingLine.points.size());
         if(fmarker < 0)
-            fmarker = RacingLine->points.size() -1;
+            fmarker = RacingLine.points.size() -1;
     }
     
 
     bool D_{1},B_{0},R_{0},L_{0};
     
-    sf::Vector2f next = RacingLine->GetSplinePoint(fmarker);
+    sf::Vector2f next = RacingLine.GetSplinePoint(fmarker);
     
     tx=next.x;
     ty=next.y;
@@ -80,12 +88,81 @@ void Car::EntityUpdate()
 
    //EntitySprite.setRotation(sf::radToDeg( angle));
 }
+void Car::UpdateRacingLine()
+{
+    // Reset racing line
+    for (int i = 0; i < RacingLine.points.size(); i++)
+    {
+        RacingLine.points[i] = CSpline->points[i];
+        fDisplacement[i] = 0;
+    }
+    RacingLine.UpdateSplineProperties();
+
+    for (int n = 0; n < iteration; n++)
+    {
+        for (int i = 0; i < RacingLine.points.size(); i++)
+        {
+            // Get locations of neighbour nodes
+            sf::Vector2f pointRight = RacingLine.GetSplinePoint((i + 1) % RacingLine.points.size());
+            sf::Vector2f pointLeft = RacingLine.GetSplinePoint((i + RacingLine.points.size() - 1) % RacingLine.points.size());
+            sf::Vector2f pointMiddle = RacingLine.GetSplinePoint(i);
+
+            // Create vectors to neighbours
+            sf::Vector2f vectorLeft = { pointLeft.x - pointMiddle.x, pointLeft.y - pointMiddle.y };
+            sf::Vector2f vectorRight = { pointRight.x - pointMiddle.x, pointRight.y - pointMiddle.y };
+
+            // Normalise neighbours
+            float lengthLeft = sqrtf(vectorLeft.x*vectorLeft.x + vectorLeft.y*vectorLeft.y);
+            sf::Vector2f leftn = { vectorLeft.x / lengthLeft, vectorLeft.y / lengthLeft };
+            float lengthRight = sqrtf(vectorRight.x*vectorRight.x + vectorRight.y*vectorRight.y);
+            sf::Vector2f rightn = { vectorRight.x / lengthRight, vectorRight.y / lengthRight };
+
+            // Add together to create bisector vector
+            sf::Vector2f vectorSum = { rightn.x + leftn.x, rightn.y + leftn.y };
+            float len = sqrtf(vectorSum.x*vectorSum.x + vectorSum.y*vectorSum.y);
+            vectorSum.x /= len;
+            vectorSum.y /= len;
+
+            // Get point gradient and normalise
+            sf::Vector2f g = CSpline->GetSplineGradient(i);
+            float glen = sqrtf(g.x*g.x + g.y*g.y);
+            g.x /= glen; g.y /= glen;
+
+            // Project required correction onto point tangent to give displacment
+            float dp = -g.y*vectorSum.x + g.x * vectorSum.y;
+
+            // Shortest path
+            if(distance)
+                fDisplacement[i] += (dp * 0.3f);
+
+            // Curvature
+            if(curve)
+            {
+                fDisplacement[(i + 1) % RacingLine.points.size()] += dp * -0.2f;
+                fDisplacement[(i - 1 + RacingLine.points.size()) % RacingLine.points.size()] += dp * -0.2f;
+            }
+        }
+
+        // Clamp displaced points to track width
+        for (int i = 0; i < RacingLine.points.size(); i++)
+        {
+            if (fDisplacement[i] >= TrackWidth) fDisplacement[i] = TrackWidth;
+            if (fDisplacement[i] <= -TrackWidth) fDisplacement[i] = -TrackWidth;
+
+            sf::Vector2f g = CSpline->GetSplineGradient(i);
+            float glen = sqrtf(g.x*g.x + g.y*g.y);
+            g.x /= glen; g.y /= glen;
+
+            RacingLine.points[i].x = CSpline->points[i].x + -g.y * fDisplacement[i];
+            RacingLine.points[i].y = CSpline->points[i].y + g.x * fDisplacement[i];
+        }
+    }
+
+
+    RacingLine.UpdateSplineProperties();
+}
 void Car::Render(Window *window)
 {
-    ImGui::Begin("car");
-    ImGui::SliderInt("radius", &radius, 1, 1000);
-    ImGui::End();
-    
     sf::CircleShape circle;
     circle.setRadius(radius);
     circle.setOutlineThickness(5);
@@ -93,12 +170,13 @@ void Car::Render(Window *window)
     circle.setFillColor(sf::Color::Transparent);
     circle.setOrigin(circle.getLocalBounds().width/2, circle.getLocalBounds().height/2);
     
-    for(float t{0};t<RacingLine->points.size();t++)
+    for(float t{0};t<RacingLine.points.size();t++)
     {
-        circle.setPosition(RacingLine->GetSplinePoint(t));
+        circle.setPosition(RacingLine.GetSplinePoint(t));
         window->draw(circle);
-
     }
+    if(RLine)
+        RacingLine.DrawSelf(window,sf::Color::Magenta,{5,5});
     
     if(Active)
         window->draw(EntitySprite);
@@ -150,9 +228,27 @@ void Car::Input(sf::Event event)
      
      //MoveCar(D,R,L,B);
 }
+void Car::UI()
+{
+    ImGui::Begin("car");
+    ImGui::SliderInt("radius", &radius, 1, 1000);
+    ImGui::Text("%fmph",speed*12);
+    ImGui::End();
+    
+    static int maxit{100},minit{0};
+    ImGui::Begin("track");
+    ImGui::Checkbox("Show Racing Line", &RLine);
+    ImGui::InputInt("max iteration", &maxit);
+    ImGui::InputInt("min iteration", &minit);
+    ImGui::SliderInt("iterations", &iteration, minit, maxit);
+    ImGui::Checkbox("Curve", &curve);
+    ImGui::Checkbox("Distance", &distance);
+    ImGui::End();
+    UpdateRacingLine();
+}
 void Car::Exit()
 {
-    
+    return;
 }
 void Car::MoveCar(bool Drive,bool Right, bool Left, bool Brake)
 {

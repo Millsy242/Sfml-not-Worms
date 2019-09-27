@@ -20,7 +20,7 @@ void Game::Start()
     car.LoadTexture("car.png");
     car.SetPosition(track.GetStart());
     car.SetScale(sf::Vector2f(1,1));
-    car.giveRacingLineSpline(&track.RacingLine,track.getStartNode());
+    car.giveRacingLineSpline(&track.CSpline,track.getStartNode(),track.TrackWidth);
 }
 void Game::Input(sf::Event e)
 {
@@ -44,7 +44,8 @@ void Game::Render(Window *window)
 }
 void Game::UI()
 {
-
+    car.UI();
+    track.UI();
 }
 void Game::EarlyUpdate()
 {

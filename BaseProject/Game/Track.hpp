@@ -24,6 +24,7 @@ public:
     void Render(Window *window) override;
     void Input(sf::Event event) override;
     void Exit() override;
+    void UI() override;
     
      
     sf::Sprite temp;
@@ -39,22 +40,23 @@ public:
         return StartNode;
     }
     
-    mySpline CSpline,LSpline,RSpline, RacingLine;
+    mySpline CSpline,LSpline,RSpline;
+    
+    float TrackWidth;
     
 private:
     int StartNode,EndNode,Sector1,Sector2,Sector3,numnodes,Width,Height;
-    float TrackWidth;
+    
     bool Loaded = false;
     
     float scaleX{1}, scaleY{1};
     
     sf::Texture trackedge;
     
-    int iteration = 0;
     
-    float fDisplacement[50];
+    bool center{true},background{true};
     
-    bool curve{false}, distance{true};
+  
 };
 
 #endif /* Track_hpp */

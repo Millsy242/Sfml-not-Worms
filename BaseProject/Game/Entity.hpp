@@ -30,6 +30,7 @@ public:
     virtual void Input(sf::Event event) override = 0;
     virtual void Exit() override = 0;
     virtual bool isCollision(sf::Sprite *sprite);
+    virtual void UI(){};
     
     virtual void FlipTexture(bool Vertical);
      

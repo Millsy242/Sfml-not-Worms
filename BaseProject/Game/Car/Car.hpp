@@ -74,13 +74,15 @@ public:
     Car(){};
     ~Car(){};
     
-    void giveRacingLineSpline(mySpline *RacingLine_, int startpoint);
+    void giveRacingLineSpline(mySpline *CenterLine, int startpoint,float Twidth);
   
     void Start() override ;
     void EntityUpdate()  override ;
     
     void Input(sf::Event event) override ;
     void Exit() override ;
+    
+    void UI() override;
     
     void Render(Window *window) override;
     
@@ -90,9 +92,13 @@ public:
     
     void findTarget(sf::Vector2f next);
     
+    void UpdateRacingLine(); 
+    
 private:
     void MoveCar(bool Drive,bool Right, bool Left, bool Brake);
     void LoadFromFile(std::string Filepath);
+    
+    bool  RLine{true};
     
     float fitness = 0.f;
     float maxSpeed=15.0;
@@ -112,13 +118,22 @@ private:
     sf::Vector2f forwardVec = sf::Vector2f(0.f, -1.f);
     sf::Vector2f movementVec; //normal vector based on current direction
     
-    mySpline *RacingLine = nullptr;
+    mySpline RacingLine;
+    mySpline *CSpline;
     
     sw::Line carline;
     sw::Line myline;
     
     float fmarker= 1;
-    int start = 0; 
+    int start = 0;
+    
+    
+    int iteration = 0;
+      
+      float fDisplacement[50];
+    float TrackWidth;
+      
+      bool curve{false}, distance{true};
 };
 
 #endif /* Car_hpp */
