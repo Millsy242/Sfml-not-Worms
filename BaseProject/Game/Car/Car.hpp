@@ -14,6 +14,7 @@
 #include <string>
 #include "mySpline.hpp"
 #include "SelbaWard.hpp"
+#include "Chromosome.hpp"
 
 struct Timing
 {
@@ -78,7 +79,7 @@ public:
   
     void Start() override ;
     void EntityUpdate()  override ;
-    
+    virtual void LoadTexture(std::string filepath) override; 
     void Input(sf::Event event) override ;
     void Exit() override ;
     
@@ -114,9 +115,14 @@ private:
     float angle = 0; 
     bool D{false},B{false},L{false},R{false};
    
+    Chromosome chromo;
+    
+    std::vector<sf::Sprite> surroundings;
     
     sf::Vector2f forwardVec = sf::Vector2f(0.f, -1.f);
     sf::Vector2f movementVec; //normal vector based on current direction
+    
+    sf::Color CarColour = sf::Color::White;
     
     mySpline RacingLine;
     mySpline *CSpline;

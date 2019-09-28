@@ -12,6 +12,28 @@ void Car::Start()
 {
     
 }
+void Car::LoadTexture(std::string filepath)
+{
+    Collision::CreateTextureAndBitmask(EntityTexture, filepath);
+    EntitySprite.setTexture(EntityTexture);
+    EntitySprite.setColor(CarColour);
+    EntitySprite.setOrigin(EntitySprite.getLocalBounds().width/2, EntitySprite.getLocalBounds().height-10);
+    
+    sf::Sprite sideSprite = EntitySprite;
+    sideSprite.setColor(sf::Color(CarColour.r,CarColour.g,CarColour.b,CarColour.a/2));
+    //left
+    sideSprite.setPosition(EntitySprite.getPosition().x - EntitySprite.getGlobalBounds().width,EntitySprite.getPosition().y);
+    surroundings.push_back(sideSprite);
+    //right
+    sideSprite.setPosition(EntitySprite.getPosition().x + EntitySprite.getGlobalBounds().width,EntitySprite.getPosition().y);
+    surroundings.push_back(sideSprite);
+    //up
+    sideSprite.setPosition(EntitySprite.getPosition().x,EntitySprite.getPosition().y - EntitySprite.getGlobalBounds().height);
+    surroundings.push_back(sideSprite);
+    //down
+    sideSprite.setPosition(EntitySprite.getPosition().x,EntitySprite.getPosition().y + EntitySprite.getGlobalBounds().height);
+    surroundings.push_back(sideSprite);
+}
 
 void Car::giveRacingLineSpline(mySpline *CenterLine, int startpoint,float Twidth)
 {
@@ -26,7 +48,7 @@ void Car::giveRacingLineSpline(mySpline *CenterLine, int startpoint,float Twidth
     radius = TrackWidth*2;
    // FlipTexture(true);
     
-    EntitySprite.setOrigin(EntitySprite.getLocalBounds().width/2, EntitySprite.getLocalBounds().height-10);
+    
     
     start = startpoint;
     fmarker = start;
@@ -54,6 +76,7 @@ void Car::EntityUpdate()
     myline = sw::Line(start,end,5.f);
     */
     
+    
     angle = sf::degToRad(EntitySprite.getRotation());
     
     float x{GetPosition().x},y{GetPosition().y},tx{RacingLine.GetSplinePoint(fmarker).x},ty{RacingLine.GetSplinePoint(fmarker).y};
@@ -65,7 +88,6 @@ void Car::EntityUpdate()
             fmarker = RacingLine.points.size() -1;
     }
     
-
     bool D_{1},B_{0},R_{0},L_{0};
     
     sf::Vector2f next = RacingLine.GetSplinePoint(fmarker);
@@ -85,8 +107,6 @@ void Car::EntityUpdate()
     }
 
     MoveCar(D_,R_,L_,B_);
-
-   //EntitySprite.setRotation(sf::radToDeg( angle));
 }
 void Car::UpdateRacingLine()
 {
@@ -180,6 +200,11 @@ void Car::Render(Window *window)
     
     if(Active)
         window->draw(EntitySprite);
+    for(int i{0};i<surroundings.size();i++)
+    {
+        surroundings[i].setRotation(EntitySprite.getRotation());
+        window->draw(surroundings[i]);
+    }
     
     window->draw(myline);
 }
@@ -323,7 +348,19 @@ void Car::MoveCar(bool Drive,bool Right, bool Left, bool Brake)
     //when accelerating after a tight turn
     speed *= oldVec * movementVec;
    
-    SetPosition(sf::Vector2f(GetPosition().x + (movementVec.x * speed),GetPosition().y + (movementVec.y * speed)));    
+    SetPosition(sf::Vector2f(GetPosition().x + (movementVec.x * speed),GetPosition().y + (movementVec.y * speed)));
+    //left
+    surroundings[0].setPosition(EntitySprite.getPosition().x - EntitySprite.getGlobalBounds().width,EntitySprite.getPosition().y);
+    
+    //right
+    surroundings[1].setPosition(EntitySprite.getPosition().x + EntitySprite.getGlobalBounds().width,EntitySprite.getPosition().y);
+    
+    //up
+    surroundings[2].setPosition(EntitySprite.getPosition().x,EntitySprite.getPosition().y - EntitySprite.getGlobalBounds().height);
+    
+    //down
+    surroundings[3].setPosition(EntitySprite.getPosition().x,EntitySprite.getPosition().y + EntitySprite.getGlobalBounds().height);
+
 }
 void Car::LoadFromFile(std::string Filepath)
 {
