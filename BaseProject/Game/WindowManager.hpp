@@ -13,6 +13,14 @@
 #include "Window.hpp"
 #include "Game.hpp"
 #include "Menu.hpp"
+#include <thread>
+
+enum class windowType
+{
+    eNull,
+    eGame,
+    eMenu
+};
 
 class WindowManager : public Base
 {
@@ -26,8 +34,13 @@ public:
     void Render(Window *window) override;
     void Input(sf::Event event) override;
     
+    void ChangeWindow(windowType wt);
+    void UpdateWindow(); 
+    
 private:
-    std::unique_ptr<WindowHolder> currentWindow;
+    std::shared_ptr<WindowHolder> currentWindow;
+    Window window;
+    windowType CurrentWindowType = windowType::eNull;
 };
 
 #endif /* WindowManager_hpp */

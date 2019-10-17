@@ -12,14 +12,19 @@
 #include <stdlib.h>
 
 
-Window::Window(const std::string& windowName): window(sf::VideoMode(1920,1080), windowName, sf::Style::Default)
+Window::Window()
 {  
-    window.setFramerateLimit(1000);
-	rendertexture.create(window.getSize().x,window.getSize().y);
-	ImGui::SFML::Init(window);
-    CalculateDT();
+
 }
 
+void Window::Start(const std::string& windowName)
+{
+    window.create(sf::VideoMode(1920,1080), windowName, sf::Style::Default);
+    window.setFramerateLimit(1000);
+    rendertexture.create(window.getSize().x,window.getSize().y);
+    ImGui::SFML::Init(window);
+    CalculateDT();
+}
 void Window::Update()
 {
 	fps.update();
@@ -116,7 +121,7 @@ void Window::Process()
 	
 	window.draw(windowtexture);
 }
-void Window::SetTitle(std::string title)
+void Window::SetTitle(std::string &title)
 {
 	window.setTitle(title);
 }

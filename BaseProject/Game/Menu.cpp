@@ -7,19 +7,19 @@
 //
 
 #include "Menu.hpp"
-
+#include <iostream>
  Menu::Menu() 
 {
-    window.SetTitle("Menu");
+    
 }
 
 void Menu::Start()
 {
-    
+        Active = true;
 }
 void Menu::Input(sf::Event e)
 {
-    
+
 }
 void Menu::Render(Window *window)
 {
@@ -29,7 +29,13 @@ void Menu::Render(Window *window)
 }
 void Menu::UI()
 {
-    
+    ImGui::Begin("Menu");
+    if(ImGui::Button("change to Game"))
+    {
+        std::cout<<"stop menu\n";
+         Active = false;
+    }
+    ImGui::End();
 }
 void Menu::EarlyUpdate()
 {

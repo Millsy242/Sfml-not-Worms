@@ -10,16 +10,20 @@
 #include <math.h>
 #include <iostream>
 
-WindowHolder::WindowHolder() : window("Window")
+WindowHolder::WindowHolder()
 {
-	c.restart();
+	
 }
 
 void WindowHolder::Start()
 {
-
+	Active = true;
+	c.restart();
 }
-
+void WindowHolder::GiveWindow(Window *w)
+{
+	window = w;
+}
 void WindowHolder::Stats()
 {
 	ImGuiWindowFlags window_flags = 0;
@@ -34,7 +38,7 @@ void WindowHolder::Stats()
 	
     ImGui::Begin("Stats",NULL,window_flags);
 	ImGui::SetWindowSize("Stats", ImVec2(110,70));
-    ImGui::Text("FPS: %i \nDT: %fms",window.GetFPS(),window.getDT()*1000);
+    ImGui::Text("FPS: %i \nDT: %fms",window->GetFPS(),window->getDT()*1000);
     ImGui::End();
 }
 
@@ -43,15 +47,15 @@ void WindowHolder::Update()
 	const float frameDuration = 17;
 	const int maxTimePerFrame = 200;
 	float accumulatedTime = 0;
-	
-	while (window.IsOpen())
+	Active = true;
+	while (Active)
 	{
 		accumulatedTime += c.restart().asMilliseconds();
 		if (accumulatedTime > maxTimePerFrame)
 		{
 			accumulatedTime = maxTimePerFrame;
 		}
-		window.Update();
+		window->Update();
 		
 		Stats();
 		UI();
@@ -59,13 +63,14 @@ void WindowHolder::Update()
 		//Ensure Fps doesnt change User experiance
 		while (accumulatedTime >= frameDuration)
 		{
-		Input(window.GetEvent());
+			Input(window->GetEvent());
 			accumulatedTime -= frameDuration;
 			EarlyUpdate();
 			LateUpdate();
 		}
-		Render(&window);
+		Render(window);
 	}
+	return;
 }
 void WindowHolder::Exit()
 {

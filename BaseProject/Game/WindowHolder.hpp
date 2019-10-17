@@ -26,13 +26,15 @@ public:
     virtual void UI() = 0;
     virtual void Exit();
     void Stats();
+    void GiveWindow(Window *w);
     
 protected:
-    Window window;
-    
+
+   bool Active = true;
+    Window *window = nullptr;
 private:
-    sf::Clock c; 
-    
+    sf::Clock c;
+
     const sf::Time TimePerFrame = sf::seconds(1.f/60.f);
     sf::Time elapsedTime;
     sf::Time OverallPlayerLapTime;

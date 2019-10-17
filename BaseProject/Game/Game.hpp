@@ -25,6 +25,6 @@ public:
     void LateUpdate() override;
 private:
 
-    
+    sf::RectangleShape r; 
 };
 #endif /* Game_hpp */

@@ -18,7 +18,10 @@
 class Window
 {
 public:
-    Window(const std::string& windowName);
+    
+    Window();
+    
+    void Start(const std::string& windowName);
     
     void Update();
     
@@ -32,7 +35,7 @@ public:
 	
 	void sharpen(std::vector<sf::Uint8> &pixels);
 	
-	void SetTitle(std::string title);
+	void SetTitle(std::string &title);
 	
 	bool RenderToTexture = false;
     
