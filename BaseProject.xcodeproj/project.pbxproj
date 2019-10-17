@@ -46,10 +46,8 @@
 		0B3004E022B53926007515D0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3004DF22B53926007515D0 /* libsqlite3.tbd */; };
 		0B30050622B55DB9007515D0 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B3004FD22B55DB9007515D0 /* Window.cpp */; };
 		0B458388232D459D00D561B6 /* collision.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B458386232D459D00D561B6 /* collision.cpp */; };
-		0B547BFA233134F90072965F /* Car.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B547BF8233134F90072965F /* Car.cpp */; };
-		0B547BFD23314D700072965F /* Chromosome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B547BFB23314D700072965F /* Chromosome.cpp */; };
-		0B5ABB92232E81D000A59A2C /* Track.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B5ABB90232E81D000A59A2C /* Track.cpp */; };
 		0B6233E922B5918E00E29872 /* WindowHolder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B6233E722B5918E00E29872 /* WindowHolder.cpp */; };
+		0B9052D52358DF8B004CD66F /* WindowManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B9052D32358DF8B004CD66F /* WindowManager.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -150,15 +148,11 @@
 		0B3004FF22B55DB9007515D0 /* Window.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Window.hpp; sourceTree = "<group>"; };
 		0B458386232D459D00D561B6 /* collision.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = collision.cpp; sourceTree = "<group>"; };
 		0B458387232D459D00D561B6 /* collision.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = collision.hpp; sourceTree = "<group>"; };
-		0B547BF8233134F90072965F /* Car.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Car.cpp; sourceTree = "<group>"; };
-		0B547BF9233134F90072965F /* Car.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Car.hpp; sourceTree = "<group>"; };
-		0B547BFB23314D700072965F /* Chromosome.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Chromosome.cpp; sourceTree = "<group>"; };
-		0B547BFC23314D700072965F /* Chromosome.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Chromosome.hpp; sourceTree = "<group>"; };
-		0B5ABB90232E81D000A59A2C /* Track.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Track.cpp; sourceTree = "<group>"; };
-		0B5ABB91232E81D000A59A2C /* Track.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Track.hpp; sourceTree = "<group>"; };
 		0B5ABB94232E910200A59A2C /* mySpline.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mySpline.hpp; sourceTree = "<group>"; };
 		0B6233E722B5918E00E29872 /* WindowHolder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WindowHolder.cpp; sourceTree = "<group>"; usesTabs = 1; };
 		0B6233E822B5918E00E29872 /* WindowHolder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WindowHolder.hpp; sourceTree = "<group>"; };
+		0B9052D32358DF8B004CD66F /* WindowManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WindowManager.cpp; sourceTree = "<group>"; };
+		0B9052D42358DF8B004CD66F /* WindowManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WindowManager.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -335,17 +329,6 @@
 			path = Render;
 			sourceTree = "<group>";
 		};
-		0B547BF7233134E70072965F /* Car */ = {
-			isa = PBXGroup;
-			children = (
-				0B547BF8233134F90072965F /* Car.cpp */,
-				0B547BF9233134F90072965F /* Car.hpp */,
-				0B547BFB23314D700072965F /* Chromosome.cpp */,
-				0B547BFC23314D700072965F /* Chromosome.hpp */,
-			);
-			path = Car;
-			sourceTree = "<group>";
-		};
 		0B5ABB93232E910200A59A2C /* Spline */ = {
 			isa = PBXGroup;
 			children = (
@@ -357,7 +340,6 @@
 		0B6233E622B5914700E29872 /* Game */ = {
 			isa = PBXGroup;
 			children = (
-				0B547BF7233134E70072965F /* Car */,
 				0B6233E722B5918E00E29872 /* WindowHolder.cpp */,
 				0B6233E822B5918E00E29872 /* WindowHolder.hpp */,
 				0B0F42D9232C2FF900190405 /* Menu.cpp */,
@@ -368,8 +350,8 @@
 				0B0F42E0232C400900190405 /* Base.hpp */,
 				0B0F42E2232C40AC00190405 /* Entity.cpp */,
 				0B0F42E3232C40AC00190405 /* Entity.hpp */,
-				0B5ABB90232E81D000A59A2C /* Track.cpp */,
-				0B5ABB91232E81D000A59A2C /* Track.hpp */,
+				0B9052D32358DF8B004CD66F /* WindowManager.cpp */,
+				0B9052D42358DF8B004CD66F /* WindowManager.hpp */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -437,9 +419,8 @@
 				0B0F42BA232C299000190405 /* PieChart.cpp in Sources */,
 				0B0F42C2232C299000190405 /* imgui_draw.cpp in Sources */,
 				0B0F42B4232C299000190405 /* BitmapText.cpp in Sources */,
-				0B547BFA233134F90072965F /* Car.cpp in Sources */,
 				0B0F42B6232C299000190405 /* ProgressBar.cpp in Sources */,
-				0B5ABB92232E81D000A59A2C /* Track.cpp in Sources */,
+				0B9052D52358DF8B004CD66F /* WindowManager.cpp in Sources */,
 				0B30050622B55DB9007515D0 /* Window.cpp in Sources */,
 				0B0F42AB232C299000190405 /* osdialog.c in Sources */,
 				0B0F42C1232C299000190405 /* imgui_demo.cpp in Sources */,
@@ -467,7 +448,6 @@
 				0B0F42BB232C299000190405 /* Spline.cpp in Sources */,
 				0B458388232D459D00D561B6 /* collision.cpp in Sources */,
 				0B6233E922B5918E00E29872 /* WindowHolder.cpp in Sources */,
-				0B547BFD23314D700072965F /* Chromosome.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

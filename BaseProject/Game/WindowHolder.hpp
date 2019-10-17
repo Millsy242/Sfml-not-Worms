@@ -16,7 +16,7 @@ class WindowHolder : public Base
 {
 public:
     WindowHolder() ;
-    ~WindowHolder(){};
+    virtual ~WindowHolder(){};
     virtual void Start();
     virtual void Update();
     virtual void EarlyUpdate() = 0;
