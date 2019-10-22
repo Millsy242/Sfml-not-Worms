@@ -10,7 +10,6 @@
 #include <iostream>
 void WindowManager::Start()
 {
-    
     window.Start(" ");
     ChangeWindow(windowType::eMenu);
 }
@@ -23,7 +22,6 @@ void WindowManager::Update()
             ChangeWindow(windowType::eGame);
         else if(CurrentWindowType == windowType::eGame)
             ChangeWindow(windowType::eMenu);
-    
     }
 }
 void WindowManager::Exit()
@@ -40,31 +38,21 @@ void WindowManager::Input(sf::Event event)
 }
 void WindowManager::ChangeWindow(windowType wt)
 {
-  
     if(CurrentWindowType != wt)
     {
-      
         CurrentWindowType = wt;
         switch (wt)
         {
             case windowType::eGame:
-           
                 currentWindow = std::make_shared<Game>();
-              
                 break;
             case windowType::eMenu:
-               
                 currentWindow = std::make_shared<Menu>();
-                
                 break;
             default:
-                
                 break;
         }
-         
         currentWindow->GiveWindow(&window);
-         
         currentWindow->Start();
-         
     }
 }

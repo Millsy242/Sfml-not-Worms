@@ -14,6 +14,8 @@
 #include "Game.hpp"
 #include "Menu.hpp"
 #include <thread>
+#include "FileLogger.hpp"
+
 
 enum class windowType
 {
@@ -25,7 +27,7 @@ enum class windowType
 class WindowManager : public Base
 {
 public:
-    WindowManager(){};
+    WindowManager() : log("0.5","GameLog.txt"){};
     ~WindowManager(){};
     
     void Start() override;
@@ -41,6 +43,7 @@ private:
     std::shared_ptr<WindowHolder> currentWindow;
     Window window;
     windowType CurrentWindowType = windowType::eNull;
+    ige::FileLogger log; 
 };
 
 #endif /* WindowManager_hpp */

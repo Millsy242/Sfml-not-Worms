@@ -29,7 +29,7 @@ public:
     void GiveWindow(Window *w);
     
 protected:
-
+    bool Pause = false; 
    bool Active = true;
     Window *window = nullptr;
 private:

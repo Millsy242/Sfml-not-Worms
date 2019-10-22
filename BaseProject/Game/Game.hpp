@@ -24,7 +24,8 @@ public:
     void EarlyUpdate() override;
     void LateUpdate() override;
 private:
-
-    sf::RectangleShape r; 
+    sf::RectangleShape r;
+    
+    int direction = 5;
 };
 #endif /* Game_hpp */

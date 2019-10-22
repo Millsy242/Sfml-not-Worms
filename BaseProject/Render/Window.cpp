@@ -62,8 +62,8 @@ void Window::draw(const sf::Drawable& drawable)
 void Window::EndDraw()
 {
     ImGui::EndFrame();
-	if(RenderToTexture)
-		Process();
+//	if(RenderToTexture)
+//		Process();
     
     rendertexture.display();
 
@@ -92,35 +92,7 @@ sf::Vector2u Window::GetCentre()
 	
 	return sf::Vector2u(x,y);
 }
-void Window::Process()
-{
-	windowtexture.setTexture(rendertexture.getTexture());
-	
-	windowtexture.setOrigin(windowtexture.getTextureRect().width/2, windowtexture.getTextureRect().height/2);
-	
-	windowtexture.setPosition(sf::Vector2f(GetCentre()));
-	
-	if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space))
-	{
-		//windowtexture.setColor(sf::Color(128,128,128));
-		windowtexture.scale(1.01, 1.01);
-	}
 
-	
-	if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::LShift))
-	{
-		//windowtexture.setColor(sf::Color::Blue);
-		windowtexture.scale(0.99, 0.99);
-	}
-
-	sf::Texture texture = *windowtexture.getTexture();
-	
-	//texture.setRepeated(true);
-	//texture.setSmooth(true);
-	windowtexture.setTexture(texture);
-	
-	window.draw(windowtexture);
-}
 void Window::SetTitle(std::string &title)
 {
 	window.setTitle(title);
@@ -134,21 +106,34 @@ int Window::GetFPS()
     return fps.getFPS();
 }
 
-
 /*
- image = texture.copyToImage();
- std::vector<sf::Uint8> pixels;
- for(int y  = 0; y<600;y++)
+ void Window::Process()
  {
- for(int x  = 0; x<800;x++)
- {
- pixels.push_back(sf::Color(image.getPixel(x,y)).r);
- pixels.push_back(sf::Color(image.getPixel(x,y)).g);
- pixels.push_back(sf::Color(image.getPixel(x,y)).b);
- pixels.push_back(sf::Color(image.getPixel(x,y)).a);
+     windowtexture.setTexture(rendertexture.getTexture());
+     
+     windowtexture.setOrigin(windowtexture.getTextureRect().width/2, windowtexture.getTextureRect().height/2);
+     
+     windowtexture.setPosition(sf::Vector2f(GetCentre()));
+     
+     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space))
+     {
+         //windowtexture.setColor(sf::Color(128,128,128));
+         windowtexture.scale(1.01, 1.01);
+     }
+
+     
+     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::LShift))
+     {
+         //windowtexture.setColor(sf::Color::Blue);
+         windowtexture.scale(0.99, 0.99);
+     }
+
+     sf::Texture texture = *windowtexture.getTexture();
+     
+     //texture.setRepeated(true);
+     //texture.setSmooth(true);
+     windowtexture.setTexture(texture);
+     
+     window.draw(windowtexture);
  }
- }
- 
- image.create(800, 600, pixels.data());
- texture.loadFromImage(image);
  */

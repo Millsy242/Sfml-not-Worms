@@ -56,17 +56,18 @@ void WindowHolder::Update()
 			accumulatedTime = maxTimePerFrame;
 		}
 		window->Update();
-		
 		Stats();
 		UI();
-		
-		//Ensure Fps doesnt change User experiance
-		while (accumulatedTime >= frameDuration)
+		if(!Pause)
 		{
-			Input(window->GetEvent());
-			accumulatedTime -= frameDuration;
-			EarlyUpdate();
-			LateUpdate();
+			//Ensure Fps doesnt change User experiance
+			while (accumulatedTime >= frameDuration)
+			{
+				Input(window->GetEvent());
+				accumulatedTime -= frameDuration;
+				EarlyUpdate();
+				LateUpdate();
+			}
 		}
 		Render(window);
 	}
