@@ -8,27 +8,30 @@
 
 #include "Menu.hpp"
 #include <iostream>
- Menu::Menu() 
+ Menu::Menu(ige::FileLogger *LOG)
 {
-    
+    log = LOG;
 }
 
 void Menu::Start()
 {
+    *log << "Starting Menu";
         Active = true;
 }
 void Menu::Input(sf::Event e)
 {
-
+    *log << "Menu Input";
 }
 void Menu::Render(Window *window)
 {
+    *log << "Menu Render";
     window->BeginDraw(sf::Color::Blue);
     
     window->EndDraw();
 }
 void Menu::UI()
 {
+    *log << "Menu UI";
     ImGui::Begin("Menu");
     if(ImGui::Button("change to Game"))
     {
@@ -39,9 +42,9 @@ void Menu::UI()
 }
 void Menu::EarlyUpdate()
 {
-    
+    *log << "Menu Early Update";
 }
 void Menu::LateUpdate()
 {
-    
+    *log << "Menu Late Update";
 }

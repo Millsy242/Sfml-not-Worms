@@ -7,13 +7,14 @@
 //
 #include "Game.hpp"
 #include <iostream>
-Game::Game()
+Game::Game(ige::FileLogger *LOG)
 {
-    
+    log = LOG;
 }
 
 void Game::Start()
 {
+    *log << "Game Start";
     Active = true;
     r.setSize(sf::Vector2f(60,60));
     r.setPosition(window->GetCentre().x,window->GetCentre().y);
@@ -21,10 +22,11 @@ void Game::Start()
 }
 void Game::Input(sf::Event e)
 {
-   
+   *log << "Game Input";
 }
 void Game::Render(Window *window)
 {
+    *log << "Game Render";
     window->BeginDraw(sf::Color::Red);
 
     window->draw(r);
@@ -33,6 +35,7 @@ void Game::Render(Window *window)
 }
 void Game::UI()
 {
+    *log << "Game UI";
     ImGui::Begin("Game");
     if(ImGui::Button("change to menu"))
     {
@@ -50,6 +53,7 @@ void Game::UI()
     
     if(Pause)
     {
+        *log << "Game Paused";
         ImGuiWindowFlags window_flags = 0;
         window_flags |= ImGuiWindowFlags_NoMove;
         window_flags |= ImGuiWindowFlags_NoNav;
@@ -62,17 +66,22 @@ void Game::UI()
         //centre window on screen
         ImGui::SetWindowPos(ImVec2((window->GetCentre().x - ImGui::GetWindowSize().x/2),(window->GetCentre().y - ImGui::GetWindowSize().y/2)));
         
-        ImGui::Text("This is a pause menu!");
+        ImGui::Text("PAUSED");
         if(ImGui::Button("Return"))
         {
             Pause = false;
         }
-        
+        if(ImGui::Button("Exit"))
+        {
+            Continue = false;
+            Active = false;
+        }
         ImGui::End();
     }
 }
 void Game::EarlyUpdate()
 {
+    *log << "Game Early Update";
     if(r.getPosition().x >= window->GetSize().x-60)
     {
         direction *= -1;
@@ -81,12 +90,10 @@ void Game::EarlyUpdate()
     {
         direction *= -1;
     }
-    
-    
+
      r.move(direction, 0);
-        
 }
 void Game::LateUpdate()
 {
-    
+    *log << "Game Late Update";
 }

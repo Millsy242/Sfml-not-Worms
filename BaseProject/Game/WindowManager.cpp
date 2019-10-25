@@ -15,14 +15,18 @@ void WindowManager::Start()
 }
 void WindowManager::Update()
 {
-    while(1)
+    while(currentWindow->Continue)
     {
         currentWindow->Update();
-        if(CurrentWindowType == windowType::eMenu)
-            ChangeWindow(windowType::eGame);
-        else if(CurrentWindowType == windowType::eGame)
-            ChangeWindow(windowType::eMenu);
+        if(currentWindow->Continue)
+        {
+            if(CurrentWindowType == windowType::eMenu)
+                ChangeWindow(windowType::eGame);
+            else if(CurrentWindowType == windowType::eGame)
+                ChangeWindow(windowType::eMenu);
+        }
     }
+    log << "Exiting";
 }
 void WindowManager::Exit()
 {
@@ -44,10 +48,12 @@ void WindowManager::ChangeWindow(windowType wt)
         switch (wt)
         {
             case windowType::eGame:
-                currentWindow = std::make_shared<Game>();
+                currentWindow = std::make_shared<Game>(&log);
+                log << "Changing to Game";
                 break;
             case windowType::eMenu:
-                currentWindow = std::make_shared<Menu>();
+                currentWindow = std::make_shared<Menu>(&log);
+                log << "Changing to Menu";
                 break;
             default:
                 break;

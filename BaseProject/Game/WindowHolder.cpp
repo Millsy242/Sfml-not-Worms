@@ -10,10 +10,7 @@
 #include <math.h>
 #include <iostream>
 
-WindowHolder::WindowHolder()
-{
-	
-}
+
 
 void WindowHolder::Start()
 {
@@ -26,6 +23,7 @@ void WindowHolder::GiveWindow(Window *w)
 }
 void WindowHolder::Stats()
 {
+	*log << "Display Stats";
 	ImGuiWindowFlags window_flags = 0;
 	window_flags |= ImGuiWindowFlags_NoMove;
 	window_flags |= ImGuiWindowFlags_NoResize;

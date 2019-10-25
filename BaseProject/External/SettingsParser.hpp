@@ -3,7 +3,9 @@
 //  BaseProject
 //
 //  Created by Daniel Harvey on 06/07/2019.
-//  Copyright © 2019 Daniel Harvey. All rights reserved.
+//  Edits made on 25/10/2019
+//  To add filename input to saveToFile and write
+//  This allows the user to
 //
 
 ////////////////////////////////////////////////////////////
@@ -42,7 +44,7 @@ public:
     ~SettingsParser();
     
     bool loadFromFile(const std::string& filename);
-    bool saveToFile();
+    bool saveToFile(const std::string& filename);
     
     bool isChanged() const;
     

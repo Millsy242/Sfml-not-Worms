@@ -15,7 +15,7 @@
 class Menu : public WindowHolder
 {
     public:
-    Menu();
+    Menu(ige::FileLogger *LOG);
     ~Menu(){};
         
         void Start() override;

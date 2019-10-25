@@ -11,11 +11,11 @@
 #include "Base.hpp"
 
 #include "Window.hpp"
-
+#include "FileLogger.hpp"
 class WindowHolder : public Base
 {
 public:
-    WindowHolder() ;
+    
     virtual ~WindowHolder(){};
     virtual void Start();
     virtual void Update();
@@ -27,14 +27,15 @@ public:
     virtual void Exit();
     void Stats();
     void GiveWindow(Window *w);
+    bool Continue = true;
     
 protected:
     bool Pause = false; 
    bool Active = true;
     Window *window = nullptr;
+    ige::FileLogger *log; 
 private:
     sf::Clock c;
-
     const sf::Time TimePerFrame = sf::seconds(1.f/60.f);
     sf::Time elapsedTime;
     sf::Time OverallPlayerLapTime;

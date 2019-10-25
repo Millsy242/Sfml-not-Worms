@@ -12,21 +12,24 @@
 #include <stdlib.h>
 
 
-Window::Window()
+Window::Window(ige::FileLogger *LOG) : log(LOG)
 {  
 
 }
 
 void Window::Start(const std::string& windowName)
 {
+    *log << "Creating SFML window";
     window.create(sf::VideoMode(1920,1080), windowName, sf::Style::Default);
     window.setFramerateLimit(1000);
     rendertexture.create(window.getSize().x,window.getSize().y);
+    *log << "Setting up ImGui";
     ImGui::SFML::Init(window);
     CalculateDT();
 }
 void Window::Update()
 {
+    *log << "Updating Window";
 	fps.update();
     ImGui::SFML::Update(window, sf::seconds(deltatime));
    
@@ -46,6 +49,7 @@ sf::Event Window::GetEvent()
 
 void Window::BeginDraw(sf::Color colour)
 {
+     *log << "Starting render";
     window.clear(colour);
     if(RenderToTexture)
 	rendertexture.clear(colour);
@@ -53,6 +57,7 @@ void Window::BeginDraw(sf::Color colour)
 
 void Window::draw(const sf::Drawable& drawable)
 {
+     *log << "Drawing drawable";
 	if(RenderToTexture)
 		rendertexture.draw(drawable);
 	else
@@ -61,16 +66,12 @@ void Window::draw(const sf::Drawable& drawable)
 
 void Window::EndDraw()
 {
+     *log << "Finishing Draw";
     ImGui::EndFrame();
-//	if(RenderToTexture)
-//		Process();
-    
     rendertexture.display();
-
     ImGui::SFML::Render(window);
 	 window.display();
     CalculateDT();
-    
 }
 void Window::CalculateDT()
 {
@@ -105,35 +106,3 @@ int Window::GetFPS()
 {
     return fps.getFPS();
 }
-
-/*
- void Window::Process()
- {
-     windowtexture.setTexture(rendertexture.getTexture());
-     
-     windowtexture.setOrigin(windowtexture.getTextureRect().width/2, windowtexture.getTextureRect().height/2);
-     
-     windowtexture.setPosition(sf::Vector2f(GetCentre()));
-     
-     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space))
-     {
-         //windowtexture.setColor(sf::Color(128,128,128));
-         windowtexture.scale(1.01, 1.01);
-     }
-
-     
-     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::LShift))
-     {
-         //windowtexture.setColor(sf::Color::Blue);
-         windowtexture.scale(0.99, 0.99);
-     }
-
-     sf::Texture texture = *windowtexture.getTexture();
-     
-     //texture.setRepeated(true);
-     //texture.setSmooth(true);
-     windowtexture.setTexture(texture);
-     
-     window.draw(windowtexture);
- }
- */

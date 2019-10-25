@@ -14,7 +14,7 @@
 class Game : public WindowHolder
 {
 public:
-    Game();
+    Game(ige::FileLogger *LOG);
     ~Game(){};
     
     void Start() override;

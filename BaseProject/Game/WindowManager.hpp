@@ -16,18 +16,17 @@
 #include <thread>
 #include "FileLogger.hpp"
 
-
-enum class windowType
-{
-    eNull,
-    eGame,
-    eMenu
-};
-
 class WindowManager : public Base
 {
 public:
-    WindowManager() : log("0.5","GameLog.txt"){};
+    enum class windowType
+    {
+        eNull,
+        eGame,
+        eMenu
+    };
+    
+    WindowManager() : log("0.5","GameLog.txt"), window(&log) {};
     ~WindowManager(){};
     
     void Start() override;
