@@ -25,7 +25,6 @@ class Menu : public WindowHolder
         void EarlyUpdate() override;
         void LateUpdate() override;
 
-    
     private:
 };
 #endif /* Menu_hpp */

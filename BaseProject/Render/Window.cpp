@@ -14,7 +14,7 @@
 
 Window::Window(ige::FileLogger *LOG) : log(LOG)
 {  
-
+    
 }
 
 void Window::Start(const std::string& windowName)
@@ -26,6 +26,11 @@ void Window::Start(const std::string& windowName)
     *log << "Setting up ImGui";
     ImGui::SFML::Init(window);
     CalculateDT();
+    
+}
+void Window::SetSize(sf::Vector2u size)
+{
+    window.setSize(size);
 }
 void Window::Update()
 {
@@ -68,9 +73,9 @@ void Window::EndDraw()
 {
      *log << "Finishing Draw";
     ImGui::EndFrame();
-    rendertexture.display();
+    //rendertexture.display();
     ImGui::SFML::Render(window);
-	 window.display();
+	window.display();
     CalculateDT();
 }
 void Window::CalculateDT()

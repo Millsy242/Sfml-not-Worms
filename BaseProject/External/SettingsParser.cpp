@@ -43,7 +43,7 @@ SettingsParser::SettingsParser() : m_isChanged(false)
 
 SettingsParser::~SettingsParser()
 {
-    saveToFile();
+    saveToFile(m_filename);
 }
 
 
@@ -55,10 +55,12 @@ bool SettingsParser::loadFromFile(const std::string& filename)
 }
 
 
-bool SettingsParser::saveToFile()
+bool SettingsParser::saveToFile(const std::string& filename)
 {
     if(m_isChanged)
     {
+        if(filename != m_filename)
+            m_filename = filename;
         m_isChanged = false;
         return write();
     }
@@ -100,8 +102,13 @@ bool SettingsParser::write() const
     
     std::ifstream in(m_filename);
     
+    auto isEmpty = [](std::ifstream& pFile)
+    {
+        return pFile.peek() == std::ifstream::traits_type::eof();
+    };
+    
     // read the file into a vector and replace the values of the keys that match with our map
-    if(in.is_open())
+    if(in.is_open() && !isEmpty(in))
     {
         std::string line;
         while(std::getline(in, line))

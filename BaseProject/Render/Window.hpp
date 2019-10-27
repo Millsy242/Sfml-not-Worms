@@ -15,7 +15,7 @@
 #include "FPS.hpp"
 #include <SFML/Graphics.hpp>
 #include "FileLogger.hpp"
-
+#include <thread>
 
 class Window
 {
@@ -28,6 +28,7 @@ public:
     void draw(const sf::Drawable& drawable);
     void EndDraw();
 	
+    void SetSize(sf::Vector2u size); 
     bool IsOpen() const;
 	sf::Vector2u GetCentre();
 	void SetTitle(std::string &title);
@@ -38,7 +39,9 @@ public:
     sf::Vector2u GetSize();
     
 private:
-    void CalculateDT(); 
+    void CalculateDT();
+    
+    std::thread thread; 
     
     sf::RenderWindow window;
 	sf::RenderTexture rendertexture;

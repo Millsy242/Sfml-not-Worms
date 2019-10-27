@@ -15,6 +15,7 @@
 #include "Menu.hpp"
 #include <thread>
 #include "FileLogger.hpp"
+#include "SettingsManager.hpp"
 
 class WindowManager : public Base
 {
@@ -42,7 +43,8 @@ private:
     std::shared_ptr<WindowHolder> currentWindow;
     Window window;
     windowType CurrentWindowType = windowType::eNull;
-    ige::FileLogger log; 
+    ige::FileLogger log;
+    SettingsManager Settings; 
 };
 
 #endif /* WindowManager_hpp */

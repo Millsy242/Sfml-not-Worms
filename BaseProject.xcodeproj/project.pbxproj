@@ -38,6 +38,7 @@
 		0B0F42DE232C300400190405 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F42DC232C300400190405 /* Game.cpp */; };
 		0B0F42E1232C400900190405 /* Base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F42DF232C400900190405 /* Base.cpp */; };
 		0B0F42E4232C40AC00190405 /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F42E2232C40AC00190405 /* Entity.cpp */; };
+		0B2D4CC72365EDCC00CC17EA /* SettingsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B2D4CC52365EDCC00CC17EA /* SettingsManager.cpp */; };
 		0B3004DA22B538FC007515D0 /* libsfml-network.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3004D522B538FC007515D0 /* libsfml-network.2.5.1.dylib */; };
 		0B3004DB22B538FC007515D0 /* libsfml-audio.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3004D622B538FC007515D0 /* libsfml-audio.2.5.1.dylib */; };
 		0B3004DC22B538FC007515D0 /* libsfml-window.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3004D722B538FC007515D0 /* libsfml-window.2.5.1.dylib */; };
@@ -136,6 +137,8 @@
 		0B0F42E0232C400900190405 /* Base.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Base.hpp; sourceTree = "<group>"; };
 		0B0F42E2232C40AC00190405 /* Entity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Entity.cpp; sourceTree = "<group>"; };
 		0B0F42E3232C40AC00190405 /* Entity.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Entity.hpp; sourceTree = "<group>"; };
+		0B2D4CC52365EDCC00CC17EA /* SettingsManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SettingsManager.cpp; sourceTree = "<group>"; };
+		0B2D4CC62365EDCC00CC17EA /* SettingsManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SettingsManager.hpp; sourceTree = "<group>"; };
 		0B3004CA22B53812007515D0 /* BaseProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BaseProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B3004D522B538FC007515D0 /* libsfml-network.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-network.2.5.1.dylib"; path = "../../../../../usr/local/Cellar/sfml/2.5.1/lib/libsfml-network.2.5.1.dylib"; sourceTree = "<group>"; };
 		0B3004D622B538FC007515D0 /* libsfml-audio.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-audio.2.5.1.dylib"; path = "../../../../../usr/local/Cellar/sfml/2.5.1/lib/libsfml-audio.2.5.1.dylib"; sourceTree = "<group>"; };
@@ -352,6 +355,8 @@
 				0B0F42E3232C40AC00190405 /* Entity.hpp */,
 				0B9052D32358DF8B004CD66F /* WindowManager.cpp */,
 				0B9052D42358DF8B004CD66F /* WindowManager.hpp */,
+				0B2D4CC52365EDCC00CC17EA /* SettingsManager.cpp */,
+				0B2D4CC62365EDCC00CC17EA /* SettingsManager.hpp */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -441,6 +446,7 @@
 				0B0F42BD232C299000190405 /* imgui_widgets.cpp in Sources */,
 				0B0F42E4232C40AC00190405 /* Entity.cpp in Sources */,
 				0B0F42B2232C299000190405 /* ConsoleScreen.cpp in Sources */,
+				0B2D4CC72365EDCC00CC17EA /* SettingsManager.cpp in Sources */,
 				0B0F42DB232C2FF900190405 /* Menu.cpp in Sources */,
 				0B0F42D8232C2D3200190405 /* main.cpp in Sources */,
 				0B0F42BF232C299000190405 /* imgui-SFML.cpp in Sources */,

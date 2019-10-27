@@ -1,0 +1,2 @@
+ScreenHeight = 1080
+ScreenWidth = 1920

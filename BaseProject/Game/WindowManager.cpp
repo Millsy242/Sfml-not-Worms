@@ -17,6 +17,7 @@ void WindowManager::Update()
 {
     while(currentWindow->Continue)
     {
+        Settings.Setup();
         currentWindow->Update();
         if(currentWindow->Continue)
         {
@@ -49,10 +50,12 @@ void WindowManager::ChangeWindow(windowType wt)
         {
             case windowType::eGame:
                 currentWindow = std::make_shared<Game>(&log);
+                 window.SetSize(Settings.GameSize);
                 log << "Changing to Game";
                 break;
             case windowType::eMenu:
                 currentWindow = std::make_shared<Menu>(&log);
+                 window.SetSize(Settings.MenuSize);
                 log << "Changing to Menu";
                 break;
             default:

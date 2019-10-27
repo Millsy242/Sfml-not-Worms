@@ -25,20 +25,46 @@ void Menu::Input(sf::Event e)
 void Menu::Render(Window *window)
 {
     *log << "Menu Render";
-    window->BeginDraw(sf::Color::Blue);
+    window->BeginDraw(sf::Color(40,45,55));
     
     window->EndDraw();
 }
 void Menu::UI()
 {
     *log << "Menu UI";
-    ImGui::Begin("Menu");
-    if(ImGui::Button("change to Game"))
+    ImGuiWindowFlags window_flags = 0;
+    window_flags |= ImGuiWindowFlags_NoMove;
+    window_flags |= ImGuiWindowFlags_NoNav;
+    window_flags |= ImGuiWindowFlags_NoCollapse;
+    window_flags |= ImGuiWindowFlags_NoNavFocus;
+    window_flags |= ImGuiWindowFlags_NoTitleBar;
+    window_flags |= ImGuiWindowFlags_NoBackground;
+    
+    ImGui::Begin("Menu",NULL,window_flags);
+    ImGui::SetWindowSize(ImVec2(window->GetSize()));
+    ImGui::SetWindowPos(ImVec2(0,0));
+    ImGui::SetCursorPos(ImVec2(150,50));
+    //Look up how to move buttons into centre
+    //possibly just specify size of buttons using button images
+    if(ImGui::Button("Start"))
     {
-        std::cout<<"stop menu\n";
          Active = false;
     }
+    ImGui::SetCursorPos(ImVec2(150,100));
+    if(ImGui::Button("Settings"))
+    {
+         //settings menu
+    }
+    ImGui::SetCursorPos(ImVec2(150,150));
+    if(ImGui::Button("Exit"))
+    {
+        Continue = false;
+        Active = false;
+    }
     ImGui::End();
+    
+
+    
 }
 void Menu::EarlyUpdate()
 {
