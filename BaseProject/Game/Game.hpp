@@ -14,7 +14,7 @@
 class Game : public WindowHolder
 {
 public:
-    Game(ige::FileLogger *LOG);
+    Game(ige::FileLogger *LOG,SettingsManager *SM);
     ~Game(){};
     
     void Start() override;
@@ -25,6 +25,8 @@ public:
     void LateUpdate() override;
 private:
     sf::RectangleShape r;
+    
+    sf::Texture DebugTexture,ExitTexture,PauseTexture,SettingsTexture; 
     
     int direction = 5;
 };

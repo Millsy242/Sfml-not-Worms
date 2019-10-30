@@ -14,8 +14,8 @@
 
 class Menu : public WindowHolder
 {
-    public:
-    Menu(ige::FileLogger *LOG);
+public:
+    Menu(ige::FileLogger *LOG,SettingsManager *SM);
     ~Menu(){};
         
         void Start() override;
@@ -24,7 +24,11 @@ class Menu : public WindowHolder
         void UI() override;
         void EarlyUpdate() override;
         void LateUpdate() override;
-
-    private:
+    
+private:
+    void StartScreen(); 
+    void ProgramSettingsMenu();
+    void GameSettingsMenu();
+    sf::Texture StartTexture,SettingsTexture,ExitTexture;
 };
 #endif /* Menu_hpp */

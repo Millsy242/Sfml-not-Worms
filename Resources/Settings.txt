@@ -1,2 +1,8 @@
-ScreenHeight = 1080
-ScreenWidth = 1920
+GameAspectRatioX = 16
+GameAspectRatioY = 9
+GameScreenWidth = 1920
+MenuAspectRatioX = 4
+MenuAspectRatioY = 3
+MenuScreenWidth = 846
+Version = 2
+Vsync = FALSE

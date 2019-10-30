@@ -23,10 +23,13 @@ public:
     
     sf::Vector2u MenuSize{400,600};
     sf::Vector2u GameSize{1920,1080};
-    
+    sf::Vector2u MenuApsectRatio{4,3};
+    sf::Vector2u GameApsectRatio{16,9};
+    bool Vsync = false; 
 private:
     SettingsParser parse;
     std::string FileName = "Settings.txt";
+    int SettingsVersion = 2; 
 
 };
 

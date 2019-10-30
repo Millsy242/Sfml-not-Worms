@@ -12,6 +12,7 @@
 
 #include "Window.hpp"
 #include "FileLogger.hpp"
+#include "SettingsManager.hpp"
 class WindowHolder : public Base
 {
 public:
@@ -31,9 +32,11 @@ public:
     
 protected:
     bool Pause = false; 
-   bool Active = true;
+    bool Active = true;
+    bool Debug{false},DebugMetrics{false},DebugUserGuide{false},DebugStyleSel{false},DebugStyleEditer{false};
     Window *window = nullptr;
-    ige::FileLogger *log; 
+    ige::FileLogger *log;
+    SettingsManager *settings;
 private:
     sf::Clock c;
     const sf::Time TimePerFrame = sf::seconds(1.f/60.f);

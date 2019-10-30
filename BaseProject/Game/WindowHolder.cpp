@@ -10,8 +10,6 @@
 #include <math.h>
 #include <iostream>
 
-
-
 void WindowHolder::Start()
 {
 	Active = true;
@@ -38,6 +36,22 @@ void WindowHolder::Stats()
 	ImGui::SetWindowSize("Stats", ImVec2(110,70));
     ImGui::Text("FPS: %i \nDT: %fms",window->GetFPS(),window->getDT()*1000);
     ImGui::End();
+	
+	
+	
+	if(Debug)
+	{
+		if(DebugMetrics)
+			ImGui::ShowMetricsWindow();
+		if(DebugUserGuide)
+			ImGui::ShowUserGuide();
+		if(DebugStyleSel)
+			ImGui::ShowStyleSelector("Style");
+		if(DebugStyleEditer)
+			ImGui::ShowStyleEditor();
+	}
+	
+	
 }
 
 void WindowHolder::Update()

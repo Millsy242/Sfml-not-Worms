@@ -7,9 +7,10 @@
 //
 #include "Game.hpp"
 #include <iostream>
-Game::Game(ige::FileLogger *LOG)
+Game::Game(ige::FileLogger *LOG,SettingsManager *SM)
 {
     log = LOG;
+    settings = SM;
 }
 
 void Game::Start()
@@ -18,7 +19,13 @@ void Game::Start()
     Active = true;
     r.setSize(sf::Vector2f(60,60));
     r.setPosition(window->GetCentre().x,window->GetCentre().y);
-    r.setFillColor(sf::Color::Black);
+    r.setFillColor(sf::Color::Black);    
+    
+    DebugTexture.loadFromFile("Game Icons/Debug Icon.png");
+    ExitTexture.loadFromFile("Game Icons/Exit Icon.png");
+    PauseTexture.loadFromFile("Game Icons/Pause Icon.png");
+    SettingsTexture.loadFromFile("Game Icons/Settings Icon.png");
+    
 }
 void Game::Input(sf::Event e)
 {
@@ -28,41 +35,24 @@ void Game::Render(Window *window)
 {
     *log << "Game Render";
     window->BeginDraw(sf::Color::Red);
-
     window->draw(r);
-    
     window->EndDraw();
 }
 void Game::UI()
 {
     *log << "Game UI";
-    ImGui::Begin("Game");
-    if(ImGui::Button("change to menu"))
-    {
-         Active = false;
-    }
-    if(ImGui::Button("pause"))
-    {
-         Pause = !Pause;
-    }
-    if(ImGui::Button("ImGui Debug"))
-    {
-        ImGui::ShowMetricsWindow();
-    }
-    ImGui::End();
+    ImGuiWindowFlags window_flags = 0;
+    window_flags |= ImGuiWindowFlags_NoMove;
+    window_flags |= ImGuiWindowFlags_NoNav;
+    window_flags |= ImGuiWindowFlags_NoCollapse;
+    window_flags |= ImGuiWindowFlags_NoNavFocus;
+    window_flags |= ImGuiWindowFlags_NoTitleBar;
+    window_flags |= ImGuiWindowFlags_AlwaysAutoResize;
     
+    ImGui::Begin("GameUI",NULL,window_flags);
     if(Pause)
     {
         *log << "Game Paused";
-        ImGuiWindowFlags window_flags = 0;
-        window_flags |= ImGuiWindowFlags_NoMove;
-        window_flags |= ImGuiWindowFlags_NoNav;
-        window_flags |= ImGuiWindowFlags_NoCollapse;
-        window_flags |= ImGuiWindowFlags_NoNavFocus;
-        window_flags |= ImGuiWindowFlags_NoTitleBar;
-        window_flags |= ImGuiWindowFlags_AlwaysAutoResize;
-        
-        ImGui::Begin("Pause",NULL,window_flags);
         //centre window on screen
         ImGui::SetWindowPos(ImVec2((window->GetCentre().x - ImGui::GetWindowSize().x/2),(window->GetCentre().y - ImGui::GetWindowSize().y/2)));
         
@@ -71,11 +61,45 @@ void Game::UI()
         {
             Pause = false;
         }
-        if(ImGui::Button("Exit"))
+        if(ImGui::Button("Menu"))
+        {
+             Active = false;
+        }
+    }
+    else
+    {
+        ImGui::SetWindowPos(ImVec2((window->GetCentre().x - ImGui::GetWindowSize().x/2),(window->GetSize().y - ImGui::GetWindowSize().y-50)));
+        ImGui::SetCursorPos(ImVec2(5,5));
+        if(ImGui::ImageButton(PauseTexture, sf::Vector2f(20,20)))
+        {
+            Pause = true;
+        }
+        ImGui::SetCursorPos(ImVec2(35,5));
+        if(ImGui::ImageButton(SettingsTexture, sf::Vector2f(20,20)))
+        {
+            Pause = true;
+        }
+        ImGui::SetCursorPos(ImVec2(65,5));
+        if(ImGui::ImageButton(ExitTexture, sf::Vector2f(20,20)))
         {
             Continue = false;
             Active = false;
         }
+        ImGui::SetCursorPos(ImVec2(95,5));
+        if(ImGui::ImageButton(DebugTexture, sf::Vector2f(20,20)))
+        {
+            Debug = !Debug;
+        }
+    }
+    ImGui::End();
+
+    if(Debug)
+    {
+        ImGui::Begin("Debug Menu");
+            ImGui::Checkbox("Metrics", &DebugMetrics);
+            ImGui::Checkbox("User Guide", &DebugUserGuide);
+            ImGui::Checkbox("Style Selector", &DebugStyleSel);
+            ImGui::Checkbox("Style Editor", &DebugStyleEditer);
         ImGui::End();
     }
 }
