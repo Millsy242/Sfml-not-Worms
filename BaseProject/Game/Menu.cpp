@@ -89,13 +89,7 @@ void Menu::StartScreen()
        {
             Active = false;
        }
-      // ImGui::SetCursorPos(ImVec2(5,240));
-/*       if(ImGui::ImageButton(SettingsTexture,sf::Vector2f(window->GetSize().x,window->GetSize().y/6)))
-       {
-            //settings menu
-           
-       }
-       ImGui::SetCursorPos(ImVec2(5,260)); */
+
        if(ImGui::ImageButton(ExitTexture))//,sf::Vector2f(window->GetSize().x-10,window->GetSize().x/4)))
        {
            Continue = false;

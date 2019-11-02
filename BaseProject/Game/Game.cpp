@@ -36,7 +36,21 @@ void Game::Render(Window *window)
 }
 void Game::UI()
 {
-    *log << "Game UI";
+    *log << "UI";
+    GameUI();
+}
+void Game::EarlyUpdate()
+{
+    *log << "Game Early Update";
+
+}
+void Game::LateUpdate()
+{
+    *log << "Game Late Update";
+}
+
+void Game::GameUI()
+{
     ImGuiWindowFlags window_flags = 0;
     window_flags |= ImGuiWindowFlags_NoMove;
     window_flags |= ImGuiWindowFlags_NoNav;
@@ -98,13 +112,4 @@ void Game::UI()
             ImGui::Checkbox("Style Editor", &DebugStyleEditer);
         ImGui::End();
     }
-}
-void Game::EarlyUpdate()
-{
-    *log << "Game Early Update";
-
-}
-void Game::LateUpdate()
-{
-    *log << "Game Late Update";
 }

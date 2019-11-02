@@ -18,17 +18,17 @@ public:
     Menu(ige::FileLogger *LOG,SettingsManager *SM);
     ~Menu(){};
         
-        void Start() override;
-        void Input(sf::Event e) override;
-        void Render(Window *window) override;
-        void UI() override;
-        void EarlyUpdate() override;
-        void LateUpdate() override;
+    virtual void Start() override;
+    virtual void Input(sf::Event e) override;
+    virtual void Render(Window *window) override;
+    virtual void UI() override;
+    virtual void EarlyUpdate() override;
+    virtual void LateUpdate() override;
     
 private:
-    void StartScreen(); 
-    void ProgramSettingsMenu();
-    void GameSettingsMenu();
-    sf::Texture StartTexture,SettingsTexture,ExitTexture;
+   virtual void StartScreen();
+   virtual void ProgramSettingsMenu();
+   virtual void GameSettingsMenu();
+   sf::Texture StartTexture,SettingsTexture,ExitTexture;
 };
 #endif /* Menu_hpp */
