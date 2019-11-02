@@ -10,8 +10,8 @@
 #include <iostream>
 void WindowManager::Start()
 {
-    window.Start(" ");
     Settings.Setup();
+    window.Start(" ",Settings.MenuSize);
     ChangeWindow(windowType::eMenu);
 }
 void WindowManager::Update()
@@ -36,7 +36,7 @@ void WindowManager::Exit()
 }
 void WindowManager::Render(Window *window)
 {
-    
+
 }
 void WindowManager::Input(sf::Event event)
 {
@@ -47,15 +47,14 @@ void WindowManager::ChangeWindow(windowType wt)
     if(CurrentWindowType != wt)
     {
         CurrentWindowType = wt;
+        UpdateFromSettings();
         switch (wt)
         {
             case windowType::eGame:
-                window.SetSize(Settings.GameSize);
                 currentWindow = std::make_shared<Game>(&log,&Settings);
                 log << "Changing to Game";
                 break;
             case windowType::eMenu:
-                window.SetSize(Settings.MenuSize);
                 currentWindow = std::make_shared<Menu>(&log,&Settings);
                 log << "Changing to Menu";
                 break;
@@ -65,4 +64,16 @@ void WindowManager::ChangeWindow(windowType wt)
         currentWindow->GiveWindow(&window);
         currentWindow->Start();
     }
+}
+void WindowManager::UpdateFromSettings()
+{
+    if(CurrentWindowType == windowType::eGame)
+    {
+        window.Start("Game", Settings.GameSize, Settings.Fullscreen);
+    }
+    else if(CurrentWindowType == windowType::eMenu)
+    {
+        window.Start("Menu", Settings.MenuSize);
+    }
+    window.SetVsync(Settings.Vsync);
 }

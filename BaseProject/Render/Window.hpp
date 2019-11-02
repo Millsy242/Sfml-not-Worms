@@ -22,7 +22,7 @@ class Window
 public:
     
     Window(ige::FileLogger *LOG);
-    void Start(const std::string& windowName);
+    void Start(const std::string& windowName,sf::Vector2u WindowSize,bool Fullscreen = false);
     void Update();
     void BeginDraw(sf::Color colour = sf::Color::Magenta);
     void draw(const sf::Drawable& drawable);
@@ -37,6 +37,7 @@ public:
     int GetFPS();
     sf::Event GetEvent();
     sf::Vector2u GetSize();
+    void SetVsync(bool Vsync);
     
 private:
     void CalculateDT();

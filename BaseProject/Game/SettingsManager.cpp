@@ -33,6 +33,10 @@ void SettingsManager::Setup()
         parse.get("GameAspectRatioX",GARX);
         parse.get("GameAspectRatioY",GARY);
         parse.get("Vsync", Vsync);
+        parse.get("FullScreen",Fullscreen);
+        
+        GameApsectRatio = sf::Vector2u(GARX,GARY);
+        MenuApsectRatio = sf::Vector2u(MARX,MARY);
         
         MenuSize = sf::Vector2u(Mx,(Mx/MARX)*MARY);
         GameSize = sf::Vector2u(Gx,(Gx/GARX)*GARY);
@@ -57,7 +61,8 @@ void SettingsManager::UpdateFile()
     parse.set("MenuScreenWidth", MenuSize.x);
     parse.set("GameScreenWidth", GameSize.x);
     parse.set("Vsync", Vsync);
+    parse.set("FullScreen",Fullscreen);
     
-
     parse.saveToFile(FileName);
 }
+

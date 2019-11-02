@@ -47,7 +47,7 @@ void Menu::UI()
     
     ImGui::Begin("Menu",NULL,window_flags);
     ImGui::SetWindowSize(ImVec2(window->GetSize()));
-    ImGui::SetWindowPos(ImVec2(0,50));
+    ImGui::SetWindowPos(ImVec2(0,25));
     
     if (ImGui::BeginTabBar("##tabs", ImGuiTabBarFlags_None))
     {
@@ -85,18 +85,18 @@ void Menu::StartScreen()
        //Look up how to move buttons into centre
        //possibly just specify size of buttons using button images
        
-       if(ImGui::ImageButton((StartTexture),sf::Vector2f(window->GetSize().x-10,window->GetSize().y/4)))
+       if(ImGui::ImageButton((StartTexture)))//,sf::Vector2f(window->GetSize().x-10,window->GetSize().y/4)))
        {
             Active = false;
        }
-       ImGui::SetCursorPos(ImVec2(5,240));
+      // ImGui::SetCursorPos(ImVec2(5,240));
 /*       if(ImGui::ImageButton(SettingsTexture,sf::Vector2f(window->GetSize().x,window->GetSize().y/6)))
        {
             //settings menu
            
        }
        ImGui::SetCursorPos(ImVec2(5,260)); */
-       if(ImGui::ImageButton(ExitTexture,sf::Vector2f(window->GetSize().x-10,window->GetSize().x/4)))
+       if(ImGui::ImageButton(ExitTexture))//,sf::Vector2f(window->GetSize().x-10,window->GetSize().x/4)))
        {
            Continue = false;
            Active = false;
@@ -142,6 +142,7 @@ void Menu::ProgramSettingsMenu()
         settings->MenuSize.y = (MenuX/MARX)*MARY;
     }
     ImGui::Checkbox("Vsync", &settings->Vsync);
+    ImGui::Checkbox("Fullscreen", &settings->Fullscreen);
     settings->UpdateFile();
 }
 void Menu::GameSettingsMenu()

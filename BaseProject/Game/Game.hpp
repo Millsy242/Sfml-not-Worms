@@ -24,10 +24,6 @@ public:
     void EarlyUpdate() override;
     void LateUpdate() override;
 private:
-    sf::RectangleShape r;
-    
-    sf::Texture DebugTexture,ExitTexture,PauseTexture,SettingsTexture; 
-    
-    int direction = 5;
+    sf::Texture DebugTexture,ExitTexture,PauseTexture,SettingsTexture;
 };
 #endif /* Game_hpp */

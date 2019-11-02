@@ -17,16 +17,25 @@ Window::Window(ige::FileLogger *LOG) : log(LOG)
     
 }
 
-void Window::Start(const std::string& windowName)
+void Window::Start(const std::string& windowName,sf::Vector2u WindowSize, bool Fullscreen)
 {
     *log << "Creating SFML window";
-    window.create(sf::VideoMode(1920,1080), windowName, sf::Style::Default);
+    
+        if(Fullscreen)
+    window.create(sf::VideoMode(WindowSize.x,WindowSize.y,32), windowName, sf::Style::Fullscreen);
+    else
+        window.create(sf::VideoMode(WindowSize.x,WindowSize.y,32), windowName, sf::Style::Default);
+    
     window.setFramerateLimit(1000);
     rendertexture.create(window.getSize().x,window.getSize().y);
     *log << "Setting up ImGui";
     ImGui::SFML::Init(window);
     CalculateDT();
     
+}
+void Window::SetVsync(bool Vsync)
+{
+    window.setVerticalSyncEnabled(Vsync); 
 }
 void Window::SetSize(sf::Vector2u size)
 {

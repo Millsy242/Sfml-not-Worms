@@ -37,7 +37,8 @@ public:
     void Input(sf::Event event) override;
     
     void ChangeWindow(windowType wt);
-    void UpdateWindow(); 
+    void UpdateWindow();
+    void UpdateFromSettings(); 
     
 private:
     std::shared_ptr<WindowHolder> currentWindow;

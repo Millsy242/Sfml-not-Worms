@@ -17,15 +17,11 @@ void Game::Start()
 {
     *log << "Game Start";
     Active = true;
-    r.setSize(sf::Vector2f(60,60));
-    r.setPosition(window->GetCentre().x,window->GetCentre().y);
-    r.setFillColor(sf::Color::Black);    
     
     DebugTexture.loadFromFile("Game Icons/Debug Icon.png");
     ExitTexture.loadFromFile("Game Icons/Exit Icon.png");
     PauseTexture.loadFromFile("Game Icons/Pause Icon.png");
     SettingsTexture.loadFromFile("Game Icons/Settings Icon.png");
-    
 }
 void Game::Input(sf::Event e)
 {
@@ -34,8 +30,8 @@ void Game::Input(sf::Event e)
 void Game::Render(Window *window)
 {
     *log << "Game Render";
-    window->BeginDraw(sf::Color::Red);
-    window->draw(r);
+    window->BeginDraw(sf::Color(20,55,34));
+    
     window->EndDraw();
 }
 void Game::UI()
@@ -106,16 +102,7 @@ void Game::UI()
 void Game::EarlyUpdate()
 {
     *log << "Game Early Update";
-    if(r.getPosition().x >= window->GetSize().x-60)
-    {
-        direction *= -1;
-    }
-    if(r.getPosition().x <= 0)
-    {
-        direction *= -1;
-    }
 
-     r.move(direction, 0);
 }
 void Game::LateUpdate()
 {
