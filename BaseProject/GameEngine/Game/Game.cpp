@@ -11,17 +11,21 @@ Game::Game(ige::FileLogger *LOG,SettingsManager *SM)
 {
     log = LOG;
     settings = SM;
-}
-
-void Game::Start()
-{
-    *log << "Game Start";
-    Active = true;
     
     DebugTexture.loadFromFile("Game Icons/Debug Icon.png");
     ExitTexture.loadFromFile("Game Icons/Exit Icon.png");
     PauseTexture.loadFromFile("Game Icons/Pause Icon.png");
     SettingsTexture.loadFromFile("Game Icons/Settings Icon.png");
+    
+    Active = true;
+}
+
+void Game::Start()
+{
+    *log << "Game Start";
+    
+    
+    
 }
 void Game::Input(sf::Event e)
 {
