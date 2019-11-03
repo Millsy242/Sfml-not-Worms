@@ -8,8 +8,6 @@
 
 #include "WindowManager.hpp"
 
-
-
 int main()
 {
     WindowManager WM;
