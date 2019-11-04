@@ -8,6 +8,11 @@
 
 #include "MyGame.hpp"
 
+MyGame::MyGame(ige::FileLogger *LOG,SettingsManager *SM) : Game(LOG, SM)
+{
+    
+}
+
 void MyGame::Start()
 {
     *log << "Game Start";
@@ -32,7 +37,6 @@ void MyGame::UI()
 void MyGame::EarlyUpdate()
 {
     *log << "Game Early Update";
-
 }
 void MyGame::LateUpdate()
 {

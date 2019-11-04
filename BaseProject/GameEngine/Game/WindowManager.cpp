@@ -8,6 +8,7 @@
 
 #include "WindowManager.hpp"
 #include <iostream>
+
 void WindowManager::Start()
 {
     Settings.Setup();
@@ -51,11 +52,11 @@ void WindowManager::ChangeWindow(windowType wt)
         switch (wt)
         {
             case windowType::eGame:
-                currentWindow = std::make_shared<Game>(&log,&Settings);
+                currentWindow = std::make_shared<MyGame>(&log,&Settings);
                 log << "Changing to Game";
                 break;
             case windowType::eMenu:
-                currentWindow = std::make_shared<Menu>(&log,&Settings);
+                currentWindow = std::make_shared<MyMenu>(&log,&Settings);
                 log << "Changing to Menu";
                 break;
             default:

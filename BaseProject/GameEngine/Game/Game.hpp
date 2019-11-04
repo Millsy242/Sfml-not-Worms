@@ -25,7 +25,7 @@ public:
    virtual void LateUpdate() override;
     
    void GameUI();
-private:
+protected:
     sf::Texture DebugTexture,ExitTexture,PauseTexture,SettingsTexture;
 };
 #endif /* Game_hpp */

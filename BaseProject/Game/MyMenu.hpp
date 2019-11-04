@@ -1,30 +1,30 @@
 //
-//  MyGame.hpp
+//  MyMenu.hpp
 //  BaseProject
 //
 //  Created by Daniel Harvey on 03/11/2019.
 //  Copyright © 2019 Daniel Harvey. All rights reserved.
 //
 
-#ifndef MyGame_hpp
-#define MyGame_hpp
-#include <iostream>
-#include <stdio.h>
-#include "Game.hpp"
+#ifndef MyMenu_hpp
+#define MyMenu_hpp
 
-class MyGame : public Game
+#include <stdio.h>
+#include "Menu.hpp"
+
+class MyMenu : public Menu
 {
 public:
-    MyGame(ige::FileLogger *LOG,SettingsManager *SM) ;
-    void Start() override;
+    MyMenu(ige::FileLogger *LOG,SettingsManager *SM);
+    
+    void GameSettingsMenu() override;
     void Input(sf::Event e) override;
     void Render(Window *window) override;
-    void UI() override;
+    
     void EarlyUpdate() override;
     void LateUpdate() override;
     
 private:
-    
 };
 
-#endif /* MyGame_hpp */
+#endif /* MyMenu_hpp */

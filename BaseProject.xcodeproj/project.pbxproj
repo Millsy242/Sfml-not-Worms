@@ -51,9 +51,11 @@
 		0BCA9B7A236F1240002603A1 /* imgui_stdlib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BCA9B73236F1240002603A1 /* imgui_stdlib.cpp */; };
 		0BCA9B7B236F1240002603A1 /* imgui_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BCA9B75236F1240002603A1 /* imgui_demo.cpp */; };
 		0BCA9B7C236F1240002603A1 /* imgui_draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BCA9B76236F1240002603A1 /* imgui_draw.cpp */; };
-		0BCA9B7F236F126D002603A1 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BCA9B7D236F126A002603A1 /* OpenGL.framework */; };
-		0BCA9B80236F126E002603A1 /* OpenGL.framework in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 0BCA9B7D236F126A002603A1 /* OpenGL.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0BCA9B81236F127B002603A1 /* libsfml-audio.2.5.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 0B3004D622B538FC007515D0 /* libsfml-audio.2.5.1.dylib */; };
+		0BFB4AD3236F38AA00EAE02B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BCA9B7D236F126A002603A1 /* OpenGL.framework */; };
+		0BFB4AD4236F38AA00EAE02B /* OpenGL.framework in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 0BCA9B7D236F126A002603A1 /* OpenGL.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0BFB4AD8236F478500EAE02B /* MyGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BFB4AD6236F478500EAE02B /* MyGame.cpp */; };
+		0BFB4ADB236F48B200EAE02B /* MyMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BFB4AD9236F48B200EAE02B /* MyMenu.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -77,7 +79,7 @@
 				0BCA9B63236F11C3002603A1 /* libsfml-window.2.5.1.dylib in Embed Libraries */,
 				0BCA9B81236F127B002603A1 /* libsfml-audio.2.5.1.dylib in Embed Libraries */,
 				0BCA9B60236F11BF002603A1 /* libsfml-graphics.2.5.1.dylib in Embed Libraries */,
-				0BCA9B80236F126E002603A1 /* OpenGL.framework in Embed Libraries */,
+				0BFB4AD4236F38AA00EAE02B /* OpenGL.framework in Embed Libraries */,
 			);
 			name = "Embed Libraries";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,6 +177,10 @@
 		0BCA9B75236F1240002603A1 /* imgui_demo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_demo.cpp; sourceTree = "<group>"; };
 		0BCA9B76236F1240002603A1 /* imgui_draw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_draw.cpp; sourceTree = "<group>"; };
 		0BCA9B7D236F126A002603A1 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		0BFB4AD6236F478500EAE02B /* MyGame.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MyGame.cpp; sourceTree = "<group>"; };
+		0BFB4AD7236F478500EAE02B /* MyGame.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MyGame.hpp; sourceTree = "<group>"; };
+		0BFB4AD9236F48B200EAE02B /* MyMenu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MyMenu.cpp; sourceTree = "<group>"; };
+		0BFB4ADA236F48B200EAE02B /* MyMenu.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MyMenu.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,7 +191,7 @@
 				0B3004E022B53926007515D0 /* libsqlite3.tbd in Frameworks */,
 				0B3004DA22B538FC007515D0 /* libsfml-network.2.5.1.dylib in Frameworks */,
 				0B3004DB22B538FC007515D0 /* libsfml-audio.2.5.1.dylib in Frameworks */,
-				0BCA9B7F236F126D002603A1 /* OpenGL.framework in Frameworks */,
+				0BFB4AD3236F38AA00EAE02B /* OpenGL.framework in Frameworks */,
 				0B3004DC22B538FC007515D0 /* libsfml-window.2.5.1.dylib in Frameworks */,
 				0B3004DD22B538FC007515D0 /* libsfml-graphics.2.5.1.dylib in Frameworks */,
 				0B3004DE22B538FC007515D0 /* libsfml-system.2.5.1.dylib in Frameworks */,
@@ -285,6 +291,7 @@
 		0B3004CC22B53812007515D0 /* BaseProject */ = {
 			isa = PBXGroup;
 			children = (
+				0BFB4AD5236F46E700EAE02B /* Game */,
 				0BCA9B32236F0B74002603A1 /* GameEngine */,
 			);
 			path = BaseProject;
@@ -387,6 +394,17 @@
 			path = "imGui-SFML";
 			sourceTree = "<group>";
 		};
+		0BFB4AD5236F46E700EAE02B /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				0BFB4AD6236F478500EAE02B /* MyGame.cpp */,
+				0BFB4AD7236F478500EAE02B /* MyGame.hpp */,
+				0BFB4AD9236F48B200EAE02B /* MyMenu.cpp */,
+				0BFB4ADA236F48B200EAE02B /* MyMenu.hpp */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -447,6 +465,7 @@
 			files = (
 				0B0F42DE232C300400190405 /* Game.cpp in Sources */,
 				0B0F42AD232C299000190405 /* Line.cpp in Sources */,
+				0BFB4ADB236F48B200EAE02B /* MyMenu.cpp in Sources */,
 				0B0F42BA232C299000190405 /* PieChart.cpp in Sources */,
 				0BCA9B79236F1240002603A1 /* imgui-SFML.cpp in Sources */,
 				0B0F42B4232C299000190405 /* BitmapText.cpp in Sources */,
@@ -459,6 +478,7 @@
 				0BCA9B7C236F1240002603A1 /* imgui_draw.cpp in Sources */,
 				0B0F42B8232C299000190405 /* ConsoleScreenOld.cpp in Sources */,
 				0B0F42B5232C299000190405 /* SpinningCard.cpp in Sources */,
+				0BFB4AD8236F478500EAE02B /* MyGame.cpp in Sources */,
 				0B0F42B7232C299000190405 /* GallerySprite.cpp in Sources */,
 				0B0F42BC232C299000190405 /* Starfield.cpp in Sources */,
 				0B0F42AC232C299000190405 /* Yaml.cpp in Sources */,
