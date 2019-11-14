@@ -17,7 +17,7 @@ class MyGame : public Game
 public:
     MyGame(ige::FileLogger *LOG,SettingsManager *SM) ;
     void Start() override;
-    void Input(sf::Event e) override;
+    void Input(std::queue<sf::Event> &events) override;
     void Render(Window *window) override;
     void UI() override;
     void EarlyUpdate() override;

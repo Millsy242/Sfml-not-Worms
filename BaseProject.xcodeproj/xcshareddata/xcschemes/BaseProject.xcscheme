@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0B3004C922B53812007515D0"
-               BuildableName = "BaseProject"
-               BlueprintName = "BaseProject"
+               BuildableName = "MyPetridish"
+               BlueprintName = "MyPetridish"
                ReferencedContainer = "container:BaseProject.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -31,8 +31,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0B3004C922B53812007515D0"
-            BuildableName = "BaseProject"
-            BlueprintName = "BaseProject"
+            BuildableName = "MyPetridish"
+            BlueprintName = "MyPetridish"
             ReferencedContainer = "container:BaseProject.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -45,7 +45,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "YES"
-      customWorkingDirectory = "/Users/danielharvey/Programming/GameEngineSFML/BaseProject/Resources"
+      customWorkingDirectory = "/Users/danielharvey/Programming/MyPetridish/GameEngineSFML/Resources"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
@@ -55,8 +55,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0B3004C922B53812007515D0"
-            BuildableName = "BaseProject"
-            BlueprintName = "BaseProject"
+            BuildableName = "MyPetridish"
+            BlueprintName = "MyPetridish"
             ReferencedContainer = "container:BaseProject.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -72,8 +72,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0B3004C922B53812007515D0"
-            BuildableName = "BaseProject"
-            BlueprintName = "BaseProject"
+            BuildableName = "MyPetridish"
+            BlueprintName = "MyPetridish"
             ReferencedContainer = "container:BaseProject.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

@@ -18,20 +18,20 @@ class WindowHolder : public Base
 public:
     
     virtual ~WindowHolder(){};
-    virtual void Start();
-    virtual void Update();
+    virtual void Start()override;
+    virtual void Update()override;
     virtual void EarlyUpdate() = 0;
     virtual void LateUpdate() = 0;
-    virtual void Render(Window *window) = 0;
-    virtual void Input(sf::Event e) = 0;
-    virtual void UI() = 0;
-    virtual void Exit();
+    virtual void Render(Window *window) override= 0;
+    virtual void Input(std::queue<sf::Event> &events) override = 0;
+    
+    virtual void Exit() override;
     void Stats();
     void GiveWindow(Window *w);
     bool Continue = true;
     
 protected:
-    bool Pause = false; 
+    bool Pause = false;
     bool Active = true;
     bool Debug{false},DebugMetrics{false},DebugUserGuide{false},DebugStyleSel{false},DebugStyleEditer{false};
     Window *window = nullptr;

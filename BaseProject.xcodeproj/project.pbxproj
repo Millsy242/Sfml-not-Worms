@@ -142,7 +142,7 @@
 		0B0F42E3232C40AC00190405 /* Entity.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Entity.hpp; sourceTree = "<group>"; };
 		0B2D4CC52365EDCC00CC17EA /* SettingsManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SettingsManager.cpp; sourceTree = "<group>"; };
 		0B2D4CC62365EDCC00CC17EA /* SettingsManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SettingsManager.hpp; sourceTree = "<group>"; };
-		0B3004CA22B53812007515D0 /* BaseProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BaseProject; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B3004CA22B53812007515D0 /* MyPetridish */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MyPetridish; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B3004D522B538FC007515D0 /* libsfml-network.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-network.2.5.1.dylib"; path = "../../../../../usr/local/Cellar/sfml/2.5.1/lib/libsfml-network.2.5.1.dylib"; sourceTree = "<group>"; };
 		0B3004D622B538FC007515D0 /* libsfml-audio.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-audio.2.5.1.dylib"; path = "../../../../../usr/local/Cellar/sfml/2.5.1/lib/libsfml-audio.2.5.1.dylib"; sourceTree = "<group>"; };
 		0B3004D722B538FC007515D0 /* libsfml-window.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-window.2.5.1.dylib"; path = "../../../../../usr/local/Cellar/sfml/2.5.1/lib/libsfml-window.2.5.1.dylib"; sourceTree = "<group>"; };
@@ -283,7 +283,7 @@
 		0B3004CB22B53812007515D0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0B3004CA22B53812007515D0 /* BaseProject */,
+				0B3004CA22B53812007515D0 /* MyPetridish */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -408,9 +408,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0B3004C922B53812007515D0 /* BaseProject */ = {
+		0B3004C922B53812007515D0 /* MyPetridish */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0B3004D122B53812007515D0 /* Build configuration list for PBXNativeTarget "BaseProject" */;
+			buildConfigurationList = 0B3004D122B53812007515D0 /* Build configuration list for PBXNativeTarget "MyPetridish" */;
 			buildPhases = (
 				0B3004C622B53812007515D0 /* Sources */,
 				0B3004C722B53812007515D0 /* Frameworks */,
@@ -421,9 +421,9 @@
 			);
 			dependencies = (
 			);
-			name = BaseProject;
+			name = MyPetridish;
 			productName = BaseProject;
-			productReference = 0B3004CA22B53812007515D0 /* BaseProject */;
+			productReference = 0B3004CA22B53812007515D0 /* MyPetridish */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -453,7 +453,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0B3004C922B53812007515D0 /* BaseProject */,
+				0B3004C922B53812007515D0 /* MyPetridish */,
 			);
 		};
 /* End PBXProject section */
@@ -666,7 +666,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0B3004D122B53812007515D0 /* Build configuration list for PBXNativeTarget "BaseProject" */ = {
+		0B3004D122B53812007515D0 /* Build configuration list for PBXNativeTarget "MyPetridish" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0B3004D222B53812007515D0 /* Debug */,

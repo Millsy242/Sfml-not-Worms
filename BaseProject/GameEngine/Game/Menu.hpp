@@ -19,7 +19,7 @@ public:
     ~Menu(){};
         
     virtual void Start() override;
-    virtual void Input(sf::Event e) override;
+    virtual void Input(std::queue<sf::Event> &events) override;
     virtual void Render(Window *window) override;
     virtual void UI() override;
     virtual void EarlyUpdate() override;
@@ -29,6 +29,7 @@ private:
    virtual void StartScreen();
    virtual void ProgramSettingsMenu();
    virtual void GameSettingsMenu();
+    virtual void GameSettingsMenuTWO();
    sf::Texture StartTexture,SettingsTexture,ExitTexture;
 };
 #endif /* Menu_hpp */

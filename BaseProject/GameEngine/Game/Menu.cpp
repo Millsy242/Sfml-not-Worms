@@ -23,7 +23,7 @@ void Menu::Start()
     SettingsTexture.loadFromFile("Menu Icons/Settings.png");
     ExitTexture.loadFromFile("Menu Icons/Exit.png");
 }
-void Menu::Input(sf::Event e)
+void Menu::Input(std::queue<sf::Event> &events)
 {
     *log << "Menu Input";
 }
@@ -53,7 +53,7 @@ void Menu::UI()
     {
         if (ImGui::BeginTabItem("Main"))
         {
-            StartScreen(); 
+            StartScreen();
             ImGui::EndTabItem();
         }
         if (ImGui::BeginTabItem("Program Settings"))
@@ -64,6 +64,11 @@ void Menu::UI()
         if (ImGui::BeginTabItem("Game Settings"))
         {
             GameSettingsMenu();
+            ImGui::EndTabItem();
+        }
+        if (ImGui::BeginTabItem("Game Settings 2"))
+        {
+            GameSettingsMenuTWO();
             ImGui::EndTabItem();
         }
         ImGui::EndTabBar();
@@ -142,4 +147,8 @@ void Menu::ProgramSettingsMenu()
 void Menu::GameSettingsMenu()
 {
     ImGui::Text("this is the Game Settings Menu!\nIt should be used for settings related to ingame variables. Such as car details, tracks etc");
+}
+void Menu::GameSettingsMenuTWO()
+{
+    ImGui::Text("this is the Game Settings 2 Menu!\nIt should be used for settings related to ingame variables. Such as car details, tracks etc");
 }

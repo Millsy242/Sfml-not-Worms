@@ -18,7 +18,8 @@ public:
     MyMenu(ige::FileLogger *LOG,SettingsManager *SM);
     
     void GameSettingsMenu() override;
-    void Input(sf::Event e) override;
+    void GameSettingsMenuTWO() override;
+    void Input(std::queue<sf::Event> &events) override;
     void Render(Window *window) override;
     
     void EarlyUpdate() override;

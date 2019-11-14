@@ -23,15 +23,13 @@ public:
     ~Entity(){};
     
     virtual void Start() override = 0;
-    virtual void LoadTexture(std::string filepath); 
+    virtual void LoadTexture(std::string filepath);
     void Update() override;
     virtual void EntityUpdate()  = 0 ;
     virtual void Render(Window *window) override;
-    virtual void Input(sf::Event event) override = 0;
+    virtual void Input(std::queue<sf::Event> &events) override = 0;
     virtual void Exit() override = 0;
     virtual bool isCollision(sf::Sprite *sprite);
-    virtual void UI(){};
-    
     virtual void FlipTexture(bool Vertical);
      
     

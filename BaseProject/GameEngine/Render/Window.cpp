@@ -13,7 +13,7 @@
 
 
 Window::Window(ige::FileLogger *LOG) : log(LOG)
-{  
+{
     
 }
 
@@ -33,9 +33,17 @@ void Window::Start(const std::string& windowName,sf::Vector2u WindowSize, bool F
     CalculateDT();
     
 }
+sf::Vector2i Window::GetMouse()
+{
+    return sf::Mouse::getPosition(window);
+}
+void Window::Close()
+{
+    window.close();
+}
 void Window::SetVsync(bool Vsync)
 {
-    window.setVerticalSyncEnabled(Vsync); 
+    window.setVerticalSyncEnabled(Vsync);
 }
 void Window::SetSize(sf::Vector2u size)
 {
@@ -44,15 +52,19 @@ void Window::SetSize(sf::Vector2u size)
 void Window::Update()
 {
     *log << "Updating Window";
-	fps.update();
+    fps.update();
     ImGui::SFML::Update(window, sf::seconds(deltatime));
    
-    if (window.pollEvent(event))
+    while (window.pollEvent(event))
     {
-		 ImGui::SFML::ProcessEvent(event);
+         ImGui::SFML::ProcessEvent(event);
         if (event.type == sf::Event::Closed)
         {
             window.close();
+        }
+        else
+        {
+            events.push(event);
         }
     }
 }
@@ -66,16 +78,16 @@ void Window::BeginDraw(sf::Color colour)
      *log << "Starting render";
     window.clear(colour);
     if(RenderToTexture)
-	rendertexture.clear(colour);
+    rendertexture.clear(colour);
 }
 
 void Window::draw(const sf::Drawable& drawable)
 {
      *log << "Drawing drawable";
-	if(RenderToTexture)
-		rendertexture.draw(drawable);
-	else
-    	window.draw(drawable);
+    if(RenderToTexture)
+        rendertexture.draw(drawable);
+    else
+        window.draw(drawable);
 }
 
 void Window::EndDraw()
@@ -84,7 +96,7 @@ void Window::EndDraw()
     ImGui::EndFrame();
     //rendertexture.display();
     ImGui::SFML::Render(window);
-	window.display();
+    window.display();
     CalculateDT();
 }
 void Window::CalculateDT()
@@ -102,19 +114,19 @@ sf::Vector2u Window::GetSize()
 }
 sf::Vector2u Window::GetCentre()
 {
-	unsigned int x = window.getSize().x/2;
-	unsigned int y = window.getSize().y/2;
-	
-	return sf::Vector2u(x,y);
+    unsigned int x = window.getSize().x/2;
+    unsigned int y = window.getSize().y/2;
+    
+    return sf::Vector2u(x,y);
 }
 
 void Window::SetTitle(std::string &title)
 {
-	window.setTitle(title);
+    window.setTitle(title);
 }
 float Window::getDT()
 {
-    return deltatime; 
+    return deltatime;
 }
 int Window::GetFPS()
 {

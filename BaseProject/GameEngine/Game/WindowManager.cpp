@@ -39,7 +39,7 @@ void WindowManager::Render(Window *window)
 {
 
 }
-void WindowManager::Input(sf::Event event)
+void WindowManager::Input(std::queue<sf::Event> &events)
 {
 
 }

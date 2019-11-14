@@ -36,7 +36,7 @@ public:
     void Update() override;
     void Exit() override;
     void Render(Window *window) override;
-    void Input(sf::Event event) override;
+    void Input(std::queue<sf::Event> &events) override;
     
     void ChangeWindow(windowType wt);
     void UpdateWindow();

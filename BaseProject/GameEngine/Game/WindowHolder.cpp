@@ -60,7 +60,7 @@ void WindowHolder::Update()
 	const int maxTimePerFrame = 200;
 	float accumulatedTime = 0;
 	Active = true;
-	while (Active)
+	while (Active )
 	{
 		accumulatedTime += c.restart().asMilliseconds();
 		if (accumulatedTime > maxTimePerFrame)
@@ -70,12 +70,13 @@ void WindowHolder::Update()
 		window->Update();
 		Stats();
 		UI();
+		Input(window->events);
 		if(!Pause)
 		{
 			//Ensure Fps doesnt change User experiance
-			while (accumulatedTime >= frameDuration)
+			while (accumulatedTime >= frameDuration && Active)
 			{
-				Input(window->GetEvent());
+				
 				accumulatedTime -= frameDuration;
 				EarlyUpdate();
 				LateUpdate();

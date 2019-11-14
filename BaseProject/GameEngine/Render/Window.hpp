@@ -16,6 +16,7 @@
 #include <SFML/Graphics.hpp>
 #include "FileLogger.hpp"
 #include <thread>
+#include <queue>
 
 class Window
 {
@@ -27,31 +28,33 @@ public:
     void BeginDraw(sf::Color colour = sf::Color::Magenta);
     void draw(const sf::Drawable& drawable);
     void EndDraw();
-	
-    void SetSize(sf::Vector2u size); 
+    void Close();
+    void SetSize(sf::Vector2u size);
+    sf::Vector2i GetMouse();
     bool IsOpen() const;
-	sf::Vector2u GetCentre();
-	void SetTitle(std::string &title);
-	bool RenderToTexture = false;
+    sf::Vector2u GetCentre();
+    void SetTitle(std::string &title);
+    bool RenderToTexture = false;
     float getDT();
     int GetFPS();
     sf::Event GetEvent();
     sf::Vector2u GetSize();
     void SetVsync(bool Vsync);
-    
+    sf::RenderWindow window;
+    std::queue<sf::Event> events;
 private:
     void CalculateDT();
     
-    std::thread thread; 
+    std::thread thread;
     
-    sf::RenderWindow window;
-	sf::RenderTexture rendertexture;
-	sf::Sprite windowtexture;
-	FPS fps;
+    
+    sf::RenderTexture rendertexture;
+    sf::Sprite windowtexture;
+    FPS fps;
     float deltatime;
     sf::Clock clock;
     sf::Event event;
-    ige::FileLogger *log; 
+    ige::FileLogger *log;
 };
 
 
