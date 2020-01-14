@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0B3004C922B53812007515D0"
-               BuildableName = "MyPetridish"
-               BlueprintName = "MyPetridish"
-               ReferencedContainer = "container:BaseProject.xcodeproj">
+               BuildableName = "GameEngineSFML"
+               BlueprintName = "GameEngineSFML"
+               ReferencedContainer = "container:GameEngineSFML.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -31,9 +31,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0B3004C922B53812007515D0"
-            BuildableName = "MyPetridish"
-            BlueprintName = "MyPetridish"
-            ReferencedContainer = "container:BaseProject.xcodeproj">
+            BuildableName = "GameEngineSFML"
+            BlueprintName = "GameEngineSFML"
+            ReferencedContainer = "container:GameEngineSFML.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0B3004C922B53812007515D0"
-            BuildableName = "MyPetridish"
-            BlueprintName = "MyPetridish"
-            ReferencedContainer = "container:BaseProject.xcodeproj">
+            BuildableName = "GameEngineSFML"
+            BlueprintName = "GameEngineSFML"
+            ReferencedContainer = "container:GameEngineSFML.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0B3004C922B53812007515D0"
-            BuildableName = "MyPetridish"
-            BlueprintName = "MyPetridish"
-            ReferencedContainer = "container:BaseProject.xcodeproj">
+            BuildableName = "GameEngineSFML"
+            BlueprintName = "GameEngineSFML"
+            ReferencedContainer = "container:GameEngineSFML.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

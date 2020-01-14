@@ -137,7 +137,7 @@ void Menu::ProgramSettingsMenu()
     }
     if(ImGui::SliderInt("Menu Aspect Ratio Y",&MARY, 1, 32))
     {
-        settings->MenuApsectRatio.x = MARY;
+        settings->MenuApsectRatio.y = MARY;
         settings->MenuSize.y = (MenuX/MARX)*MARY;
     }
     ImGui::Checkbox("Vsync", &settings->Vsync);
