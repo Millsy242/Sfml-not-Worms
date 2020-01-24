@@ -35,6 +35,10 @@ void WindowManager::Exit()
 {
     currentWindow->Exit();
 }
+void WindowManager::FixedUpdate(float dt)
+{
+    
+}
 void WindowManager::Render(Window *window)
 {
 

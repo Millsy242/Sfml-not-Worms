@@ -35,6 +35,10 @@ void MyMenu::LateUpdate()
 {
     *log << "Menu Late Update";
 }
+void MyMenu::FixedUpdate(float dt)
+{
+    *log << "Menu Fixed Update";
+}
 void MyMenu::GameSettingsMenuTWO()
 {
     

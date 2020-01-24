@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -163,6 +163,7 @@
 		0B81187C23CE53FE00318514 /* Control.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Control.cpp; sourceTree = "<group>"; };
 		0B81187D23CE53FE00318514 /* Common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Common.hpp; sourceTree = "<group>"; };
 		0B81187E23CE53FE00318514 /* SfmlSoundSystem.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SfmlSoundSystem.hpp; sourceTree = "<group>"; };
+		0B8D1A4123D207E200EA341C /* libthor.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libthor.dylib; path = ../../ThorLibrary/libthor.dylib; sourceTree = "<group>"; };
 		0B9052D32358DF8B004CD66F /* WindowManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WindowManager.cpp; sourceTree = "<group>"; };
 		0B9052D42358DF8B004CD66F /* WindowManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WindowManager.hpp; sourceTree = "<group>"; };
 		0BCA9B65236F1240002603A1 /* imgui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgui.h; sourceTree = "<group>"; };
@@ -307,6 +308,7 @@
 		0B3004D422B538FC007515D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0B8D1A4123D207E200EA341C /* libthor.dylib */,
 				0BCA9B7D236F126A002603A1 /* OpenGL.framework */,
 				0B3004DF22B53926007515D0 /* libsqlite3.tbd */,
 				0B3004D622B538FC007515D0 /* libsfml-audio.2.5.1.dylib */,
@@ -460,7 +462,7 @@
 				};
 			};
 			buildConfigurationList = 0B3004C522B53812007515D0 /* Build configuration list for PBXProject "GameEngineSFML" */;
-			compatibilityVersion = "Xcode 10.0";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -644,14 +646,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_ASSIGN_ENUM = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24X23VJ266;
 				ENABLE_HARDENED_RUNTIME = YES;
-				HEADER_SEARCH_PATHS = /usr/local/Cellar/sfml/2.5.1/include;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/Cellar/sfml/2.5.1/include,
+					"\"/usr/local/Cellar/Thor-2.0/include\"",
+					"\"/usr/local/Cellar/Thor-2.0/extlibs/aurora/include\"",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/sfml/2.5.1/lib,
+					"\"/usr/local/Cellar/Thor-2.0/lib\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -661,14 +669,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_ASSIGN_ENUM = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 24X23VJ266;
 				ENABLE_HARDENED_RUNTIME = YES;
-				HEADER_SEARCH_PATHS = /usr/local/Cellar/sfml/2.5.1/include;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/Cellar/sfml/2.5.1/include,
+					"\"/usr/local/Cellar/Thor-2.0/include\"",
+					"\"/usr/local/Cellar/Thor-2.0/extlibs/aurora/include\"",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/Cellar/sfml/2.5.1/lib,
+					"\"/usr/local/Cellar/Thor-2.0/lib\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

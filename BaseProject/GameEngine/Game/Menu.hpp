@@ -24,6 +24,7 @@ public:
     virtual void UI() override;
     virtual void EarlyUpdate() override;
     virtual void LateUpdate() override;
+    virtual void FixedUpdate(float dt) override;
     
 private:
    virtual void StartScreen();

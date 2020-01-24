@@ -34,6 +34,7 @@ public:
     
     void Start() override;
     void Update() override;
+    void FixedUpdate(float dt) override;
     void Exit() override;
     void Render(Window *window) override;
     void Input(std::queue<sf::Event> &events) override;

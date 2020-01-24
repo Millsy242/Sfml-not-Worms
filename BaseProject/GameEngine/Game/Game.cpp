@@ -52,7 +52,10 @@ void Game::LateUpdate()
 {
     *log << "Game Late Update";
 }
-
+void Game::FixedUpdate(float dt)
+{
+    *log << "Game Fixed Update";
+}
 void Game::GameUI()
 {
     ImGuiWindowFlags window_flags = 0;

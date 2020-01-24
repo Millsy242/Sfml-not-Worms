@@ -81,6 +81,7 @@ void WindowHolder::Update()
 				EarlyUpdate();
 				LateUpdate();
 			}
+			FixedUpdate(window->getDT());
 		}
 		Render(window);
 	}

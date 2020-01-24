@@ -12,11 +12,9 @@ MyGame::MyGame(ige::FileLogger *LOG,SettingsManager *SM) : Game(LOG, SM)
 {
     
 }
-
 void MyGame::Start()
 {
     *log << "Game Start";
-    
 }
 void MyGame::Input(std::queue<sf::Event> &events)
 {
@@ -32,7 +30,7 @@ void MyGame::Render(Window *window)
 void MyGame::UI()
 {
     *log << "UI";
-    GameUI();
+    Game::GameUI();
 }
 void MyGame::EarlyUpdate()
 {
@@ -41,4 +39,9 @@ void MyGame::EarlyUpdate()
 void MyGame::LateUpdate()
 {
     *log << "Game Late Update";
+}
+void MyGame::FixedUpdate(float dt)
+{
+    *log << "Game Fixed Update";
+    
 }

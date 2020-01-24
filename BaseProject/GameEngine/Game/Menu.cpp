@@ -83,7 +83,10 @@ void Menu::LateUpdate()
 {
     *log << "Menu Late Update";
 }
-
+void Menu::FixedUpdate(float dt)
+{
+    *log << "Menu Fixed Update";
+}
 void Menu::StartScreen()
 {
     ImGui::SetCursorPos(ImVec2(5,40));

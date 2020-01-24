@@ -11,6 +11,7 @@
 #include <iostream>
 #include <stdio.h>
 #include "Game.hpp"
+#include "SelbaWard.hpp"
 
 class MyGame : public Game
 {
@@ -22,9 +23,10 @@ public:
     void UI() override;
     void EarlyUpdate() override;
     void LateUpdate() override;
-    
+    void FixedUpdate(float dt) override;
 private:
-    
+    sw::Sprite3d spr;
+    sf::Texture texture; 
 };
 
 #endif /* MyGame_hpp */

@@ -18,6 +18,7 @@ class Base
 public:
     virtual void Start() = 0;
     virtual void Update() = 0;
+    virtual void FixedUpdate(float dt){};
     virtual void Exit() = 0 ;
     virtual void Render(Window *window) = 0;
     virtual void Input(std::queue<sf::Event> &events)  = 0;

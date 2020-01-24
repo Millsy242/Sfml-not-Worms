@@ -21,7 +21,7 @@ public:
     void GameSettingsMenuTWO() override;
     void Input(std::queue<sf::Event> &events) override;
     void Render(Window *window) override;
-    
+    void FixedUpdate(float dt) override;
     void EarlyUpdate() override;
     void LateUpdate() override;
     
