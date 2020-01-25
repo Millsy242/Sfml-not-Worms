@@ -8,7 +8,7 @@
 
 #include "MyMenu.hpp"
 
-MyMenu::MyMenu(ige::FileLogger *LOG,SettingsManager *SM) : Menu(LOG,SM)
+MyMenu::MyMenu(std::shared_ptr<ige::FileLogger> LOG,std::shared_ptr<SettingsManager> SM) : Menu(LOG,SM)
 {
     
 }
@@ -20,7 +20,7 @@ void MyMenu::Input(std::queue<sf::Event> &events)
 {
     *log << "Menu Input";
 }
-void MyMenu::Render(Window *window)
+void MyMenu::Render(std::shared_ptr<Window> window)
 {
     *log << "Menu Render";
     window->BeginDraw(sf::Color(40,45,55));

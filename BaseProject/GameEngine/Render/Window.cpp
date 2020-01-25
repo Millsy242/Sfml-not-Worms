@@ -12,9 +12,9 @@
 #include <stdlib.h>
 
 
-Window::Window(ige::FileLogger *LOG) : log(LOG)
+Window::Window(std::shared_ptr<ige::FileLogger> LOG)
 {
-    
+    log = LOG;
 }
 
 void Window::Start(const std::string& windowName,sf::Vector2u WindowSize, bool Fullscreen)
@@ -59,6 +59,10 @@ void Window::Update()
     {
          ImGui::SFML::ProcessEvent(event);
         if (event.type == sf::Event::Closed)
+        {
+            window.close();
+        }
+        if (event.type == sf::Event::Resized)
         {
             window.close();
         }

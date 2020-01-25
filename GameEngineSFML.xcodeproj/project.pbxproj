@@ -28,7 +28,6 @@
 		0B0F42D8232C2D3200190405 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F42D7232C2D3200190405 /* main.cpp */; };
 		0B0F42DB232C2FF900190405 /* Menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F42D9232C2FF900190405 /* Menu.cpp */; };
 		0B0F42DE232C300400190405 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F42DC232C300400190405 /* Game.cpp */; };
-		0B0F42E1232C400900190405 /* Base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F42DF232C400900190405 /* Base.cpp */; };
 		0B0F42E4232C40AC00190405 /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B0F42E2232C40AC00190405 /* Entity.cpp */; };
 		0B2D4CC72365EDCC00CC17EA /* SettingsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B2D4CC52365EDCC00CC17EA /* SettingsManager.cpp */; };
 		0B3004DA22B538FC007515D0 /* libsfml-network.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3004D522B538FC007515D0 /* libsfml-network.2.5.1.dylib */; };
@@ -136,8 +135,6 @@
 		0B0F42D9232C2FF900190405 /* Menu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Menu.cpp; sourceTree = "<group>"; };
 		0B0F42DA232C2FF900190405 /* Menu.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Menu.hpp; sourceTree = "<group>"; };
 		0B0F42DC232C300400190405 /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
-		0B0F42DD232C300400190405 /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
-		0B0F42DF232C400900190405 /* Base.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Base.cpp; sourceTree = "<group>"; };
 		0B0F42E0232C400900190405 /* Base.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Base.hpp; sourceTree = "<group>"; };
 		0B0F42E2232C40AC00190405 /* Entity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Entity.cpp; sourceTree = "<group>"; };
 		0B0F42E3232C40AC00190405 /* Entity.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Entity.hpp; sourceTree = "<group>"; };
@@ -163,6 +160,7 @@
 		0B81187C23CE53FE00318514 /* Control.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Control.cpp; sourceTree = "<group>"; };
 		0B81187D23CE53FE00318514 /* Common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Common.hpp; sourceTree = "<group>"; };
 		0B81187E23CE53FE00318514 /* SfmlSoundSystem.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SfmlSoundSystem.hpp; sourceTree = "<group>"; };
+		0B8C1CA123DCCFB7005DB308 /* Game.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
 		0B8D1A4123D207E200EA341C /* libthor.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libthor.dylib; path = ../../ThorLibrary/libthor.dylib; sourceTree = "<group>"; };
 		0B9052D32358DF8B004CD66F /* WindowManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WindowManager.cpp; sourceTree = "<group>"; };
 		0B9052D42358DF8B004CD66F /* WindowManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WindowManager.hpp; sourceTree = "<group>"; };
@@ -346,8 +344,7 @@
 				0B0F42D9232C2FF900190405 /* Menu.cpp */,
 				0B0F42DA232C2FF900190405 /* Menu.hpp */,
 				0B0F42DC232C300400190405 /* Game.cpp */,
-				0B0F42DD232C300400190405 /* Game.hpp */,
-				0B0F42DF232C400900190405 /* Base.cpp */,
+				0B8C1CA123DCCFB7005DB308 /* Game.hpp */,
 				0B0F42E0232C400900190405 /* Base.hpp */,
 				0B0F42E2232C40AC00190405 /* Entity.cpp */,
 				0B0F42E3232C40AC00190405 /* Entity.hpp */,
@@ -453,7 +450,7 @@
 		0B3004C222B53812007515D0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1120;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Daniel Harvey";
 				TargetAttributes = {
 					0B3004C922B53812007515D0 = {
@@ -505,7 +502,6 @@
 				0B0F42BC232C299000190405 /* Starfield.cpp in Sources */,
 				0B0F42AC232C299000190405 /* Yaml.cpp in Sources */,
 				0B0F42B0232C299000190405 /* NinePatch.cpp in Sources */,
-				0B0F42E1232C400900190405 /* Base.cpp in Sources */,
 				0B0F42C3232C299000190405 /* SettingsParser.cpp in Sources */,
 				0B0F42B3232C299000190405 /* Ring.cpp in Sources */,
 				0B0F42B9232C299000190405 /* Crosshair.cpp in Sources */,

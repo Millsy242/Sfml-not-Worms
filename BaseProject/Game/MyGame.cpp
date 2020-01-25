@@ -8,7 +8,7 @@
 
 #include "MyGame.hpp"
 
-MyGame::MyGame(ige::FileLogger *LOG,SettingsManager *SM) : Game(LOG, SM)
+MyGame::MyGame(std::shared_ptr<ige::FileLogger> LOG,std::shared_ptr<SettingsManager> SM) : Game(LOG, SM)
 {
     
 }
@@ -20,7 +20,7 @@ void MyGame::Input(std::queue<sf::Event> &events)
 {
    *log << "Game Input";
 }
-void MyGame::Render(Window *window)
+void MyGame::Render(std::shared_ptr<Window> window)
 {
     *log << "Game Render";
     window->BeginDraw(sf::Color(20,55,34));
