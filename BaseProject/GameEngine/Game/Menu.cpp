@@ -23,7 +23,7 @@ void Menu::Start()
     SettingsTexture.loadFromFile("Menu Icons/Settings.png");
     ExitTexture.loadFromFile("Menu Icons/Exit.png");
 }
-void Menu::Input(std::queue<sf::Event> &events)
+void Menu::Input(std::queue<sf::Event> &events, float dt)
 {
     *log << "Menu Input";
 }

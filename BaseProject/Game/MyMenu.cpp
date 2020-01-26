@@ -16,7 +16,7 @@ void MyMenu::GameSettingsMenu()
 {
     ImGui::Text("this is the Game Settings Menu!\nIt should be used for settings related to ingame variables. Such as car details, tracks etc");
 }
-void MyMenu::Input(std::queue<sf::Event> &events)
+void MyMenu::Input(std::queue<sf::Event> &events, float dt)
 {
     *log << "Menu Input";
 }

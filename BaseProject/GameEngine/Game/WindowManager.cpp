@@ -47,7 +47,7 @@ void WindowManager::Render(std::shared_ptr<Window> window)
 {
 
 }
-void WindowManager::Input(std::queue<sf::Event> &events)
+void WindowManager::Input(std::queue<sf::Event> &events, float dt)
 {
 
 }

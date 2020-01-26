@@ -24,7 +24,7 @@ public:
     virtual void LateUpdate() = 0;
     virtual void FixedUpdate(float dt) override = 0;
     virtual void Render(std::shared_ptr<Window> window) override= 0;
-    virtual void Input(std::queue<sf::Event> &events) override = 0;
+    virtual void Input(std::queue<sf::Event> &events, float dt) override = 0;
     
     virtual void Exit() override;
     void Stats();

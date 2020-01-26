@@ -18,7 +18,7 @@ class Game : public WindowHolder
         ~Game(){};
         
         virtual void Start() override;
-        virtual void Input(std::queue<sf::Event> &events) override;
+        virtual void Input(std::queue<sf::Event> &events, float dt) override;
         virtual void Render(std::shared_ptr<Window> window) override;
         virtual void UI() override;
         virtual void EarlyUpdate() override;

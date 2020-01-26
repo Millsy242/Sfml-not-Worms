@@ -67,7 +67,7 @@ void WindowHolder::Update()
 		window->Update();
 		Stats();
 		UI();
-		Input(window->events);
+		Input(window->events, window->getDT());
 		if(!Pause)
 		{
 			//Ensure Fps doesnt change User experiance

@@ -40,6 +40,8 @@
 		0B458388232D459D00D561B6 /* collision.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B458386232D459D00D561B6 /* collision.cpp */; };
 		0B6233E922B5918E00E29872 /* WindowHolder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B6233E722B5918E00E29872 /* WindowHolder.cpp */; };
 		0B81187F23CE53FE00318514 /* Control.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B81187C23CE53FE00318514 /* Control.cpp */; };
+		0B8C1CA523DCE366005DB308 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B8C1CA323DCE366005DB308 /* Camera.cpp */; };
+		0B8C1CA823DCE4D4005DB308 /* Inputs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B8C1CA623DCE4D4005DB308 /* Inputs.cpp */; };
 		0B9052D52358DF8B004CD66F /* WindowManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B9052D32358DF8B004CD66F /* WindowManager.cpp */; };
 		0BCA9B60236F11BF002603A1 /* libsfml-graphics.2.5.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 0B3004D822B538FC007515D0 /* libsfml-graphics.2.5.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		0BCA9B61236F11C0002603A1 /* libsfml-network.2.5.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 0B3004D522B538FC007515D0 /* libsfml-network.2.5.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -161,6 +163,10 @@
 		0B81187D23CE53FE00318514 /* Common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Common.hpp; sourceTree = "<group>"; };
 		0B81187E23CE53FE00318514 /* SfmlSoundSystem.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SfmlSoundSystem.hpp; sourceTree = "<group>"; };
 		0B8C1CA123DCCFB7005DB308 /* Game.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
+		0B8C1CA323DCE366005DB308 /* Camera.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
+		0B8C1CA423DCE366005DB308 /* Camera.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Camera.hpp; sourceTree = "<group>"; };
+		0B8C1CA623DCE4D4005DB308 /* Inputs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Inputs.cpp; sourceTree = "<group>"; };
+		0B8C1CA723DCE4D4005DB308 /* Inputs.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Inputs.hpp; sourceTree = "<group>"; };
 		0B8D1A4123D207E200EA341C /* libthor.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libthor.dylib; path = ../../ThorLibrary/libthor.dylib; sourceTree = "<group>"; };
 		0B9052D32358DF8B004CD66F /* WindowManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WindowManager.cpp; sourceTree = "<group>"; };
 		0B9052D42358DF8B004CD66F /* WindowManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WindowManager.hpp; sourceTree = "<group>"; };
@@ -324,6 +330,8 @@
 				0B3004FD22B55DB9007515D0 /* Window.cpp */,
 				0B3004FF22B55DB9007515D0 /* Window.hpp */,
 				0B3004FE22B55DB9007515D0 /* FPS.hpp */,
+				0B8C1CA323DCE366005DB308 /* Camera.cpp */,
+				0B8C1CA423DCE366005DB308 /* Camera.hpp */,
 			);
 			path = Render;
 			sourceTree = "<group>";
@@ -339,6 +347,7 @@
 		0B6233E622B5914700E29872 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				0B8C1CA223DCE346005DB308 /* Input */,
 				0B6233E722B5918E00E29872 /* WindowHolder.cpp */,
 				0B6233E822B5918E00E29872 /* WindowHolder.hpp */,
 				0B0F42D9232C2FF900190405 /* Menu.cpp */,
@@ -365,6 +374,15 @@
 				0B81187D23CE53FE00318514 /* Common.hpp */,
 			);
 			path = SfmlSoundSystem;
+			sourceTree = "<group>";
+		};
+		0B8C1CA223DCE346005DB308 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				0B8C1CA623DCE4D4005DB308 /* Inputs.cpp */,
+				0B8C1CA723DCE4D4005DB308 /* Inputs.hpp */,
+			);
+			path = Input;
 			sourceTree = "<group>";
 		};
 		0BCA9B32236F0B74002603A1 /* GameEngine */ = {
@@ -481,6 +499,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B8C1CA823DCE4D4005DB308 /* Inputs.cpp in Sources */,
 				0B0F42DE232C300400190405 /* Game.cpp in Sources */,
 				0B81187F23CE53FE00318514 /* Control.cpp in Sources */,
 				0B0F42AD232C299000190405 /* Line.cpp in Sources */,
@@ -506,6 +525,7 @@
 				0B0F42B3232C299000190405 /* Ring.cpp in Sources */,
 				0B0F42B9232C299000190405 /* Crosshair.cpp in Sources */,
 				0B0F42E4232C40AC00190405 /* Entity.cpp in Sources */,
+				0B8C1CA523DCE366005DB308 /* Camera.cpp in Sources */,
 				0B0F42B2232C299000190405 /* ConsoleScreen.cpp in Sources */,
 				0B2D4CC72365EDCC00CC17EA /* SettingsManager.cpp in Sources */,
 				0B0F42DB232C2FF900190405 /* Menu.cpp in Sources */,

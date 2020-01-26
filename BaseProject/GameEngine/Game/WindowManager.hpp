@@ -36,7 +36,7 @@ public:
     void FixedUpdate(float dt) override;
     void Exit() override;
     void Render(std::shared_ptr<Window> window) override;
-    void Input(std::queue<sf::Event> &events) override;
+    void Input(std::queue<sf::Event> &events, float dt) override;
     
     void ChangeWindow(windowType wt);
     void UpdateWindow();

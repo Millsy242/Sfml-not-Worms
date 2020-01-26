@@ -15,8 +15,12 @@ MyGame::MyGame(std::shared_ptr<ige::FileLogger> LOG,std::shared_ptr<SettingsMana
 void MyGame::Start()
 {
     *log << "Game Start";
+    t.loadFromFile("test.png");
+    s.setTexture(t);
+    s.setPosition(0, 0);
+    
 }
-void MyGame::Input(std::queue<sf::Event> &events)
+void MyGame::Input(std::queue<sf::Event> &events, float dt)
 {
    *log << "Game Input";
 }
@@ -24,7 +28,7 @@ void MyGame::Render(std::shared_ptr<Window> window)
 {
     *log << "Game Render";
     window->BeginDraw(sf::Color(20,55,34));
-    
+    window->draw(s);
     window->EndDraw();
 }
 void MyGame::UI()

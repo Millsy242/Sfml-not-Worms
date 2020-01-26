@@ -18,14 +18,15 @@ class MyGame : public Game
     public:
         MyGame(std::shared_ptr<ige::FileLogger> LOG, std::shared_ptr<SettingsManager> SM) ;
         void Start() override;
-        void Input(std::queue<sf::Event> &events) override;
+        void Input(std::queue<sf::Event> &events, float dt) override;
         void Render(std::shared_ptr<Window> window) override;
         void UI() override;
         void EarlyUpdate() override;
         void LateUpdate() override;
         void FixedUpdate(float dt) override;
     private:
-        
+    sf::Texture t;
+    sf::Sprite s; 
 };
 
 #endif /* MyGame_hpp */

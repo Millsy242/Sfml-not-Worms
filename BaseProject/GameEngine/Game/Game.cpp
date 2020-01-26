@@ -24,7 +24,7 @@ void Game::Start()
 {
     *log << "Game Start";
 }
-void Game::Input(std::queue<sf::Event> &events)
+void Game::Input(std::queue<sf::Event> &events, float dt)
 {
    *log << "Game Input";
 }
