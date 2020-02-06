@@ -93,7 +93,34 @@ void Window::draw(const sf::Drawable& drawable)
     else
         window.draw(drawable);
 }
+void Window::draw(myRect &rec)
+{
+    sf::Vertex top[4],right[2],left[2],base[2];
+    
+    top[0].position = sf::Vector2f(rec.left,rec.top);
+    top[0].color = sf::Color::Red;
+    top[1].position = sf::Vector2f(rec.right,rec.top);
+    top[1].color = sf::Color::Red;
+    right[0].position = sf::Vector2f(rec.right,rec.top);
+    right[0].color = sf::Color::Red;
+    right[1].position = sf::Vector2f(rec.right,rec.base);
+    right[1].color = sf::Color::Red;
+    left[0].position = sf::Vector2f(rec.left,rec.top);
+    left[0].color = sf::Color::Red;
+    left[1].position = sf::Vector2f(rec.left,rec.base);
+    left[1].color = sf::Color::Red;
+    base[0].position = sf::Vector2f(rec.left,rec.base);
+    base[0].color = sf::Color::Red;
+    base[1].position = sf::Vector2f(rec.right,rec.base);
+    base[1].color = sf::Color::Red;
+    
 
+    
+    window.draw(top,2,sf::Lines);
+    window.draw(right,2,sf::Lines);
+    window.draw(left,2,sf::Lines);
+    window.draw(base,2,sf::Lines);
+}
 void Window::EndDraw()
 {
      *log << "Finishing Draw";

@@ -17,6 +17,7 @@
 #include "FileLogger.hpp"
 #include <thread>
 #include <queue>
+#include "Rect.hpp"
 
 class Window
 {
@@ -26,6 +27,7 @@ public:
     void Update();
     void BeginDraw(sf::Color colour = sf::Color::Magenta);
     void draw(const sf::Drawable& drawable);
+    void draw(myRect &rec);
     void EndDraw();
     void Close();
     void SetSize(sf::Vector2u size);

@@ -53,6 +53,12 @@ void Game::FixedUpdate(float dt)
 {
     *log << "Game Fixed Update";
 }
+void Game::SetGameArea(myRect R)
+{
+    GameArea = R;
+    GameAreaShape.setSize(sf::Vector2f(GameArea.width,GameArea.height));
+    GameAreaShape.setPosition(GameArea.left,GameArea.top);
+}
 void Game::GameUI()
 {
     ImGuiWindowFlags window_flags = 0;
@@ -62,6 +68,7 @@ void Game::GameUI()
     window_flags |= ImGuiWindowFlags_NoNavFocus;
     window_flags |= ImGuiWindowFlags_NoTitleBar;
     window_flags |= ImGuiWindowFlags_AlwaysAutoResize;
+    window_flags |= ImGuiWindowFlags_NoBackground;
     
     ImGui::Begin("GameUI",NULL,window_flags);
     if(Pause)

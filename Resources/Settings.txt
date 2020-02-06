@@ -6,4 +6,4 @@ MenuAspectRatioX = 4
 MenuAspectRatioY = 3
 MenuScreenWidth = 600
 Version = 4
-Vsync = FALSE
+Vsync = TRUE

@@ -19,6 +19,7 @@ void MyGame::Start()
     s.setTexture(t);
     s.setPosition(0, 0);
     
+    SetGameArea(myRect(40,40,window->GetSize().x-40,window->GetSize().y-40));
 }
 void MyGame::Input(std::queue<sf::Event> &events, float dt)
 {
@@ -28,7 +29,8 @@ void MyGame::Render(std::shared_ptr<Window> window)
 {
     *log << "Game Render";
     window->BeginDraw(sf::Color(20,55,34));
-    window->draw(s);
+    //window->draw(s);
+    window->draw(GameArea);
     window->EndDraw();
 }
 void MyGame::UI()

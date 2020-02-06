@@ -39,6 +39,7 @@
 		0B30050622B55DB9007515D0 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B3004FD22B55DB9007515D0 /* Window.cpp */; };
 		0B458388232D459D00D561B6 /* collision.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B458386232D459D00D561B6 /* collision.cpp */; };
 		0B6233E922B5918E00E29872 /* WindowHolder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B6233E722B5918E00E29872 /* WindowHolder.cpp */; };
+		0B722AC623EC8CCF00649C82 /* Rect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B722AC423EC8CCF00649C82 /* Rect.cpp */; };
 		0B81187F23CE53FE00318514 /* Control.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B81187C23CE53FE00318514 /* Control.cpp */; };
 		0B8C1CA523DCE366005DB308 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B8C1CA323DCE366005DB308 /* Camera.cpp */; };
 		0B8C1CA823DCE4D4005DB308 /* Inputs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B8C1CA623DCE4D4005DB308 /* Inputs.cpp */; };
@@ -157,6 +158,8 @@
 		0B5ABB94232E910200A59A2C /* mySpline.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = mySpline.hpp; sourceTree = "<group>"; };
 		0B6233E722B5918E00E29872 /* WindowHolder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WindowHolder.cpp; sourceTree = "<group>"; usesTabs = 1; };
 		0B6233E822B5918E00E29872 /* WindowHolder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WindowHolder.hpp; sourceTree = "<group>"; };
+		0B722AC423EC8CCF00649C82 /* Rect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Rect.cpp; sourceTree = "<group>"; };
+		0B722AC523EC8CCF00649C82 /* Rect.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Rect.hpp; sourceTree = "<group>"; };
 		0B81184023CE004500318514 /* grand.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = grand.hpp; sourceTree = "<group>"; };
 		0B81187B23CE53FE00318514 /* Control.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Control.hpp; sourceTree = "<group>"; };
 		0B81187C23CE53FE00318514 /* Control.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Control.cpp; sourceTree = "<group>"; };
@@ -347,6 +350,7 @@
 		0B6233E622B5914700E29872 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				0B722AC323EC872500649C82 /* CustomClasses */,
 				0B8C1CA223DCE346005DB308 /* Input */,
 				0B6233E722B5918E00E29872 /* WindowHolder.cpp */,
 				0B6233E822B5918E00E29872 /* WindowHolder.hpp */,
@@ -363,6 +367,15 @@
 				0B2D4CC62365EDCC00CC17EA /* SettingsManager.hpp */,
 			);
 			path = Game;
+			sourceTree = "<group>";
+		};
+		0B722AC323EC872500649C82 /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+				0B722AC423EC8CCF00649C82 /* Rect.cpp */,
+				0B722AC523EC8CCF00649C82 /* Rect.hpp */,
+			);
+			path = CustomClasses;
 			sourceTree = "<group>";
 		};
 		0B81187A23CE53FE00318514 /* SfmlSoundSystem */ = {
@@ -505,6 +518,7 @@
 				0B0F42AD232C299000190405 /* Line.cpp in Sources */,
 				0BFB4ADB236F48B200EAE02B /* MyMenu.cpp in Sources */,
 				0B0F42BA232C299000190405 /* PieChart.cpp in Sources */,
+				0B722AC623EC8CCF00649C82 /* Rect.cpp in Sources */,
 				0BCA9B79236F1240002603A1 /* imgui-SFML.cpp in Sources */,
 				0B0F42B4232C299000190405 /* BitmapText.cpp in Sources */,
 				0BCA9B7B236F1240002603A1 /* imgui_demo.cpp in Sources */,
