@@ -17,6 +17,8 @@ Game::Game(std::shared_ptr<ige::FileLogger> LOG,std::shared_ptr<SettingsManager>
     PauseTexture.loadFromFile("Game Icons/Pause Icon.png");
     SettingsTexture.loadFromFile("Game Icons/Settings Icon.png");
     
+
+    
     Active = true;
 }
 

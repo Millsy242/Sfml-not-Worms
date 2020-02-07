@@ -44,6 +44,15 @@
 		0B8C1CA523DCE366005DB308 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B8C1CA323DCE366005DB308 /* Camera.cpp */; };
 		0B8C1CA823DCE4D4005DB308 /* Inputs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B8C1CA623DCE4D4005DB308 /* Inputs.cpp */; };
 		0B9052D52358DF8B004CD66F /* WindowManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B9052D32358DF8B004CD66F /* WindowManager.cpp */; };
+		0BAEE37823EDCD7400E7A723 /* Duration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BAEE35723EDCD7400E7A723 /* Duration.cpp */; };
+		0BAEE37923EDCD7400E7A723 /* Continuum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BAEE35B23EDCD7400E7A723 /* Continuum.cpp */; };
+		0BAEE37A23EDCD7400E7A723 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BAEE35C23EDCD7400E7A723 /* Timer.cpp */; };
+		0BAEE37B23EDCD7400E7A723 /* FpsLite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BAEE36023EDCD7400E7A723 /* FpsLite.cpp */; };
+		0BAEE37C23EDCD7400E7A723 /* Absorel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BAEE36423EDCD7400E7A723 /* Absorel.cpp */; };
+		0BAEE37D23EDCD7400E7A723 /* TimestepLite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BAEE36523EDCD7400E7A723 /* TimestepLite.cpp */; };
+		0BAEE37E23EDCD7400E7A723 /* Stopwatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BAEE36823EDCD7400E7A723 /* Stopwatch.cpp */; };
+		0BAEE37F23EDCD7400E7A723 /* BasicClock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BAEE36A23EDCD7400E7A723 /* BasicClock.cpp */; };
+		0BAEE38023EDCD7400E7A723 /* Timestep.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BAEE36B23EDCD7400E7A723 /* Timestep.cpp */; };
 		0BCA9B60236F11BF002603A1 /* libsfml-graphics.2.5.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 0B3004D822B538FC007515D0 /* libsfml-graphics.2.5.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		0BCA9B61236F11C0002603A1 /* libsfml-network.2.5.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 0B3004D522B538FC007515D0 /* libsfml-network.2.5.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		0BCA9B62236F11C2002603A1 /* libsfml-system.2.5.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 0B3004D922B538FC007515D0 /* libsfml-system.2.5.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -151,7 +160,6 @@
 		0B3004D922B538FC007515D0 /* libsfml-system.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-system.2.5.1.dylib"; path = "../../../../../usr/local/Cellar/sfml/2.5.1/lib/libsfml-system.2.5.1.dylib"; sourceTree = "<group>"; };
 		0B3004DF22B53926007515D0 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		0B3004FD22B55DB9007515D0 /* Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Window.cpp; sourceTree = "<group>"; };
-		0B3004FE22B55DB9007515D0 /* FPS.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FPS.hpp; sourceTree = "<group>"; };
 		0B3004FF22B55DB9007515D0 /* Window.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Window.hpp; sourceTree = "<group>"; };
 		0B458386232D459D00D561B6 /* collision.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = collision.cpp; sourceTree = "<group>"; };
 		0B458387232D459D00D561B6 /* collision.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = collision.hpp; sourceTree = "<group>"; };
@@ -173,6 +181,29 @@
 		0B8D1A4123D207E200EA341C /* libthor.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libthor.dylib; path = ../../ThorLibrary/libthor.dylib; sourceTree = "<group>"; };
 		0B9052D32358DF8B004CD66F /* WindowManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WindowManager.cpp; sourceTree = "<group>"; };
 		0B9052D42358DF8B004CD66F /* WindowManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WindowManager.hpp; sourceTree = "<group>"; };
+		0BAEE35623EDCD7400E7A723 /* Absorel.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Absorel.inl; sourceTree = "<group>"; };
+		0BAEE35723EDCD7400E7A723 /* Duration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Duration.cpp; sourceTree = "<group>"; };
+		0BAEE35823EDCD7400E7A723 /* Stopwatch.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Stopwatch.hpp; sourceTree = "<group>"; };
+		0BAEE35923EDCD7400E7A723 /* BasicClock.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BasicClock.hpp; sourceTree = "<group>"; };
+		0BAEE35A23EDCD7400E7A723 /* Timestep.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Timestep.hpp; sourceTree = "<group>"; };
+		0BAEE35B23EDCD7400E7A723 /* Continuum.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Continuum.cpp; sourceTree = "<group>"; };
+		0BAEE35C23EDCD7400E7A723 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
+		0BAEE35D23EDCD7400E7A723 /* all.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = all.hpp; sourceTree = "<group>"; };
+		0BAEE35E23EDCD7400E7A723 /* Absorel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Absorel.hpp; sourceTree = "<group>"; };
+		0BAEE35F23EDCD7400E7A723 /* TimestepLite.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TimestepLite.hpp; sourceTree = "<group>"; };
+		0BAEE36023EDCD7400E7A723 /* FpsLite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FpsLite.cpp; sourceTree = "<group>"; };
+		0BAEE36123EDCD7400E7A723 /* Continuum.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Continuum.hpp; sourceTree = "<group>"; };
+		0BAEE36223EDCD7400E7A723 /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
+		0BAEE36323EDCD7400E7A723 /* Yalpes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Yalpes.hpp; sourceTree = "<group>"; };
+		0BAEE36423EDCD7400E7A723 /* Absorel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Absorel.cpp; sourceTree = "<group>"; };
+		0BAEE36523EDCD7400E7A723 /* TimestepLite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimestepLite.cpp; sourceTree = "<group>"; };
+		0BAEE36623EDCD7400E7A723 /* FpsLite.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FpsLite.hpp; sourceTree = "<group>"; };
+		0BAEE36723EDCD7400E7A723 /* Duration.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Duration.hpp; sourceTree = "<group>"; };
+		0BAEE36823EDCD7400E7A723 /* Stopwatch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Stopwatch.cpp; sourceTree = "<group>"; };
+		0BAEE36923EDCD7400E7A723 /* Yalpes.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Yalpes.inl; sourceTree = "<group>"; };
+		0BAEE36A23EDCD7400E7A723 /* BasicClock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BasicClock.cpp; sourceTree = "<group>"; };
+		0BAEE36B23EDCD7400E7A723 /* Timestep.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Timestep.cpp; sourceTree = "<group>"; };
+		0BAEE36C23EDCD7400E7A723 /* Kairos.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Kairos.hpp; sourceTree = "<group>"; };
 		0BCA9B65236F1240002603A1 /* imgui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgui.h; sourceTree = "<group>"; };
 		0BCA9B66236F1240002603A1 /* imstb_textedit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imstb_textedit.h; sourceTree = "<group>"; };
 		0BCA9B67236F1240002603A1 /* imconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imconfig.h; sourceTree = "<group>"; };
@@ -218,6 +249,8 @@
 		0B0F4261232C299000190405 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				0BAEE35523EDCD7400E7A723 /* Kairos */,
+				0BAEE36C23EDCD7400E7A723 /* Kairos.hpp */,
 				0B81187A23CE53FE00318514 /* SfmlSoundSystem */,
 				0BCA9B64236F1240002603A1 /* DearImGUI */,
 				0B0F4262232C299000190405 /* SelbaWard.hpp */,
@@ -332,7 +365,6 @@
 			children = (
 				0B3004FD22B55DB9007515D0 /* Window.cpp */,
 				0B3004FF22B55DB9007515D0 /* Window.hpp */,
-				0B3004FE22B55DB9007515D0 /* FPS.hpp */,
 				0B8C1CA323DCE366005DB308 /* Camera.cpp */,
 				0B8C1CA423DCE366005DB308 /* Camera.hpp */,
 			);
@@ -396,6 +428,35 @@
 				0B8C1CA723DCE4D4005DB308 /* Inputs.hpp */,
 			);
 			path = Input;
+			sourceTree = "<group>";
+		};
+		0BAEE35523EDCD7400E7A723 /* Kairos */ = {
+			isa = PBXGroup;
+			children = (
+				0BAEE35623EDCD7400E7A723 /* Absorel.inl */,
+				0BAEE35723EDCD7400E7A723 /* Duration.cpp */,
+				0BAEE35823EDCD7400E7A723 /* Stopwatch.hpp */,
+				0BAEE35923EDCD7400E7A723 /* BasicClock.hpp */,
+				0BAEE35A23EDCD7400E7A723 /* Timestep.hpp */,
+				0BAEE35B23EDCD7400E7A723 /* Continuum.cpp */,
+				0BAEE35C23EDCD7400E7A723 /* Timer.cpp */,
+				0BAEE35D23EDCD7400E7A723 /* all.hpp */,
+				0BAEE35E23EDCD7400E7A723 /* Absorel.hpp */,
+				0BAEE35F23EDCD7400E7A723 /* TimestepLite.hpp */,
+				0BAEE36023EDCD7400E7A723 /* FpsLite.cpp */,
+				0BAEE36123EDCD7400E7A723 /* Continuum.hpp */,
+				0BAEE36223EDCD7400E7A723 /* Timer.hpp */,
+				0BAEE36323EDCD7400E7A723 /* Yalpes.hpp */,
+				0BAEE36423EDCD7400E7A723 /* Absorel.cpp */,
+				0BAEE36523EDCD7400E7A723 /* TimestepLite.cpp */,
+				0BAEE36623EDCD7400E7A723 /* FpsLite.hpp */,
+				0BAEE36723EDCD7400E7A723 /* Duration.hpp */,
+				0BAEE36823EDCD7400E7A723 /* Stopwatch.cpp */,
+				0BAEE36923EDCD7400E7A723 /* Yalpes.inl */,
+				0BAEE36A23EDCD7400E7A723 /* BasicClock.cpp */,
+				0BAEE36B23EDCD7400E7A723 /* Timestep.cpp */,
+			);
+			path = Kairos;
 			sourceTree = "<group>";
 		};
 		0BCA9B32236F0B74002603A1 /* GameEngine */ = {
@@ -522,6 +583,7 @@
 				0BCA9B79236F1240002603A1 /* imgui-SFML.cpp in Sources */,
 				0B0F42B4232C299000190405 /* BitmapText.cpp in Sources */,
 				0BCA9B7B236F1240002603A1 /* imgui_demo.cpp in Sources */,
+				0BAEE37C23EDCD7400E7A723 /* Absorel.cpp in Sources */,
 				0B0F42B6232C299000190405 /* ProgressBar.cpp in Sources */,
 				0B9052D52358DF8B004CD66F /* WindowManager.cpp in Sources */,
 				0B30050622B55DB9007515D0 /* Window.cpp in Sources */,
@@ -538,14 +600,22 @@
 				0B0F42C3232C299000190405 /* SettingsParser.cpp in Sources */,
 				0B0F42B3232C299000190405 /* Ring.cpp in Sources */,
 				0B0F42B9232C299000190405 /* Crosshair.cpp in Sources */,
+				0BAEE37823EDCD7400E7A723 /* Duration.cpp in Sources */,
+				0BAEE37E23EDCD7400E7A723 /* Stopwatch.cpp in Sources */,
 				0B0F42E4232C40AC00190405 /* Entity.cpp in Sources */,
+				0BAEE38023EDCD7400E7A723 /* Timestep.cpp in Sources */,
 				0B8C1CA523DCE366005DB308 /* Camera.cpp in Sources */,
 				0B0F42B2232C299000190405 /* ConsoleScreen.cpp in Sources */,
+				0BAEE37923EDCD7400E7A723 /* Continuum.cpp in Sources */,
+				0BAEE37A23EDCD7400E7A723 /* Timer.cpp in Sources */,
 				0B2D4CC72365EDCC00CC17EA /* SettingsManager.cpp in Sources */,
+				0BAEE37F23EDCD7400E7A723 /* BasicClock.cpp in Sources */,
+				0BAEE37B23EDCD7400E7A723 /* FpsLite.cpp in Sources */,
 				0B0F42DB232C2FF900190405 /* Menu.cpp in Sources */,
 				0BCA9B77236F1240002603A1 /* imgui_widgets.cpp in Sources */,
 				0B0F42D8232C2D3200190405 /* main.cpp in Sources */,
 				0B0F42B1232C299000190405 /* Sprite3d.cpp in Sources */,
+				0BAEE37D23EDCD7400E7A723 /* TimestepLite.cpp in Sources */,
 				0B0F42BB232C299000190405 /* Spline.cpp in Sources */,
 				0B458388232D459D00D561B6 /* collision.cpp in Sources */,
 				0BCA9B7A236F1240002603A1 /* imgui_stdlib.cpp in Sources */,

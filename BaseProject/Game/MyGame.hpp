@@ -26,7 +26,8 @@ class MyGame : public Game
         void FixedUpdate(float dt) override;
     private:
     sf::Texture t;
-    sf::Sprite s; 
+    sf::Sprite s;
+    float vx{0}, vy{0};
 };
 
 #endif /* MyGame_hpp */

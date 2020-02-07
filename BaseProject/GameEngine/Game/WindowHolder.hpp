@@ -9,7 +9,7 @@
 #ifndef WindowHolder_hpp
 #define WindowHolder_hpp
 #include "Base.hpp"
-
+#include "Kairos.hpp"
 #include "Window.hpp"
 #include "FileLogger.hpp"
 #include "SettingsManager.hpp"
@@ -32,6 +32,7 @@ public:
     bool Continue = true;
     
 protected:
+    kairos::TimestepLite timestep;
     bool Pause = false;
     bool Active = true;
     bool Debug{false},DebugMetrics{false},DebugUserGuide{false},DebugStyleSel{false},DebugStyleEditer{false};

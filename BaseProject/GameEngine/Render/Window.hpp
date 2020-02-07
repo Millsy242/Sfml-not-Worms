@@ -12,7 +12,7 @@
 
 #include "imgui.h"
 #include "imgui-SFML.h"
-#include "FPS.hpp"
+#include "FpsLite.hpp"
 #include <SFML/Graphics.hpp>
 #include "FileLogger.hpp"
 #include <thread>
@@ -28,15 +28,20 @@ public:
     void BeginDraw(sf::Color colour = sf::Color::Magenta);
     void draw(const sf::Drawable& drawable);
     void draw(myRect &rec);
+    void draw(const sf::Vertex *vertices, std::size_t vertexCount, sf::PrimitiveType type);
+    void draw(const sf::VertexBuffer &vertexBuffer);
+    void draw(const sf::VertexBuffer &vertexBuffer, std::size_t firstVertex, std::size_t vertexCount);
+    
     void EndDraw();
     void Close();
     void SetSize(sf::Vector2u size);
     void SetVsync(bool Vsync);
     void SetTitle(std::string &title);
     bool IsOpen() const;
+    void OnResize(float newx, float newy);
 
     float getDT();
-    int GetFPS();
+    double GetFPS();
     
     sf::Event GetEvent();
     sf::Vector2u GetSize();
@@ -57,7 +62,7 @@ private:
     sf::Clock clock;
     sf::Event event;
     
-    FPS fps;
+    kairos::FpsLite fps;
     float deltatime;
 
     std::shared_ptr<ige::FileLogger> log;

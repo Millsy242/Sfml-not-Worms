@@ -35,7 +35,7 @@ void WindowHolder::Stats()
 	window_flags |= ImGuiWindowFlags_NoTitleBar;
 	
     ImGui::Begin("Stats",NULL,window_flags);
-    ImGui::Text("FPS: %i \nDT: %fms",window->GetFPS(),window->getDT()*1000);
+	ImGui::Text("FPS: %i \nDT: %fms",(int)window->GetFPS(),window->getDT()*1000);
     ImGui::End();
 	
 	if(Debug)
@@ -53,27 +53,20 @@ void WindowHolder::Stats()
 
 void WindowHolder::Update()
 {
-	const float frameDuration = 17;
-	const int maxTimePerFrame = 200;
-	float accumulatedTime = 0;
+    timestep.setStep(1/20.0);    
 	Active = true;
 	while (Active )
 	{
-		accumulatedTime += c.restart().asMilliseconds();
-		if (accumulatedTime > maxTimePerFrame)
-		{
-			accumulatedTime = maxTimePerFrame;
-		}
 		window->Update();
 		Stats();
 		UI();
 		Input(window->events, window->getDT());
+		timestep.update(window->getDT());
 		if(!Pause)
 		{
 			//Ensure Fps doesnt change User experiance
-			while (accumulatedTime >= frameDuration && Active)
+			while (Active && timestep.isTimeToIntegrate())
 			{
-				accumulatedTime -= frameDuration;
 				EarlyUpdate();
 				LateUpdate();
 			}

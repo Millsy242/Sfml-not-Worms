@@ -24,12 +24,13 @@ void MyGame::Start()
 void MyGame::Input(std::queue<sf::Event> &events, float dt)
 {
    *log << "Game Input";
+
 }
 void MyGame::Render(std::shared_ptr<Window> window)
 {
     *log << "Game Render";
     window->BeginDraw(sf::Color(20,55,34));
-    //window->draw(s);
+    window->draw(s);
     window->draw(GameArea);
     window->EndDraw();
 }
@@ -41,6 +42,17 @@ void MyGame::UI()
 void MyGame::EarlyUpdate()
 {
     *log << "Game Early Update";
+   
+    vy = vx = 0;
+    
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
+        vy = -500;
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
+        vy = 500;
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+        vx = -500;
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
+        vx = 500;
 }
 void MyGame::LateUpdate()
 {
@@ -49,5 +61,5 @@ void MyGame::LateUpdate()
 void MyGame::FixedUpdate(float dt)
 {
     *log << "Game Fixed Update";
-    
+     s.move(vx*dt, vy*dt);
 }

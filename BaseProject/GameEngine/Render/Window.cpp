@@ -64,7 +64,7 @@ void Window::Update()
         }
         else if (event.type == sf::Event::Resized)
         {
-        
+            OnResize(event.size.width, event.size.height);
         }
         else
         {
@@ -75,6 +75,10 @@ void Window::Update()
 sf::Event Window::GetEvent()
 {
     return event;
+}
+void Window::OnResize(float newx, float newy)
+{
+    SetSize(sf::Vector2u(newx,newy));
 }
 
 void Window::BeginDraw(sf::Color colour)
@@ -88,38 +92,42 @@ void Window::BeginDraw(sf::Color colour)
 void Window::draw(const sf::Drawable& drawable)
 {
      *log << "Drawing drawable";
-    if(RenderToTexture)
-        rendertexture.draw(drawable);
-    else
-        window.draw(drawable);
+      window.draw(drawable);
+}
+void Window::draw(const sf::Vertex *vertices, std::size_t vertexCount, sf::PrimitiveType type)
+{
+    window.draw(vertices,vertexCount,type);
+}
+void Window::draw(const sf::VertexBuffer &vertexBuffer)
+{
+    window.draw(vertexBuffer);
+}
+void Window::draw(const sf::VertexBuffer &vertexBuffer, std::size_t firstVertex, std::size_t vertexCount)
+{
+    window.draw(vertexBuffer,firstVertex,vertexCount);
 }
 void Window::draw(myRect &rec)
 {
-    sf::Vertex top[4],right[2],left[2],base[2];
+    sf::VertexArray arr(sf::Lines,8);
     
-    top[0].position = sf::Vector2f(rec.left,rec.top);
-    top[0].color = sf::Color::Red;
-    top[1].position = sf::Vector2f(rec.right,rec.top);
-    top[1].color = sf::Color::Red;
-    right[0].position = sf::Vector2f(rec.right,rec.top);
-    right[0].color = sf::Color::Red;
-    right[1].position = sf::Vector2f(rec.right,rec.base);
-    right[1].color = sf::Color::Red;
-    left[0].position = sf::Vector2f(rec.left,rec.top);
-    left[0].color = sf::Color::Red;
-    left[1].position = sf::Vector2f(rec.left,rec.base);
-    left[1].color = sf::Color::Red;
-    base[0].position = sf::Vector2f(rec.left,rec.base);
-    base[0].color = sf::Color::Red;
-    base[1].position = sf::Vector2f(rec.right,rec.base);
-    base[1].color = sf::Color::Red;
-    
+    arr[0].position = sf::Vector2f(rec.left,rec.top);
+    arr[0].color = sf::Color::Red;
+    arr[1].position = sf::Vector2f(rec.right,rec.top);
+    arr[1].color = sf::Color::Red;
+    arr[2].position = sf::Vector2f(rec.right,rec.top);
+    arr[2].color = sf::Color::Red;
+    arr[3].position = sf::Vector2f(rec.right,rec.base);
+    arr[3].color = sf::Color::Red;
+    arr[4].position = sf::Vector2f(rec.left,rec.top);
+    arr[4].color = sf::Color::Red;
+    arr[5].position = sf::Vector2f(rec.left,rec.base);
+    arr[5].color = sf::Color::Red;
+    arr[6].position = sf::Vector2f(rec.left,rec.base);
+    arr[6].color = sf::Color::Red;
+    arr[7].position = sf::Vector2f(rec.right,rec.base);
+    arr[7].color = sf::Color::Red;
 
-    
-    window.draw(top,2,sf::Lines);
-    window.draw(right,2,sf::Lines);
-    window.draw(left,2,sf::Lines);
-    window.draw(base,2,sf::Lines);
+    window.draw(arr);
 }
 void Window::EndDraw()
 {
@@ -160,7 +168,7 @@ float Window::getDT()
 {
     return deltatime;
 }
-int Window::GetFPS()
+double Window::GetFPS()
 {
-    return fps.getFPS();
+    return fps.getFps();
 }
