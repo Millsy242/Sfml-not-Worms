@@ -48,6 +48,8 @@ void WindowHolder::Stats()
 			ImGui::ShowStyleSelector("Style");
 		if(DebugStyleEditer)
 			ImGui::ShowStyleEditor();
+		
+
 	}
 }
 

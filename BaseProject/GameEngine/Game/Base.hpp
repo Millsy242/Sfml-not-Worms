@@ -12,17 +12,30 @@
 #include <stdio.h>
 #include "Window.hpp"
 #include <queue>
+#include "Rect.hpp"
+#include <iostream>
 
 class Base
 {
 public:
-    virtual void Start() = 0;
-    virtual void Update() = 0;
-    virtual void FixedUpdate(float dt){};
-    virtual void Exit() = 0 ;
-    virtual void Render(std::shared_ptr<Window> window) = 0;
-    virtual void Input(std::queue<sf::Event> &events, float dt)  = 0;
-    virtual void UI(){};
+    virtual void Start();
+    virtual void Update();
+    virtual void FixedUpdate(float dt);
+    virtual void Exit();
+    virtual void Render(std::shared_ptr<Window> window);
+    virtual void Input(std::queue<sf::Event> &events, float dt);
+    virtual void UI();
+    virtual void DebugUI(int i);
+    void DebugSelected(bool sel);
+protected:
+    std::string ClassName = "BaseClass";
+    myRect Bounds;
+    sf::Vector2f Position = {80,80};
+    sf::Vector2f Size = {300,300};
+    bool Renderable = false;
+private:
+    bool drawRect = false;
+    bool Selected = false;
 };
 
 #endif /* Base_hpp */

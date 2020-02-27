@@ -13,6 +13,15 @@
 #include "Game.hpp"
 #include "SelbaWard.hpp"
 
+class myBase : public Base
+{
+public:
+    myBase(int a = 0){b=a;};
+    void Start() {Base::Start();ClassName = "MYBASE";};
+    
+    int b;
+};
+
 class MyGame : public Game
 {
     public:
@@ -28,6 +37,7 @@ class MyGame : public Game
     sf::Texture t;
     sf::Sprite s;
     float vx{0}, vy{0};
+    myBase a,b,c,d,e;
 };
 
 #endif /* MyGame_hpp */

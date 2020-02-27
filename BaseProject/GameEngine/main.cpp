@@ -18,130 +18,94 @@ int main()
     return 0;
 }
 
-
 /*
-#include <SFML/Graphics.hpp>
+#include <TGUI/TGUI.hpp>
+#include <iostream>
 
-
-
-#include "TimestepLite.hpp"
-#include "Stopwatch.hpp"
-
-
-// linearInterpolation based on code in the Plinth library (https://github.com/Hapaxia/Plinth)
-sf::Vector2f linearInterpolation(sf::Vector2f start, sf::Vector2f end, float alpha)
+void login(tgui::EditBox::Ptr username, tgui::EditBox::Ptr password)
 {
-    return (start * (1 - alpha) + end * alpha);
+    std::cout << "Username: " << username->getText().toAnsiString() << std::endl;
+    std::cout << "Password: " << password->getText().toAnsiString() << std::endl;
+}
+
+void loadWidgets( tgui::Gui& gui )
+{
+    // Create the background image
+    // The picture is of type tgui::Picture::Ptr which is actually just a typedef for std::shared_widget<Picture>
+    // The picture will fit the entire window and will scale with it
+    auto picture = tgui::Picture::create("test.png");
+    picture->setSize({"100%", "100%"});
+    gui.add(picture);
+
+    // Create the username edit box
+    // Similar to the picture, we set a relative position and size
+    // In case it isn't obvious, the default text is the text that is displayed when the edit box is empty
+    auto editBoxUsername = tgui::EditBox::create();
+    editBoxUsername->setSize({"66.67%", "12.5%"});
+    editBoxUsername->setPosition({"16.67%", "16.67%"});
+    editBoxUsername->setDefaultText("Username");
+    gui.add(editBoxUsername);
+
+    // Create the password edit box
+    // We copy the previous edit box here and keep the same size
+    auto editBoxPassword = tgui::EditBox::copy(editBoxUsername);
+    editBoxPassword->setPosition({"16.67%", "41.6%"});
+    editBoxPassword->setPasswordCharacter('*');
+    editBoxPassword->setDefaultText("Password");
+    gui.add(editBoxPassword);
+
+    // Create the login button
+    auto button = tgui::Button::create("Login");
+    button->setSize({"50%", "16.67%"});
+    button->setPosition({"25%", "70%"});
+    gui.add(button);
+
+    // Call the login function when the button is pressed and pass the edit boxes that we created as parameters
+    button->connect("pressed", login, editBoxUsername, editBoxPassword);
 }
 
 int main()
 {
-    const std::string windowTitle{ "Timestep example" };
-    sf::RenderWindow window(sf::VideoMode(800, 600), windowTitle, sf::Style::Default);
-    window.setFramerateLimit(100); // max render rate is 100 fps (different to physics timestep)
+    // Create the window
+    sf::RenderWindow window(sf::VideoMode(400, 300), "TGUI window");
+    tgui::Gui gui(window);
 
-    sf::CircleShape circle(50.f);
-    circle.setOrigin(circle.getRadius(), circle.getRadius());
-    circle.setFillColor(sf::Color(192, 128, 192));
-    circle.setOutlineColor(sf::Color(64, 255, 192));
-    circle.setOutlineThickness(-5.f);
-    const float movementSpeed{ 250.f }; // pixels per second
-    sf::Vector2f currentCirclePosition{ window.getSize() / 2u };
-    sf::Vector2f previousCirclePosition = currentCirclePosition;
+    try
+    {
+        loadWidgets(gui);
+    }
+    catch (const tgui::Exception& e)
+    {
+        std::cerr << "Failed to load TGUI widgets: " << e.what() << std::endl;
+        return 1;
+    }
 
-    bool interpolate{ false }, extrapolate{ false };
-
-    kairos::FpsLite fps;
-
-    kairos::Timestep timestep;
-    timestep.setStep(1.0 / 5.0); // 'physics' timestep is one fifth of a second, or 5 frames per second.
-    timestep.setMaxAccumulation(0.25); // set maximum time processed at once to a quarter of a second. if time passed is greater than this amount, the extra is discarded.
+    // Main loop
     while (window.isOpen())
     {
+        
         sf::Event event;
         while (window.pollEvent(event))
         {
-            if (event.type == sf::Event::Closed || event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape)
+            // When the window is closed, the application ends
+            if (event.type == sf::Event::Closed)
                 window.close();
-            if (event.type == sf::Event::KeyPressed)
+
+            // When the window is resized, the view is changed
+            else if (event.type == sf::Event::Resized)
             {
-                if (event.key.code == sf::Keyboard::Num1) // toggle interpolation
-                {
-                    interpolate = !interpolate;
-                    extrapolate = false;
-                }
-                else if (event.key.code == sf::Keyboard::Num2) // toggle extrapolation
-                {
-                    extrapolate = !extrapolate;
-                    interpolate = false;
-                }
-                else if (event.key.code == sf::Keyboard::Space) // toggle step value
-                {
-                    if (timestep.getStep() > 1.0 / 6.0)
-                        timestep.setStep(1.0 / 60.0);
-                    else
-                        timestep.setStep(1.0 / 5.0);
-                }
+                window.setView(sf::View(sf::FloatRect(0.f, 0.f, static_cast<float>(event.size.width), static_cast<float>(event.size.height))));
+                gui.setView(window.getView());
             }
+            else  // Pass the event to all the widgets
+            gui.handleEvent(event);
         }
-
-        fps.update();
-
-        timestep.addFrame(); // add frame to timestep each cycle
-        while (timestep.isUpdateRequired()) // this is true as long as there are unprocessed timesteps.
-        {
-            previousCirclePosition = currentCirclePosition;
-            float dt{ timestep.getStepAsFloat() };
-
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) // move up
-                currentCirclePosition.y -= movementSpeed * dt;
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) // move down
-                currentCirclePosition.y += movementSpeed * dt;
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) // move left
-                currentCirclePosition.x -= movementSpeed * dt;
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) // move right
-                currentCirclePosition.x += movementSpeed * dt;
-
-            // keep circle inside the window
-            if (currentCirclePosition.x < circle.getRadius())
-                currentCirclePosition.x = circle.getRadius();
-            else if (currentCirclePosition.x > window.getSize().x - circle.getRadius())
-                currentCirclePosition.x = window.getSize().x - circle.getRadius();
-            if (currentCirclePosition.y < circle.getRadius())
-                currentCirclePosition.y = circle.getRadius();
-            else if (currentCirclePosition.y > window.getSize().y - circle.getRadius())
-                currentCirclePosition.y = window.getSize().y - circle.getRadius();
-        }
-
-        float interpolationAlpha{ timestep.getInterpolationAlphaAsFloat() }; // the interpolation alpha is how much the unprocessed time is of a step.
-        if (extrapolate)
-            // interpolates the current frame and the next frame predictively (extrapolation).
-            // this is closer to the actual position but smooth only when movement is constant.
-            // (interpolation between the previous frame and the current one is smoother but lags behind by a step)
-            interpolationAlpha += 1.f;
-        else if (!interpolate)
-            interpolationAlpha = 1.f;
-        circle.setPosition(linearInterpolation(previousCirclePosition, currentCirclePosition, interpolationAlpha));
-
-        // shows information in the window title bar
-        std::string infoTitle{ windowTitle };
-
-        infoTitle += " || Fps: " + std::to_string(fps.getFps());
-        infoTitle += " | Time passed: " + std::to_string(timestep.getTime());
-
-        if (timestep.getStep() > 1.0 / 6.0)
-            infoTitle += " || Timestep: 5 FPS";
-        else
-            infoTitle += " || Timestep: 60 FPS";
-        if (interpolate)
-            infoTitle += " | Interpolating";
-        else if (extrapolate)
-            infoTitle += " | Extrapolating";
-
-        window.setTitle(infoTitle);
 
         window.clear();
-        window.draw(circle);
+
+        // Draw all created widgets
+        gui.draw();
+
         window.display();
     }
 

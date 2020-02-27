@@ -14,9 +14,9 @@
 struct myRect
 {
     myRect(float l, float t, float r, float b) : left{l},right{r},top{t},base{b},width{r-l},height{b-t},area{width * height} {};
-    myRect(sf::IntRect ir)             : left{(float)ir.left},right{(float)ir.left + (float)ir.width},top{(float)ir.top},base{(float)ir.top + (float)ir.height},width{(float)ir.width},height{(float)ir.height},area{width * height}{};
-    myRect(float w, float h)               : left{0},right{w},top{0},base{h},width{w},height{h},area{width * height}{};
-    myRect()                           : left{0},right{1},top{0},base{1},width{1},height{1},area{width*height} {};
+    myRect(sf::IntRect ir)                     : left{(float)ir.left},right{(float)ir.left + (float)ir.width},top{(float)ir.top},base{(float)ir.top + (float)ir.height},width{(float)ir.width},height{(float)ir.height},area{width * height}{};
+    myRect(float w, float h)                   : left{0},right{w},top{0},base{h},width{w},height{h},area{width * height}{};
+    myRect()                                   : left{0},right{1},top{0},base{1},width{1},height{1},area{width*height} {};
     
     void move(float x, float y)
     {

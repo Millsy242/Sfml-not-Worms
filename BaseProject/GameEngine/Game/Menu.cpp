@@ -19,9 +19,9 @@ void Menu::Start()
     *log << "Starting Menu";
         Active = true;
     
-    StartTexture.loadFromFile("Menu Icons/Start.png");
-    SettingsTexture.loadFromFile("Menu Icons/Settings.png");
-    ExitTexture.loadFromFile("Menu Icons/Exit.png");
+    ResourceHolder::get().textures.add("Menu Icons/Start");
+    ResourceHolder::get().textures.add("Menu Icons/Settings");
+    ResourceHolder::get().textures.add("Menu Icons/Exit");
 }
 void Menu::Input(std::queue<sf::Event> &events, float dt)
 {
@@ -93,12 +93,12 @@ void Menu::StartScreen()
        //Look up how to move buttons into centre
        //possibly just specify size of buttons using button images
        
-       if(ImGui::ImageButton((StartTexture)))//,sf::Vector2f(window->GetSize().x-10,window->GetSize().y/4)))
+       if(ImGui::ImageButton(ResourceHolder::get().textures.get("Menu Icons/Start")))
        {
             Active = false;
        }
 
-       if(ImGui::ImageButton(ExitTexture))//,sf::Vector2f(window->GetSize().x-10,window->GetSize().x/4)))
+       if(ImGui::ImageButton(ResourceHolder::get().textures.get("Menu Icons/Exit")))
        {
            Continue = false;
            Active = false;

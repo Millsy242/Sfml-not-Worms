@@ -27,9 +27,11 @@ void Window::Start(const std::string& windowName,sf::Vector2u WindowSize, bool F
         window.create(sf::VideoMode(WindowSize.x,WindowSize.y,32), windowName, sf::Style::Default);
     
     window.setFramerateLimit(1000);
-    //rendertexture.create(window.getSize().x,window.getSize().y);
+    
     *log << "Setting up ImGui";
     ImGui::SFML::Init(window);
+        *log << "Setting up TGui";
+    GUI.setTarget(window);
     CalculateDT();
     
 }
@@ -106,26 +108,26 @@ void Window::draw(const sf::VertexBuffer &vertexBuffer, std::size_t firstVertex,
 {
     window.draw(vertexBuffer,firstVertex,vertexCount);
 }
-void Window::draw(myRect &rec)
+void Window::draw(myRect &rec,sf::Color col)
 {
     sf::VertexArray arr(sf::Lines,8);
     
     arr[0].position = sf::Vector2f(rec.left,rec.top);
-    arr[0].color = sf::Color::Red;
+    arr[0].color = col;
     arr[1].position = sf::Vector2f(rec.right,rec.top);
-    arr[1].color = sf::Color::Red;
+    arr[1].color = col;
     arr[2].position = sf::Vector2f(rec.right,rec.top);
-    arr[2].color = sf::Color::Red;
+    arr[2].color = col;
     arr[3].position = sf::Vector2f(rec.right,rec.base);
-    arr[3].color = sf::Color::Red;
+    arr[3].color = col;
     arr[4].position = sf::Vector2f(rec.left,rec.top);
-    arr[4].color = sf::Color::Red;
+    arr[4].color = col;
     arr[5].position = sf::Vector2f(rec.left,rec.base);
-    arr[5].color = sf::Color::Red;
+    arr[5].color = col;
     arr[6].position = sf::Vector2f(rec.left,rec.base);
-    arr[6].color = sf::Color::Red;
+    arr[6].color = col;
     arr[7].position = sf::Vector2f(rec.right,rec.base);
-    arr[7].color = sf::Color::Red;
+    arr[7].color = col;
 
     window.draw(arr);
 }

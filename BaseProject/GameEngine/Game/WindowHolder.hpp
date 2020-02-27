@@ -13,6 +13,7 @@
 #include "Window.hpp"
 #include "FileLogger.hpp"
 #include "SettingsManager.hpp"
+#include "ResourceHolder.hpp"
 class WindowHolder : public Base
 {
 public:
@@ -27,7 +28,7 @@ public:
     virtual void Input(std::queue<sf::Event> &events, float dt) override = 0;
     
     virtual void Exit() override;
-    void Stats();
+    virtual void Stats();
     void GiveWindow(std::shared_ptr<Window> w);
     bool Continue = true;
     

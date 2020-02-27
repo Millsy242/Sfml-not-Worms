@@ -32,6 +32,6 @@ protected:
     virtual void GameSettingsMenu();
     virtual void GameSettingsMenuTWO();
 private:
-    sf::Texture StartTexture,SettingsTexture,ExitTexture;
+    
 };
 #endif /* Menu_hpp */

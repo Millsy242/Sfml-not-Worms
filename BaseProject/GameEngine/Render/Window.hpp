@@ -18,6 +18,8 @@
 #include <thread>
 #include <queue>
 #include "Rect.hpp"
+#include <TGUI/TGUI.hpp>
+ 
 
 class Window
 {
@@ -27,7 +29,7 @@ public:
     void Update();
     void BeginDraw(sf::Color colour = sf::Color::Magenta);
     void draw(const sf::Drawable& drawable);
-    void draw(myRect &rec);
+    void draw(myRect &rec,sf::Color col = sf::Color::Red);
     void draw(const sf::Vertex *vertices, std::size_t vertexCount, sf::PrimitiveType type);
     void draw(const sf::VertexBuffer &vertexBuffer);
     void draw(const sf::VertexBuffer &vertexBuffer, std::size_t firstVertex, std::size_t vertexCount);
@@ -54,6 +56,8 @@ public:
     
     std::queue<sf::Event> events;
     
+    
+    
 private:
     void CalculateDT();
 
@@ -61,6 +65,8 @@ private:
     sf::Sprite windowtexture;
     sf::Clock clock;
     sf::Event event;
+    
+    tgui::Gui GUI; 
     
     kairos::FpsLite fps;
     float deltatime;
