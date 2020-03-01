@@ -1,9 +1,9 @@
 FullScreen = FALSE
-GameAspectRatioX = 17
-GameAspectRatioY = 9
-GameScreenWidth = 1366
+GameAspectRatioX = 1
+GameAspectRatioY = 1
+GameScreenWidth = 512
 MenuAspectRatioX = 4
 MenuAspectRatioY = 3
 MenuScreenWidth = 600
 Version = 4
-Vsync = TRUE
+Vsync = FALSE

@@ -41,8 +41,6 @@ Updating Window
 Display Stats
 Menu UI
 Menu Input
-Menu Early Update
-Menu Late Update
 Menu Fixed Update
 Menu Render
 Starting render
@@ -75,8 +73,6 @@ Updating Window
 Display Stats
 Menu UI
 Menu Input
-Menu Early Update
-Menu Late Update
 Menu Fixed Update
 Menu Render
 Starting render
@@ -101,26 +97,6 @@ Updating Window
 Display Stats
 Menu UI
 Menu Input
-Menu Early Update
-Menu Late Update
-Menu Fixed Update
-Menu Render
-Starting render
-Finishing Draw
-Updating Window
-Display Stats
-Menu UI
-Menu Input
-Menu Fixed Update
-Menu Render
-Starting render
-Finishing Draw
-Updating Window
-Display Stats
-Menu UI
-Menu Input
-Menu Early Update
-Menu Late Update
 Menu Fixed Update
 Menu Render
 Starting render
@@ -145,8 +121,6 @@ Updating Window
 Display Stats
 Menu UI
 Menu Input
-Menu Early Update
-Menu Late Update
 Menu Fixed Update
 Menu Render
 Starting render
@@ -197,8 +171,342 @@ Updating Window
 Display Stats
 Menu UI
 Menu Input
-Menu Early Update
-Menu Late Update
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
 Menu Fixed Update
 Menu Render
 Starting render
@@ -249,8 +557,6 @@ Updating Window
 Display Stats
 Menu UI
 Menu Input
-Menu Early Update
-Menu Late Update
 Menu Fixed Update
 Menu Render
 Starting render
@@ -275,8 +581,6 @@ Updating Window
 Display Stats
 Menu UI
 Menu Input
-Menu Early Update
-Menu Late Update
 Menu Fixed Update
 Menu Render
 Starting render
@@ -301,8 +605,6 @@ Updating Window
 Display Stats
 Menu UI
 Menu Input
-Menu Early Update
-Menu Late Update
 Menu Fixed Update
 Menu Render
 Starting render
@@ -327,8 +629,6 @@ Updating Window
 Display Stats
 Menu UI
 Menu Input
-Menu Early Update
-Menu Late Update
 Menu Fixed Update
 Menu Render
 Starting render
@@ -353,8 +653,6 @@ Updating Window
 Display Stats
 Menu UI
 Menu Input
-Menu Early Update
-Menu Late Update
 Menu Fixed Update
 Menu Render
 Starting render
@@ -379,8 +677,6 @@ Updating Window
 Display Stats
 Menu UI
 Menu Input
-Menu Early Update
-Menu Late Update
 Menu Fixed Update
 Menu Render
 Starting render
@@ -405,8 +701,6 @@ Updating Window
 Display Stats
 Menu UI
 Menu Input
-Menu Early Update
-Menu Late Update
 Menu Fixed Update
 Menu Render
 Starting render
@@ -431,8 +725,6 @@ Updating Window
 Display Stats
 Menu UI
 Menu Input
-Menu Early Update
-Menu Late Update
 Menu Fixed Update
 Menu Render
 Starting render
@@ -457,8 +749,6 @@ Updating Window
 Display Stats
 Menu UI
 Menu Input
-Menu Early Update
-Menu Late Update
 Menu Fixed Update
 Menu Render
 Starting render
@@ -483,8 +773,6 @@ Updating Window
 Display Stats
 Menu UI
 Menu Input
-Menu Early Update
-Menu Late Update
 Menu Fixed Update
 Menu Render
 Starting render
@@ -509,8 +797,6 @@ Updating Window
 Display Stats
 Menu UI
 Menu Input
-Menu Early Update
-Menu Late Update
 Menu Fixed Update
 Menu Render
 Starting render
@@ -535,8 +821,6 @@ Updating Window
 Display Stats
 Menu UI
 Menu Input
-Menu Early Update
-Menu Late Update
 Menu Fixed Update
 Menu Render
 Starting render
@@ -561,8 +845,6 @@ Updating Window
 Display Stats
 Menu UI
 Menu Input
-Menu Early Update
-Menu Late Update
 Menu Fixed Update
 Menu Render
 Starting render
@@ -587,8 +869,6 @@ Updating Window
 Display Stats
 Menu UI
 Menu Input
-Menu Early Update
-Menu Late Update
 Menu Fixed Update
 Menu Render
 Starting render
@@ -605,16 +885,6 @@ Updating Window
 Display Stats
 Menu UI
 Menu Input
-Menu Fixed Update
-Menu Render
-Starting render
-Finishing Draw
-Updating Window
-Display Stats
-Menu UI
-Menu Input
-Menu Early Update
-Menu Late Update
 Menu Fixed Update
 Menu Render
 Starting render
@@ -665,6 +935,350 @@ Updating Window
 Display Stats
 Menu UI
 Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
 Menu Early Update
 Menu Late Update
 Menu Fixed Update
@@ -691,6 +1305,334 @@ Updating Window
 Display Stats
 Menu UI
 Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
 Menu Early Update
 Menu Late Update
 Menu Fixed Update
@@ -717,8 +1659,270 @@ Updating Window
 Display Stats
 Menu UI
 Menu Input
-Menu Early Update
-Menu Late Update
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
 Menu Fixed Update
 Menu Render
 Starting render
@@ -769,8 +1973,318 @@ Updating Window
 Display Stats
 Menu UI
 Menu Input
-Menu Early Update
-Menu Late Update
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
 Menu Fixed Update
 Menu Render
 Starting render
@@ -821,8 +2335,318 @@ Updating Window
 Display Stats
 Menu UI
 Menu Input
-Menu Early Update
-Menu Late Update
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
 Menu Fixed Update
 Menu Render
 Starting render
@@ -849,6 +2673,2950 @@ Menu UI
 Menu Input
 Menu Early Update
 Menu Late Update
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Early Update
+Menu Late Update
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Early Update
+Menu Late Update
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Early Update
+Menu Late Update
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Early Update
+Menu Late Update
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Early Update
+Menu Late Update
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Early Update
+Menu Late Update
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Early Update
+Menu Late Update
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Early Update
+Menu Late Update
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
+Menu Fixed Update
+Menu Render
+Starting render
+Finishing Draw
+Updating Window
+Display Stats
+Menu UI
+Menu Input
 Menu Fixed Update
 Menu Render
 Starting render
@@ -895,15 +5663,8 @@ Updating Window
 Display Stats
 UI
 Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
+Game Early Update
+Game Late Update
 Game Early Update
 Game Late Update
 Game Fixed Update
@@ -915,82 +5676,8 @@ Updating Window
 Display Stats
 UI
 Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
 Game Early Update
 Game Late Update
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Early Update
-Game Late Update
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
 Game Fixed Update
 Game Render
 Starting render
@@ -1031,15 +5718,8 @@ Updating Window
 Display Stats
 UI
 Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
+Game Early Update
+Game Late Update
 Game Fixed Update
 Game Render
 Starting render
@@ -1069,6 +5749,8 @@ Updating Window
 Display Stats
 UI
 Game Input
+Game Early Update
+Game Late Update
 Game Fixed Update
 Game Render
 Starting render
@@ -1098,6 +5780,19 @@ Updating Window
 Display Stats
 UI
 Game Input
+Game Early Update
+Game Late Update
+Game Fixed Update
+Game Render
+Starting render
+Drawing drawable
+Finishing Draw
+Updating Window
+Display Stats
+UI
+Game Input
+Game Early Update
+Game Late Update
 Game Fixed Update
 Game Render
 Starting render
@@ -1127,6 +5822,19 @@ Updating Window
 Display Stats
 UI
 Game Input
+Game Early Update
+Game Late Update
+Game Fixed Update
+Game Render
+Starting render
+Drawing drawable
+Finishing Draw
+Updating Window
+Display Stats
+UI
+Game Input
+Game Early Update
+Game Late Update
 Game Fixed Update
 Game Render
 Starting render
@@ -1156,6 +5864,8 @@ Updating Window
 Display Stats
 UI
 Game Input
+Game Early Update
+Game Late Update
 Game Fixed Update
 Game Render
 Starting render
@@ -1185,6 +5895,19 @@ Updating Window
 Display Stats
 UI
 Game Input
+Game Early Update
+Game Late Update
+Game Fixed Update
+Game Render
+Starting render
+Drawing drawable
+Finishing Draw
+Updating Window
+Display Stats
+UI
+Game Input
+Game Early Update
+Game Late Update
 Game Fixed Update
 Game Render
 Starting render
@@ -1214,6 +5937,19 @@ Updating Window
 Display Stats
 UI
 Game Input
+Game Early Update
+Game Late Update
+Game Fixed Update
+Game Render
+Starting render
+Drawing drawable
+Finishing Draw
+Updating Window
+Display Stats
+UI
+Game Input
+Game Early Update
+Game Late Update
 Game Fixed Update
 Game Render
 Starting render
@@ -1243,6 +5979,8 @@ Updating Window
 Display Stats
 UI
 Game Input
+Game Early Update
+Game Late Update
 Game Fixed Update
 Game Render
 Starting render
@@ -1272,6 +6010,19 @@ Updating Window
 Display Stats
 UI
 Game Input
+Game Early Update
+Game Late Update
+Game Fixed Update
+Game Render
+Starting render
+Drawing drawable
+Finishing Draw
+Updating Window
+Display Stats
+UI
+Game Input
+Game Early Update
+Game Late Update
 Game Fixed Update
 Game Render
 Starting render
@@ -1301,6 +6052,19 @@ Updating Window
 Display Stats
 UI
 Game Input
+Game Early Update
+Game Late Update
+Game Fixed Update
+Game Render
+Starting render
+Drawing drawable
+Finishing Draw
+Updating Window
+Display Stats
+UI
+Game Input
+Game Early Update
+Game Late Update
 Game Fixed Update
 Game Render
 Starting render
@@ -1330,6 +6094,19 @@ Updating Window
 Display Stats
 UI
 Game Input
+Game Early Update
+Game Late Update
+Game Fixed Update
+Game Render
+Starting render
+Drawing drawable
+Finishing Draw
+Updating Window
+Display Stats
+UI
+Game Input
+Game Early Update
+Game Late Update
 Game Fixed Update
 Game Render
 Starting render
@@ -1359,6 +6136,19 @@ Updating Window
 Display Stats
 UI
 Game Input
+Game Early Update
+Game Late Update
+Game Fixed Update
+Game Render
+Starting render
+Drawing drawable
+Finishing Draw
+Updating Window
+Display Stats
+UI
+Game Input
+Game Early Update
+Game Late Update
 Game Fixed Update
 Game Render
 Starting render
@@ -1388,15 +6178,6 @@ Updating Window
 Display Stats
 UI
 Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
 Game Early Update
 Game Late Update
 Game Fixed Update
@@ -1408,760 +6189,8 @@ Updating Window
 Display Stats
 UI
 Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
 Game Early Update
 Game Late Update
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Early Update
-Game Late Update
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Early Update
-Game Late Update
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Early Update
-Game Late Update
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Early Update
-Game Late Update
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Early Update
-Game Late Update
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Early Update
-Game Late Update
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Early Update
-Game Late Update
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Early Update
-Game Late Update
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Early Update
-Game Late Update
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Early Update
-Game Late Update
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Early Update
-Game Late Update
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Early Update
-Game Late Update
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Early Update
-Game Late Update
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Early Update
-Game Late Update
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Early Update
-Game Late Update
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Early Update
-Game Late Update
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Early Update
-Game Late Update
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Early Update
-Game Late Update
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Early Update
-Game Late Update
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Early Update
-Game Late Update
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Early Update
-Game Late Update
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Early Update
-Game Late Update
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Early Update
-Game Late Update
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Early Update
-Game Late Update
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
-Game Early Update
-Game Late Update
-Game Fixed Update
-Game Render
-Starting render
-Drawing drawable
-Finishing Draw
-Updating Window
-Display Stats
-UI
-Game Input
 Game Fixed Update
 Game Render
 Starting render
@@ -2186,7 +6215,3 @@ Starting render
 Drawing drawable
 Finishing Draw
 Exiting
-
-
-0 warnings
-0 errors

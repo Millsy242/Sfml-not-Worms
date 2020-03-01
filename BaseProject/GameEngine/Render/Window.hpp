@@ -33,7 +33,7 @@ public:
     void draw(const sf::Vertex *vertices, std::size_t vertexCount, sf::PrimitiveType type);
     void draw(const sf::VertexBuffer &vertexBuffer);
     void draw(const sf::VertexBuffer &vertexBuffer, std::size_t firstVertex, std::size_t vertexCount);
-    
+    void DrawWireFrameModel(const std::vector<std::pair<float, float>> &vecModelCoordinates, float x, float y, float r = 0.0f, float s = 1.0f, sf::Color col = sf::Color::White);
     void EndDraw();
     void Close();
     void SetSize(sf::Vector2u size);
@@ -41,7 +41,7 @@ public:
     void SetTitle(std::string &title);
     bool IsOpen() const;
     void OnResize(float newx, float newy);
-
+    sf::View GetView(); 
     float getDT();
     double GetFPS();
     

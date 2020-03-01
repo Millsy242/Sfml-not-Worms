@@ -27,7 +27,7 @@ void WindowHolder::Stats()
 	window_flags |= ImGuiWindowFlags_NoMove;
 	window_flags |= ImGuiWindowFlags_NoResize;
 	window_flags |= ImGuiWindowFlags_AlwaysAutoResize;
-	window_flags |= ImGuiWindowFlags_NoBackground;
+	//window_flags |= ImGuiWindowFlags_NoBackground;
 	window_flags |= ImGuiWindowFlags_NoNav;
 	window_flags |= ImGuiWindowFlags_NoInputs;
 	window_flags |= ImGuiWindowFlags_NoCollapse;

@@ -174,3 +174,55 @@ double Window::GetFPS()
 {
     return fps.getFps();
 }
+void Window::DrawWireFrameModel(const std::vector<std::pair<float, float>> &vecModelCoordinates, float x, float y, float r, float s, sf::Color col)
+{
+    //Please note: this code was taken and adapted from the console game engine, writted by Javidx9
+    //https://github.com/OneLoneCoder/videos/blob/master/olcConsoleGameEngineGL.h
+    // pair.first = x coordinate
+    // pair.second = y coordinate
+
+    // Create translated model vector of coordinate pairs
+    std::vector<std::pair<float, float>> vecTransformedCoordinates;
+    int verts = (int)vecModelCoordinates.size();
+    vecTransformedCoordinates.resize(verts);
+
+    // Rotate
+    for (int i = 0; i < verts; i++)
+    {
+        vecTransformedCoordinates[i].first = vecModelCoordinates[i].first * cosf(r) - vecModelCoordinates[i].second * sinf(r);
+        vecTransformedCoordinates[i].second = vecModelCoordinates[i].first * sinf(r) + vecModelCoordinates[i].second * cosf(r);
+    }
+
+    // Scale
+    for (int i = 0; i < verts; i++)
+    {
+        vecTransformedCoordinates[i].first = vecTransformedCoordinates[i].first * s;
+        vecTransformedCoordinates[i].second = vecTransformedCoordinates[i].second * s;
+    }
+
+    // Translate
+    for (int i = 0; i < verts; i++)
+    {
+        vecTransformedCoordinates[i].first = vecTransformedCoordinates[i].first + x;
+        vecTransformedCoordinates[i].second = vecTransformedCoordinates[i].second + y;
+    }
+
+    // Draw Closed Polygon
+    for (int i = 0; i < verts + 1; i++)
+    {
+        int j = (i + 1);
+        
+        sf::Vertex line[] =
+        {
+            sf::Vertex({vecTransformedCoordinates[i % verts].first, vecTransformedCoordinates[i % verts].second}),
+            sf::Vertex({vecTransformedCoordinates[j % verts].first, vecTransformedCoordinates[j % verts].second})
+        };
+        line[0].color = col;
+        line[1].color = col;
+        draw(line, 2, sf::Lines);
+    }
+}
+sf::View Window::GetView()
+{
+    return window.getView();
+}
